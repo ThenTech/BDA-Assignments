@@ -1,4 +1,4 @@
-from dblp_parser import run_parser_strategy, IItemStrategy, AuthorStrategyFrequency, AuthorStrategySets
+from dblp_parser import run_parser_strategy, IItemStrategy, AuthorStrategyFrequency, AuthorStrategySets, AuthorStrategyNTupleFrequency
 from itertools import combinations
 
 DATAFULL = "C:/Users/Cedric/Google Drive (cedric.mingneau@student.uhasselt.be)/BDA persoonlijk/oefeningen/dblp.xml"
@@ -72,6 +72,10 @@ def apriori_implement(support_threshold = 12):
 
     ####################
     # ----- Pass 2 -----
+    do_pass_n(2, support_threshold, authors_thesholded)
+
+
+def do_pass_n(n, support_threshold, authors_thesholded):
     print("Start pass 2...")
 
     author_combinations = combinations(authors_thesholded.keys(), 2)
@@ -82,7 +86,7 @@ def apriori_implement(support_threshold = 12):
     print("Created {} pairs.".format(amount_n_tuples))
 
     print("Find pairs in itemsets...")
-    strat = run_parser_strategy(DATA, AuthorStrategyPairFrequency(author_pairs))
+    strat = run_parser_strategy(DATA, AuthorStrategyNTupleFrequency(author_pairs, n))
 
     dump_list_to_file(strat.get_data().items(), "pass_2_pair_freqs.txt")
 
@@ -95,9 +99,7 @@ def apriori_implement(support_threshold = 12):
 
     dump_list_to_file(n_thresholded.items(), "pass_2_pair_freqs_support.txt")
 
-
-def do_pass_n(n):
-
+    return n_thresholded
 
 if __name__ == "__main__":
     print("> Start with {}".format(DATA))
