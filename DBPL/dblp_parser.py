@@ -159,18 +159,22 @@ class AuthorStrategySets(IItemStrategy):
 class AuthorStrategyNTupleFrequency(IItemStrategy):
         TAG = "author"
 
-        def __init__(self, author_n_tuples, tuple_size):
+        def __init__(self, author_n_tuples, tuple_size, max_threads=4):
             self.authors      = author_n_tuples
             self.tuple_size   = tuple_size
             self.tag          = ""
             self.current_item = []
 
-            self.__keys = list(self.authors.keys())
-            self.size   = len(self.__keys)
-            self.idx    = 0
+            self.__keys       = list(self.authors.keys())
+            self.size         = len(self.__keys)
+            self.max_threads  = max(1, max_threads)
+            self.max_threads  = max_threads if self.size > 3 else 1
+
             self.progress = progress(total=self.size,
-                                     desc="Finding {}-tuples...".format(2),
-                                     ncols=79, ascii=True)
+                                     desc="Finding {}-tuples...".format(self.tuple_size),
+                                     ncols=100, ascii=True)
+        def __del__(self):
+            self.progress.close()
 
         def __threaded_check(self):
             def check(start, end):
@@ -181,13 +185,12 @@ class AuthorStrategyNTupleFrequency(IItemStrategy):
                             self.authors[key] += 1
 
             # safety check for when there are fewer than 4 keys
-            max_threads = 4 if self.size >= 4 else 1
             threads = []
 
-            for i in range(max_threads):
+            for i in range(self.max_threads):
                 threads.append(threading.Thread(target=check,
-                                                args=(self.size * i / max_threads,
-                                                      self.size * (i+1) / max_threads)))
+                                                args=(self.size * i / self.max_threads,
+                                                      self.size * (i+1) / self.max_threads)))
                 threads[i].start()
 
             for t in threads:
@@ -203,16 +206,16 @@ class AuthorStrategyNTupleFrequency(IItemStrategy):
         def end_item(self, tag):
             if self.tag == self.TAG and self.tag != tag and self.current_item:
                 if len(self.current_item) >= self.tuple_size:
+                    # Threaded
                     self.__threaded_check()
-                    # self.idx += 1
-                    # if self.idx % 1000 == 0:
-                    #     print("Checked a pair ({} < {})".format(self.idx, n_authors))
 
+                    # Sequential
                     # for author_tuple in self.authors.keys():
                     #     if all(t in self.current_item for t in author_tuple):
                     #         self.authors[author_tuple] += 1
 
                 self.current_item = []
+                self.progress.update(1)
 
         def get_data(self):
             return self.authors
