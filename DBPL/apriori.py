@@ -1,30 +1,25 @@
 from dblp_parser import run_parser_strategy, IItemStrategy, AuthorStrategyFrequency, AuthorStrategySets, AuthorStrategyNTupleFrequency
-from itertools import combinations
+from itertools import combinations, chain
+import sys
+import os
 
-DATAFULL = "C:/Users/Cedric/Google Drive (cedric.mingneau@student.uhasselt.be)/BDA persoonlijk/oefeningen/dblp.xml"
-# DATASNAP = "G:/_temp/UHasselt/BigDataAnalysis/DBLP/dblp50000.xml"
-DATASNAP = "C:/Users/Cedric/Google Drive (cedric.mingneau@student.uhasselt.be)/BDA persoonlijk/oefeningen/dblp50000.xml"
+DATAFULL = "G:/_temp/UHasselt/BigDataAnalysis/DBLP/dblp.xml"
+DATASNAP = "G:/_temp/UHasselt/BigDataAnalysis/DBLP/dblp50000.xml"
+
+# DATAFULL = "C:/Users/Cedric/Google Drive (cedric.mingneau@student.uhasselt.be)/BDA persoonlijk/oefeningen/dblp.xml"
+# DATASNAP = "C:/Users/Cedric/Google Drive (cedric.mingneau@student.uhasselt.be)/BDA persoonlijk/oefeningen/dblp50000.xml"
 
 DATA = DATASNAP
 
-"""
-Pass 1
-    - Vertaal tabel: [author,    id]
-    - Count tabel  : [id    , count]
-
-        => dict {author: count}?
-
-Pass 2
-    - Only use authors count >= support_threshold
-    - Make combinations of
-"""
 
 def dump_list_to_file(li, fname):
     with open(fname, 'w') as fp:
         for i in li:
             fp.write("{0}\n".format(i))
 
+
 def apriori_test():
+    """For debug comparison only."""
     from efficient_apriori import apriori
 
     strat = run_parser_strategy(DATA, AuthorStrategySets())
@@ -45,70 +40,89 @@ def apriori_test():
     dump_list_to_file(rules, "apr_test_rules.txt")
 
 
-def apriori_implement(support_threshold = 12):
-    ####################
-    # ----- Pass 1 -----
-    print("Start pass 1...")
+class Apriori:
+    def __init__(self, data_path, support_threshold = 15):
+        self.data_path         = data_path
+        self.support_threshold = max(1, support_threshold)
 
-    strat = run_parser_strategy(DATA, AuthorStrategyFrequency())
-    # freqs -> strat.get_data()  ==> { author: freq }
+        if not os.path.exists(data_path):
+            raise Exception("[Apriori] No such file: {}".format(data_path))
 
-    n_authors = len(strat.get_data())
-    print("Found freqs for {} authors.".format(n_authors))
+        self.pass_counter = 1
+        self.total_items  = 0
+        self.key_to_index = {}
+        self.index_to_key = []
 
-    # Adjust for support
-    authors_thesholded = {}
+    def __next_pass(self, authors_thesholded):
+        print("Start pass {}...".format(self.pass_counter))
 
-    for k, v in strat.get_data().items():
-        if v >= support_threshold:
-            authors_thesholded[k] = v
+        if self.pass_counter == 1:
+            # First pass gets unique frequencies
 
-    del strat
-    strat = None
+            strat = run_parser_strategy(self.data_path, AuthorStrategyFrequency(show_progress=True))
+            # freqs -> strat.get_data()  ==> { author: freq }
 
-    dump_list_to_file(authors_thesholded.items(), "pass_1_single_freqs.txt")
-    print("{} authors >= support {}.".format(len(authors_thesholded), support_threshold))
+            strat.stop()
+            amount_n_tuples  = len(strat.get_data())
+            self.total_items = strat.total_items
 
+            print("  Caching singles LUT...")
+            self.key_to_index = { k: i for i, k in enumerate(strat.get_data().keys()) }
+            self.index_to_key = list(strat.get_data().keys())
 
-    ####################
-    # ----- Pass 2 -----
-    pass_ctr = 2
-    if (len(authors_thesholded) > 0):
-        n_thresholded = do_pass_n(pass_ctr, support_threshold, authors_thesholded)
-        pass_ctr += 1
-        while (len(n_thresholded) > 0):
-            do_pass_n(pass_ctr, support_threshold, n_thresholded)
-            pass_ctr += 1
+            print("  Created {} {}-tuples.".format(amount_n_tuples, self.pass_counter))
+        else:
+            # N-pass gets n-tuple frequencies
 
+            n_supported_uniques = authors_thesholded.keys()
+            if self.pass_counter > 2:
+                n_supported_uniques = dict.fromkeys(chain(*n_supported_uniques))
 
-def do_pass_n(n, support_threshold, authors_thesholded):
-    print("Start pass {}...".format(n))
+            author_n_tuples = dict.fromkeys(combinations(n_supported_uniques, self.pass_counter), 0)
+            amount_n_tuples = len(author_n_tuples)
 
-    author_combinations = combinations(authors_thesholded.keys(), 2)
+            print("  Created {} {}-tuples.".format(amount_n_tuples, self.pass_counter))
 
-    author_pairs = { k: 0 for k in author_combinations }
-    amount_n_tuples = len(author_pairs)
+            strat = run_parser_strategy(self.data_path, AuthorStrategyNTupleFrequency(author_n_tuples, self.pass_counter, prev_size=self.total_items))
+            strat.stop()
 
-    print("Created {} pairs.".format(amount_n_tuples))
+        dump_list_to_file(strat.get_data().items(), "pass_{}-tuples_freqs.txt".format(self.pass_counter))
 
-    print("Find pairs in itemsets...")
-    strat = run_parser_strategy(DATA, AuthorStrategyNTupleFrequency(author_pairs, n))
+        n_thresholded = {}
+        for k, v in strat.get_data().items():
+            if v >= self.support_threshold:
+                n_thresholded[k] = v
 
-    dump_list_to_file(strat.get_data().items(), "pass_2_pair_freqs.txt")
+        del strat  # Explicit delete
+        print("  {} {}-tuples >= support {}.".format(len(n_thresholded), self.pass_counter, self.support_threshold))
 
-    n_thresholded = {}
-    for k, v in strat.get_data().items():
-        if v >= support_threshold:
-            n_thresholded[k] = v
+        dump_list_to_file(n_thresholded.items(), "pass_{}-tuples_freqs_support.txt".format(self.pass_counter))
 
-    print("{} pairs >= support {}.".format(len(n_thresholded), support_threshold))
+        self.pass_counter += 1
+        return n_thresholded
 
-    dump_list_to_file(n_thresholded.items(), "pass_2_pair_freqs_support.txt")
+    def start(self):
+        """Run passes over the data xml."""
+        print("> Run with \"{}\" and support {}".format(self.data_path, self.support_threshold))
 
-    return n_thresholded
+        n_thresholded = {}
+
+        while True:
+            n_thresholded = self.__next_pass(n_thresholded)
+            if len(n_thresholded) == 0:
+                break
+
 
 if __name__ == "__main__":
-    print("> Start with {}".format(DATA))
+    data_path, support_threshold = DATA, 15
+
+    # argc = len(sys.argv)
+    # if argc < 3:
+    #     print("No args given! Expected file path and support_threshold.")
+    #     sys.exit()
+
+    # data_path, support_threshold = sys.argv
+    # support_threshold = int(support_threshold)
 
     # apriori_test()
-    apriori_implement()
+    Apriori(data_path, support_threshold).start()
