@@ -208,4 +208,9 @@ dmypy.json
 # Ignore all local history of files
 .history
 
+DBPL/.vscode/*
+!DBPL/.vscode/tasks.json
+!DBPL/.vscode/launch.json
+!DBPL/.vscode/extensions.json
+
 # End of https://www.gitignore.io/api/python,pycharm,visualstudiocode
