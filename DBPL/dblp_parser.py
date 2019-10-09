@@ -204,9 +204,9 @@ class AuthorStrategyNTupleFrequency(IItemStrategy):
             if self.tag == self.TAG and self.tag != tag and self.current_item:
                 if len(self.current_item) >= self.tuple_size:
                     self.__threaded_check()
-                    self.idx += 1
-                    if self.idx % 1000 == 0:
-                        print("Checked a pair ({} < {})".format(self.idx, n_authors))
+                    # self.idx += 1
+                    # if self.idx % 1000 == 0:
+                    #     print("Checked a pair ({} < {})".format(self.idx, n_authors))
 
                     # for author_tuple in self.authors.keys():
                     #     if all(t in self.current_item for t in author_tuple):
