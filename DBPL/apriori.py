@@ -72,11 +72,17 @@ def apriori_implement(support_threshold = 12):
 
     ####################
     # ----- Pass 2 -----
-    do_pass_n(2, support_threshold, authors_thesholded)
+    pass_ctr = 2
+    if (len(authors_thesholded) > 0):
+        n_thresholded = do_pass_n(pass_ctr, support_threshold, authors_thesholded)
+        pass_ctr += 1
+        while (len(n_thresholded) > 0):
+            do_pass_n(pass_ctr, support_threshold, n_thresholded)
+            pass_ctr += 1
 
 
 def do_pass_n(n, support_threshold, authors_thesholded):
-    print("Start pass 2...")
+    print("Start pass {}...".format(n))
 
     author_combinations = combinations(authors_thesholded.keys(), 2)
 
