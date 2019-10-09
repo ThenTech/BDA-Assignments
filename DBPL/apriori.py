@@ -1,11 +1,9 @@
 from dblp_parser import run_parser_strategy, IItemStrategy, AuthorStrategyFrequency, AuthorStrategySets
 from itertools import combinations
-import threading
-from tqdm import tqdm as progress
 
-DATAFULL = "G:/_temp/UHasselt/BigDataAnalysis/DBLP/dblp.xml"
+DATAFULL = "C:/Users/Cedric/Google Drive (cedric.mingneau@student.uhasselt.be)/BDA persoonlijk/oefeningen/dblp.xml"
 # DATASNAP = "G:/_temp/UHasselt/BigDataAnalysis/DBLP/dblp50000.xml"
-DATASNAP = "C:/Apps/Github/BDA-Assignments/DBLP/dblp50000.xml"
+DATASNAP = "C:/Users/Cedric/Google Drive (cedric.mingneau@student.uhasselt.be)/BDA persoonlijk/oefeningen/dblp50000.xml"
 
 DATA = DATASNAP
 
@@ -89,66 +87,6 @@ def apriori_implement(support_threshold = 12):
 
     print("Created {} pairs.".format(amount_n_tuples))
 
-    class AuthorStrategyPairFrequency(IItemStrategy):
-        TAG = "author"
-
-        def __init__(self, author_pairs):
-            self.authors      = author_pairs
-            self.tag          = ""
-            self.current_item = []
-
-
-            self.__keys = list(self.authors.keys())
-            self.size   = len(self.__keys)
-            self.idx    = 0
-            self.progress = progress(total=self.size,
-                                     desc="Finding {}-tuples...".format(2),
-                                     ncols=79, ascii=True)
-
-        def __threaded_check(self):
-            def check(start, end):
-                start, end = int(start), int(end)
-                for i in range(start, end):
-                    key = self.__keys[i]
-                    if all(t in self.current_item for t in key):
-                            self.authors[key] += 1
-
-            max_threads = 4
-            threads = []
-
-            for i in range(max_threads):
-                threads.append(threading.Thread(target=check,
-                                                args=(self.size * i / max_threads,
-                                                      self.size * (i+1) / max_threads)))
-                threads[i].start()
-
-            for t in threads:
-                t.join()
-
-        def start_item(self, tag):
-            self.tag = tag
-
-        def update_item(self, author):
-            if self.tag == self.TAG:
-                self.current_item.append(author)
-
-        def end_item(self, tag):
-            if self.tag == self.TAG and self.tag != tag and self.current_item:
-                if len(self.current_item) >= 2:
-
-                    self.__threaded_check()
-                    self.idx += 1
-                    print("Checked a pair ({} < {})".format(self.idx, n_authors))
-
-                    # for author_tuple in self.authors.keys():
-                    #     if all(t in self.current_item for t in author_tuple):
-                    #         self.authors[author_tuple] += 1
-
-                self.current_item = []
-
-        def get_data(self):
-            return self.authors
-
     print("Find pairs in itemsets...")
     strat = run_parser_strategy(DATA, AuthorStrategyPairFrequency(author_pairs))
 
@@ -162,6 +100,10 @@ def apriori_implement(support_threshold = 12):
     print("{} pairs >= support {}.".format(len(n_thresholded), support_threshold))
 
     dump_list_to_file(n_thresholded.items(), "pass_2_pair_freqs_support.txt")
+
+
+def do_pass_n(n):
+
 
 if __name__ == "__main__":
     print("Start")
