@@ -1,4 +1,5 @@
 from xml import sax
+from itertools import combinations, chain
 import threading
 from tqdm import tqdm as progress
 
@@ -173,8 +174,9 @@ class AuthorStrategySets(IItemStrategy):
 class AuthorStrategyNTupleFrequency(IItemStrategy):
     TAG = "author"
 
-    def __init__(self, author_n_tuples, tuple_size, max_threads=-1, prev_size=0):
+    def __init__(self, author_n_tuples, key_to_idx, tuple_size, max_threads=-1, prev_size=0):
         self.authors      = author_n_tuples
+        self.key_to_idx   = key_to_idx
         self.tuple_size   = tuple_size
         self.tag          = ""
         self.current_item = []
@@ -224,7 +226,7 @@ class AuthorStrategyNTupleFrequency(IItemStrategy):
 
     def update_item(self, author):
         if self.tag == self.TAG:
-            self.current_item.append(author)
+            self.current_item.append(self.key_to_idx[author])
 
     def end_item(self, tag):
         if self.tag == self.TAG and self.tag != tag and self.current_item:

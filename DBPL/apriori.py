@@ -9,13 +9,20 @@ DATASNAP = "G:/_temp/UHasselt/BigDataAnalysis/DBLP/dblp50000.xml"
 # DATAFULL = "C:/Users/Cedric/Google Drive (cedric.mingneau@student.uhasselt.be)/BDA persoonlijk/oefeningen/dblp.xml"
 # DATASNAP = "C:/Users/Cedric/Google Drive (cedric.mingneau@student.uhasselt.be)/BDA persoonlijk/oefeningen/dblp50000.xml"
 
-DATA = DATASNAP
+DATA = DATAFULL
 
 
-def dump_list_to_file(li, fname):
-    with open(fname, 'w') as fp:
-        for i in li:
-            fp.write("{0}\n".format(i))
+def dump_list_to_file(li, key_lut, fname):
+    if not key_lut:
+        with open(fname, 'w') as fp:
+            for i in li:
+                fp.write("{0}\n".format(i))
+    else:
+        with open(fname, 'w') as fp:
+            for i in li:
+                keys = [i[0]] if isinstance(i[0], int) else i[0]
+                keys = tuple(map(lambda x: key_lut[x], keys))
+                fp.write("{0}: {1}\n".format(keys, i[1]))
 
 
 def apriori_test():
@@ -36,8 +43,8 @@ def apriori_test():
                               min_support=20/basket_n, min_confidence=1.0,
                               verbosity = 1)
 
-    dump_list_to_file(["{} :\n  {}".format(k, "\n  ".join("{}".format(x) for x in v)) for k, v in itemsets.items()], "apr_test_itemsets.txt")
-    dump_list_to_file(rules, "apr_test_rules.txt")
+    dump_list_to_file(["{} :\n  {}".format(k, "\n  ".join("{}".format(x) for x in v)) for k, v in itemsets.items()], {}, "apr_test_itemsets.txt")
+    dump_list_to_file(rules, {}, "apr_test_rules.txt")
 
 
 class Apriori:
@@ -70,6 +77,11 @@ class Apriori:
             self.key_to_index = { k: i for i, k in enumerate(strat.get_data().keys()) }
             self.index_to_key = list(strat.get_data().keys())
 
+            simplified_keys_dict = {}
+            for k, v in strat.get_data().items():
+                simplified_keys_dict[self.key_to_index[k]] = v
+            strat.authors = simplified_keys_dict
+
             print("  Created {} {}-tuples.".format(amount_n_tuples, self.pass_counter))
         else:
             # N-pass gets n-tuple frequencies
@@ -83,10 +95,12 @@ class Apriori:
 
             print("  Created {} {}-tuples.".format(amount_n_tuples, self.pass_counter))
 
-            strat = run_parser_strategy(self.data_path, AuthorStrategyNTupleFrequency(author_n_tuples, self.pass_counter, prev_size=self.total_items))
+            strat = run_parser_strategy(self.data_path,
+                                        AuthorStrategyNTupleFrequency(author_n_tuples, self.key_to_index, self.pass_counter,
+                                                                      prev_size=self.total_items))
             strat.stop()
 
-        dump_list_to_file(strat.get_data().items(), "pass_{}-tuples_freqs.txt".format(self.pass_counter))
+        dump_list_to_file(strat.get_data().items(), self.index_to_key, "pass_{}-tuples_freqs.txt".format(self.pass_counter))
 
         n_thresholded = {}
         for k, v in strat.get_data().items():
@@ -96,7 +110,7 @@ class Apriori:
         del strat  # Explicit delete
         print("  {} {}-tuples >= support {}.".format(len(n_thresholded), self.pass_counter, self.support_threshold))
 
-        dump_list_to_file(n_thresholded.items(), "pass_{}-tuples_freqs_support.txt".format(self.pass_counter))
+        dump_list_to_file(n_thresholded.items(), self.index_to_key, "pass_{}-tuples_freqs_support.txt".format(self.pass_counter))
 
         self.pass_counter += 1
         return n_thresholded
