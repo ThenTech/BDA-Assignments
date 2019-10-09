@@ -58,12 +58,6 @@ def apriori_implement(support_threshold = 12):
     n_authors = len(strat.get_data())
     print("Found freqs for {} authors.".format(n_authors))
 
-
-    # basket_n = len(strat.get_data())
-    # fraction = int(0.001 * basket_n)
-    # strat.authors = {k: v for (k, v) in list(strat.get_data().items())[:fraction] }
-
-
     # Adjust for support
     authors_thesholded = {}
 
@@ -100,10 +94,12 @@ def apriori_implement(support_threshold = 12):
 
             self.__keys = list(self.authors.keys())
             self.size   = len(self.__keys)
-            self.idx    = 0
-            self.progress = progress(total=self.size,
+            self.progress = progress(total=amount_n_tuples,
                                      desc="Finding {}-tuples...".format(2),
-                                     ncols=79, ascii=True)
+                                     ncols=100, ascii=True)
+
+        def __del__(self):
+            self.progress.close()
 
         def __threaded_check(self):
             def check(start, end):
@@ -137,8 +133,7 @@ def apriori_implement(support_threshold = 12):
                 if len(self.current_item) >= 2:
 
                     self.__threaded_check()
-                    self.idx += 1
-                    print("Checked a pair ({} < {})".format(self.idx, n_authors))
+                    self.progress.update(1)
 
                     # for author_tuple in self.authors.keys():
                     #     if all(t in self.current_item for t in author_tuple):
@@ -164,7 +159,7 @@ def apriori_implement(support_threshold = 12):
     dump_list_to_file(n_thresholded.items(), "pass_2_pair_freqs_support.txt")
 
 if __name__ == "__main__":
-    print("Start")
+    print("> Start with {}".format(DATA))
 
     # apriori_test()
     apriori_implement()
