@@ -1,6 +1,5 @@
 from xml import sax
-from itertools import combinations, chain
-import threading
+from itertools import combinations
 from tqdm import tqdm as progress
 
 class IItemStrategy:
@@ -174,26 +173,17 @@ class AuthorStrategySets(IItemStrategy):
 class AuthorStrategyNTupleFrequency(IItemStrategy):
     TAG = "author"
 
-    def __init__(self, author_n_tuples, key_to_idx, tuple_size, max_threads=-1, prev_size=0):
-        self.authors      = author_n_tuples
+    def __init__(self, n_supported_uniques, key_to_idx, tuple_size, prev_size=0):
+        self.authors      = {}
+        self.freq_authors = n_supported_uniques
         self.key_to_idx   = key_to_idx
         self.tuple_size   = tuple_size
         self.tag          = ""
         self.current_item = []
 
-        if max_threads > 0:
-            self.__keys       = list(self.authors.keys())
-            self.size         = len(self.__keys)
-            self.max_threads  = max(1, max_threads)
-
-            # safety check for when there are fewer than 4 keys
-            self.max_threads  = max_threads if self.size > 3 else 1
-        else:
-            self.max_threads = 0
-
-        self.progress = progress(total=prev_size or self.size,
-                                    desc="  Finding {}-tuples...".format(self.tuple_size),
-                                    ncols=100, ascii=True)
+        self.progress = progress(total=prev_size or 1,
+                                 desc="  Finding {}-tuples...".format(self.tuple_size),
+                                 ncols=100, ascii=True)
 
     def __del__(self):
         self.stop()
@@ -202,46 +192,32 @@ class AuthorStrategyNTupleFrequency(IItemStrategy):
         if self.progress:
             self.progress.close()
 
-    def __threaded_check(self):
-        def check(start, end):
-            start, end = int(start), int(end)
-            for i in range(start, end):
-                key = self.__keys[i]  # run through all authors in the key-tuple
-                if all(t in self.current_item for t in key):
-                        self.authors[key] += 1
-
-        threads = []
-
-        for i in range(self.max_threads):
-            threads.append(threading.Thread(target=check,
-                                            args=(self.size * i / self.max_threads,
-                                                    self.size * (i+1) / self.max_threads)))
-            threads[i].start()
-
-        for t in threads:
-            t.join()
-
     def start_item(self, tag):
         self.tag = tag
 
     def update_item(self, author):
         if self.tag == self.TAG:
-            self.current_item.append(self.key_to_idx[author])
+            idx = self.key_to_idx[author]
+
+            # Only add single if it is within supported threshold, i.e in freq_authors
+            if idx in self.freq_authors:
+                self.current_item.append(idx)
 
     def end_item(self, tag):
-        if self.tag == self.TAG and self.tag != tag and self.current_item:
-            if len(self.current_item) >= self.tuple_size:
-                if self.max_threads > 1:
-                    # Threaded
-                    self.__threaded_check()
-                else:
-                    # Sequential
-                    for author_tuple in self.authors.keys():
-                        if all(t in self.current_item for t in author_tuple):
-                            self.authors[author_tuple] += 1
+        if self.tag == self.TAG and self.tag != tag:
+            # Lazy combinations, only create combinations from current_items
+            # Since these are already frequent, the combinations will be frequent as well
+            if self.current_item and len(self.current_item) >= self.tuple_size:
+                n_tuples = combinations(sorted(self.current_item), self.tuple_size)
+
+                for t in n_tuples:
+                    if t in self.authors:
+                        self.authors[t] += 1
+                    else:
+                        self.authors[t] = 1
 
             self.current_item = []
-            self.progress.update(1)
+            self.progress.update()
 
     def get_data(self):
         return self.authors

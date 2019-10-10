@@ -1,0 +1,133 @@
+> Run with "G:/_temp/UHasselt/BigDataAnalysis/DBLP/dblp.xml" and support 12
+Start pass 1...
+  Finding 1-tuples...: 7075607it [02:04, 57051.80it/s]
+  Caching singles LUT...
+  Created 2356436 1-tuples.
+  249454 1-tuples >= support 12.
+Start pass 2...
+  249454 supported uniques from previous pass to find tuples.
+  Finding 2-tuples...: 100%|###########################| 7075607/7075607 [02:13<00:00, 53123.45it/s]
+  Created 3371001 2-tuples.
+  136019 2-tuples >= support 12.
+Start pass 3...
+  105095 supported uniques from previous pass to find tuples.
+  Finding 3-tuples...: 100%|###########################| 7075607/7075607 [02:04<00:00, 56999.59it/s]
+  Created 2461550 3-tuples.
+  36032 3-tuples >= support 12.
+Start pass 4...
+  34004 supported uniques from previous pass to find tuples.
+  Finding 4-tuples...: 100%|###########################| 7075607/7075607 [02:03<00:00, 57276.05it/s]
+  Created 1312808 4-tuples.
+  24890 4-tuples >= support 12.
+Start pass 5...
+  8311 supported uniques from previous pass to find tuples.
+  Finding 5-tuples...: 100%|###########################| 7075607/7075607 [01:55<00:00, 61341.81it/s]
+  Created 157639 5-tuples.
+  66586 5-tuples >= support 12.
+Start pass 6...
+  2067 supported uniques from previous pass to find tuples.
+  Finding 6-tuples...: 100%|###########################| 7075607/7075607 [01:53<00:00, 62287.01it/s]
+  Created 226401 6-tuples.
+  198547 6-tuples >= support 12.
+Start pass 7...
+  687 supported uniques from previous pass to find tuples.
+  Finding 7-tuples...: 100%|###########################| 7075607/7075607 [01:57<00:00, 60363.25it/s]
+  Created 535370 7-tuples.
+  512359 7-tuples >= support 12.
+Start pass 8...
+  327 supported uniques from previous pass to find tuples.
+  Finding 8-tuples...: 100%|###########################| 7075607/7075607 [02:04<00:00, 56838.80it/s]
+  Created 1146472 8-tuples.
+  1120589 8-tuples >= support 12.
+Start pass 9...
+  188 supported uniques from previous pass to find tuples.
+  Finding 9-tuples...: 100%|###########################| 7075607/7075607 [02:05<00:00, 56442.99it/s]
+  Created 2110778 9-tuples.
+  2081847 9-tuples >= support 12.
+Start pass 10...
+  126 supported uniques from previous pass to find tuples.
+  Finding 10-tuples...: 100%|##########################| 7075607/7075607 [02:12<00:00, 53515.05it/s]
+  Created 3327312 10-tuples.
+  3299601 10-tuples >= support 12.
+Start pass 11...
+  112 supported uniques from previous pass to find tuples.
+  Finding 11-tuples...: 100%|##########################| 7075607/7075607 [02:17<00:00, 51443.54it/s]
+  Created 4498599 11-tuples.
+  4476652 11-tuples >= support 12.
+Start pass 12...
+  69 supported uniques from previous pass to find tuples.
+  Finding 12-tuples...: 100%|##########################| 7075607/7075607 [02:23<00:00, 49470.61it/s]
+  Created 5220320 12-tuples.
+  5209613 12-tuples >= support 12.
+Start pass 13...
+  58 supported uniques from previous pass to find tuples.
+  Finding 13-tuples...: 100%|##########################| 7075607/7075607 [02:27<00:00, 48020.47it/s]
+  Created 5209337 13-tuples.
+  5203712 13-tuples >= support 12.
+Start pass 14...
+  58 supported uniques from previous pass to find tuples.
+  Finding 14-tuples...: 100%|##########################| 7075607/7075607 [02:36<00:00, 45189.55it/s]
+  Created 4460566 14-tuples.
+  4458313 14-tuples >= support 12.
+Start pass 15...
+  58 supported uniques from previous pass to find tuples.
+  Finding 15-tuples...: 100%|##########################| 7075607/7075607 [02:15<00:00, 52196.08it/s]
+  Created 3269591 15-tuples.
+  3268928 15-tuples >= support 12.
+Start pass 16...
+  58 supported uniques from previous pass to find tuples.
+  Finding 16-tuples...: 100%|##########################| 7075607/7075607 [02:07<00:00, 55580.49it/s]
+  Created 2043129 16-tuples.
+  2042994 16-tuples >= support 12.
+Start pass 17...
+  43 supported uniques from previous pass to find tuples.
+  Finding 17-tuples...: 100%|##########################| 7075607/7075607 [02:06<00:00, 55984.03it/s]
+  Created 1081593 17-tuples.
+  1081576 17-tuples >= support 12.
+Start pass 18...
+  42 supported uniques from previous pass to find tuples.
+  Finding 18-tuples...: 100%|##########################| 7075607/7075607 [01:57<00:00, 60429.74it/s]
+  Created 480700 18-tuples.
+  480700 18-tuples >= support 12.
+Start pass 19...
+  25 supported uniques from previous pass to find tuples.
+  Finding 19-tuples...: 100%|##########################| 7075607/7075607 [01:54<00:00, 61572.69it/s]
+  Created 177100 19-tuples.
+  177100 19-tuples >= support 12.
+Start pass 20...
+  25 supported uniques from previous pass to find tuples.
+  Finding 20-tuples...: 100%|##########################| 7075607/7075607 [02:04<00:00, 56864.18it/s]
+  Created 53130 20-tuples.
+  53130 20-tuples >= support 12.
+Start pass 21...
+  25 supported uniques from previous pass to find tuples.
+  Finding 21-tuples...: 100%|##########################| 7075607/7075607 [02:00<00:00, 58738.24it/s]
+  Created 12650 21-tuples.
+  12650 21-tuples >= support 12.
+Start pass 22...
+  25 supported uniques from previous pass to find tuples.
+  Finding 22-tuples...: 100%|##########################| 7075607/7075607 [02:00<00:00, 58677.11it/s]
+  Created 2300 22-tuples.
+  2300 22-tuples >= support 12.
+Start pass 23...
+  25 supported uniques from previous pass to find tuples.
+  Finding 23-tuples...: 100%|##########################| 7075607/7075607 [02:02<00:00, 57649.87it/s]
+  Created 300 23-tuples.
+  300 23-tuples >= support 12.
+Start pass 24...
+  25 supported uniques from previous pass to find tuples.
+  Finding 24-tuples...: 100%|##########################| 7075607/7075607 [02:04<00:00, 56928.62it/s]
+  Created 25 24-tuples.
+  25 24-tuples >= support 12.
+Start pass 25...
+  25 supported uniques from previous pass to find tuples.
+  Finding 25-tuples...: 100%|##########################| 7075607/7075607 [02:05<00:00, 56500.89it/s]
+  Created 1 25-tuples.
+  1 25-tuples >= support 12.
+Start pass 26...
+  25 supported uniques from previous pass to find tuples.
+  Finding 26-tuples...: 100%|##########################| 7075607/7075607 [01:54<00:00, 62062.10it/s]
+  Created 0 26-tuples.
+  0 26-tuples >= support 12.
+
+> Completed 27 passes in 61:06.311

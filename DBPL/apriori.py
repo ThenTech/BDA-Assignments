@@ -1,7 +1,8 @@
 from dblp_parser import run_parser_strategy, IItemStrategy, AuthorStrategyFrequency, AuthorStrategySets, AuthorStrategyNTupleFrequency
-from itertools import combinations, chain
+from itertools import chain
 import sys
 import os
+import time
 
 DATAFULL = "G:/_temp/UHasselt/BigDataAnalysis/DBLP/dblp.xml"
 DATASNAP = "G:/_temp/UHasselt/BigDataAnalysis/DBLP/dblp50000.xml"
@@ -57,8 +58,8 @@ class Apriori:
 
         self.pass_counter = 1
         self.total_items  = 0
-        self.key_to_index = {}
-        self.index_to_key = []
+        self.key_to_index = {}  # To translat from name to idx -> improve memory consumption
+        self.index_to_key = []  # For printing original names
 
     def __next_pass(self, authors_thesholded):
         print("Start pass {}...".format(self.pass_counter))
@@ -90,18 +91,23 @@ class Apriori:
             if self.pass_counter > 2:
                 n_supported_uniques = dict.fromkeys(chain(*n_supported_uniques))
 
-            author_n_tuples = dict.fromkeys(combinations(n_supported_uniques, self.pass_counter), 0)
-            amount_n_tuples = len(author_n_tuples)
+            # Previously, combinations were created here, but this needed too much memory.
+            # Now only the supported uniques from the previous pass are aggregated, and hashed
+            # into a dictionary for O(1) lookup.
+            # Combinations are now made when reading a basket.
 
-            print("  Created {} {}-tuples.".format(amount_n_tuples, self.pass_counter))
+            print("  {} supported uniques from previous pass to find tuples.".format(len(n_supported_uniques)))
 
             strat = run_parser_strategy(self.data_path,
-                                        AuthorStrategyNTupleFrequency(author_n_tuples, self.key_to_index, self.pass_counter,
+                                        AuthorStrategyNTupleFrequency(n_supported_uniques, self.key_to_index, self.pass_counter,
                                                                       prev_size=self.total_items))
             strat.stop()
 
+            print("  Created {} {}-tuples.".format(len(strat.get_data()), self.pass_counter))
+
         dump_list_to_file(strat.get_data().items(), self.index_to_key, "pass_{}-tuples_freqs.txt".format(self.pass_counter))
 
+        # Filter on support threshold
         n_thresholded = {}
         for k, v in strat.get_data().items():
             if v >= self.support_threshold:
@@ -121,14 +127,22 @@ class Apriori:
 
         n_thresholded = {}
 
+        start = time.perf_counter()
+
         while True:
             n_thresholded = self.__next_pass(n_thresholded)
-            if len(n_thresholded) == 0:
+            if len(n_thresholded) < 2:
+                # If there are no or only one n-tuple, no new (n+1)-tuples can be created
                 break
+
+        end = time.perf_counter() - start
+        minutes, seconds = int(end // 60), end % 60
+
+        print("\n> Completed {0} passes in {1:02d}:{2:06.3f}".format(self.pass_counter, minutes, seconds))
 
 
 if __name__ == "__main__":
-    data_path, support_threshold = DATA, 15
+    data_path, support_threshold = DATA, 12
 
     # argc = len(sys.argv)
     # if argc < 3:
