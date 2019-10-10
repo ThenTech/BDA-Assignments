@@ -152,11 +152,11 @@ if __name__ == "__main__":
     data_path, support_threshold = DATA, 15
 
     argc = len(sys.argv)
-    if argc < 3:
+    if argc != 3:
         print("No args given! Expected file path and support_threshold.")
         # sys.exit()
     else:
-        data_path, support_threshold = sys.argv
+        _, data_path, support_threshold = sys.argv
         support_threshold = int(support_threshold)
 
     # apriori_test()
