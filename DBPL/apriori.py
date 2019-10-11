@@ -14,12 +14,11 @@ DATA = DATAFULL
 
 
 def dump_list_to_file(li, key_lut, fname):
-    if not key_lut:
-        with open(fname, 'w') as fp:
+    with open(fname, 'w') as fp:
+        if not key_lut:
             for i in li:
                 fp.write("{0}\n".format(i))
-    else:
-        with open(fname, 'w') as fp:
+        else:
             for i in li:
                 keys = (i[0],) if isinstance(i[0], int) else i[0]
                 keys = tuple(map(lambda x: key_lut[x], keys))
