@@ -1,4 +1,4 @@
-# Big Data Analysis Frequent itemsets assignment
+# Big Data Analysis - Frequent item sets assignment
 
 2019-10-11 **Cedric Mingneau, William Thenaers**
 
@@ -51,31 +51,42 @@ The program output for the settings below can be found in the [benchmarks](./ben
 
 ##### DBPL full dataset with support threshold 12
 
+(only n-tuples with frequency >= 12 are kept for next pass)
+
 ###### Pass 1
 
-- (,): 6
-- (,): 12
+- ('Carmen Heine',): 2
+- ('Gerd Hoff',): 5
+- ('Margo I. Seltzer',): 100
+- ('Frank Neven',): 131
+- ('Kris Luyten',): 164
+- ...
 
 ###### Pass 2
 
-- (,,): 1
-- (,,): 1
+- ('Manish Jain', 'Bo An'): 6
+- ('Manish Jain', 'Milind Tambe'): 34
+- ('Frank Neven', 'Jan Van den Bussche'): 13
+- ('Kris Luyten', 'Karin Coninx'): 115
+- ('Kris Luyten', 'Jan Van den Bergh 0001'): 25
+- ...
 
 ###### Pass 3
 
-- (,,,): 1
-- (,,,): 1
-
-...
+- ('Manish Jain', 'Bo An', 'Milind Tambe'): 4
+- ('Kun Sun 0001', 'Peng Ning', 'Cliff Wang'): 5
+- ('Geert Jan Bex', 'Frank Neven', 'Jan Van den Bussche'): 1
+- ('Kris Luyten', 'Karin Coninx', 'Mieke Haesen'): 17
+- ...
 
 ###### Pass 12
 
-- (,,,,,,,,,,,,): 1
-- (,,,,,,,,,,,,): 1
+- ('Julie Mullen', 'Jeremy Kepner', 'David Bestor', 'Bill Bergeron', 'Siddharth Samsi', 'Peter Michaleas', 'Michael Houle', 'Vijay Gadepally', 'Michael Jones 0001', 'Antonio Rosa', 'Matthew Hubbell', 'Albert Reuther'): 16
+- ('Lech Raczynski', 'Pawel Kowalski', 'Andrzej Kochanowski', 'Artur Slomski', 'Marek Palka', 'Natalia Zon', 'Pawel Moskal', 'Szymon Niedzwiecki', 'Jakub Kowal', 'Adam Strzelecki', 'Neha Gupta-Sharma', 'Wojciech Wislicki'): 14
+- ...
 
-...
+###### Pass 25
 
-###### Pass 26
+(single result)
 
-- (,,,,,,,,,,,,,,,,,,,,,,,,,): 1
-- (,,,,,,,,,,,,,,,,,,,,,,,,,): 1
+- ('Lech Raczynski', 'Pawel Kowalski', 'Andrzej Kochanowski', 'Artur Slomski', 'Marek Palka', 'Grzegorz Korcyl', 'Natalia Zon', 'Tomasz Kozik', 'Michal Silarski', 'Pawel Moskal', 'Tomasz Bednarski', 'Piotr Salabura', 'Marcin Molenda', 'Piotr Bialas', 'Zbigniew Rudy', 'Lukasz Kaplon', 'Wojciech Krzemien', 'Jerzy Smyrski', 'Eryk Czerwinski', 'Szymon Niedzwiecki', 'Jakub Kowal', 'Adam Strzelecki', 'Neha Gupta-Sharma', 'Marcin Zielinski', 'Wojciech Wislicki'): 14
