@@ -14,14 +14,13 @@ DATA = DATAFULL
 
 
 def dump_list_to_file(li, key_lut, fname):
-    if not key_lut:
-        with open(fname, 'w') as fp:
+    with open(fname, 'w') as fp:
+        if not key_lut:
             for i in li:
                 fp.write("{0}\n".format(i))
-    else:
-        with open(fname, 'w') as fp:
+        else:
             for i in li:
-                keys = [i[0]] if isinstance(i[0], int) else i[0]
+                keys = (i[0],) if isinstance(i[0], int) else i[0]
                 keys = tuple(map(lambda x: key_lut[x], keys))
                 fp.write("{0}: {1}\n".format(keys, i[1]))
 
@@ -61,6 +60,15 @@ class Apriori:
         self.key_to_index = {}  # To translat from name to idx -> improve memory consumption
         self.index_to_key = []  # For printing original names
 
+    def __filter_dict(self, d):
+        n_thresholded = {}
+
+        for k, v in d.items():
+            if v >= self.support_threshold:
+                n_thresholded[k] = v
+
+        return n_thresholded
+
     def __next_pass(self, authors_thesholded):
         print("Start pass {}...".format(self.pass_counter))
 
@@ -89,6 +97,7 @@ class Apriori:
 
             n_supported_uniques = authors_thesholded.keys()
             if self.pass_counter > 2:
+                # Chain used keys from previous pass to single unique list, keeping order
                 n_supported_uniques = dict.fromkeys(chain(*n_supported_uniques))
 
             # Previously, combinations were created here, but this needed too much memory.
@@ -108,10 +117,7 @@ class Apriori:
         dump_list_to_file(strat.get_data().items(), self.index_to_key, "pass_{}-tuples_freqs.txt".format(self.pass_counter))
 
         # Filter on support threshold
-        n_thresholded = {}
-        for k, v in strat.get_data().items():
-            if v >= self.support_threshold:
-                n_thresholded[k] = v
+        n_thresholded = self.__filter_dict(strat.get_data())
 
         del strat  # Explicit delete
         print("  {} {}-tuples >= support {}.".format(len(n_thresholded), self.pass_counter, self.support_threshold))
@@ -142,15 +148,15 @@ class Apriori:
 
 
 if __name__ == "__main__":
-    data_path, support_threshold = DATA, 12
+    data_path, support_threshold = DATA, 15
 
-    # argc = len(sys.argv)
-    # if argc < 3:
-    #     print("No args given! Expected file path and support_threshold.")
-    #     sys.exit()
-
-    # data_path, support_threshold = sys.argv
-    # support_threshold = int(support_threshold)
+    argc = len(sys.argv)
+    if argc != 3:
+        print("No args given! Expected file path and support_threshold.")
+        # sys.exit()
+    else:
+        _, data_path, support_threshold = sys.argv
+        support_threshold = int(support_threshold)
 
     # apriori_test()
     Apriori(data_path, support_threshold).start()

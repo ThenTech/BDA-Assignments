@@ -107,7 +107,7 @@ class AuthorStrategyFrequency(IItemStrategy):
 
         self.progress = progress(total=1,
                                  desc="  Finding 1-tuples...",
-                                 ncols=100, ascii=True) \
+                                 ncols=79, ascii=True) \
                             if show_progress else None
 
     def __del__(self):
@@ -183,7 +183,7 @@ class AuthorStrategyNTupleFrequency(IItemStrategy):
 
         self.progress = progress(total=prev_size or 1,
                                  desc="  Finding {}-tuples...".format(self.tuple_size),
-                                 ncols=100, ascii=True)
+                                 ncols=79, ascii=True)
 
     def __del__(self):
         self.stop()
