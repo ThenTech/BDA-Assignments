@@ -1,0 +1,24 @@
+def encode(s):
+    lengthe = len(s)
+    teller = 0
+    new = ""
+    if s[0] == "X":
+        teller +=1
+    for i in range(1,lengthe-1):
+        teller = 0
+        if i == lengthe-1:
+            if s[i-1] == "X":
+                teller +=1
+            break
+        elif s[i+1] == "X":
+            teller +=1
+        elif s[i-1] == "X":
+            teller +=1
+    new += str(teller)
+    return new
+    
+    
+
+
+def decode(s):
+    pass

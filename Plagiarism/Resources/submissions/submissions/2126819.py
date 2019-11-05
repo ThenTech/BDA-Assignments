@@ -1,0 +1,7 @@
+one = int(input("How many 1 eurocents do you have? "))
+two = int(input("How many 2 eurocents do you have? "))
+five = int(input("How many 5 eurocents do you have? "))
+ten = int(input("How many 10 eurocents do you have? "))
+twenty = int(input("How many 20 eurocents do you have? "))
+total = round(float(one * 0.01 + two * 0.02 + five * 0.05 + ten * 0.10 + twenty * 0.20), 2)
+print("You have", total, "euro!") 

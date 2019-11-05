@@ -1,0 +1,1 @@
+print("You have ", x,".",x,x," euro!", sep="")

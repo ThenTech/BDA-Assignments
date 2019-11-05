@@ -1,0 +1,104 @@
+[00](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[00](01, 00)-(01, 06): NAME(NAME) 'string'
+[00](01, 07)-(01, 08): EQUAL(OP) '='
+[00](01, 09)-(01, 14): NAME(NAME) 'input'
+[00](01, 14)-(01, 15): LPAR(OP) '('
+[00](01, 15)-(01, 32): STRING(STRING) '"Geef een string"'
+[00](01, 32)-(01, 33): RPAR(OP) ')'
+[00](01, 33)-(01, 34): NEWLINE(NEWLINE) '\n'
+[00](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[01](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[01](01, 00)-(01, 10): NAME(NAME) 'palindrome'
+[01](01, 11)-(01, 12): EQUAL(OP) '='
+[01](01, 13)-(01, 17): NAME(NAME) 'True'
+[01](01, 17)-(01, 18): NEWLINE(NEWLINE) '\n'
+[01](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[02](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[02](01, 00)-(01, 03): NAME(NAME) 'for'
+[02](01, 04)-(01, 05): NAME(NAME) 'i'
+[02](01, 06)-(01, 08): NAME(NAME) 'in'
+[02](01, 09)-(01, 14): NAME(NAME) 'range'
+[02](01, 14)-(01, 15): LPAR(OP) '('
+[02](01, 15)-(01, 18): NAME(NAME) 'len'
+[02](01, 18)-(01, 19): LPAR(OP) '('
+[02](01, 19)-(01, 25): NAME(NAME) 'string'
+[02](01, 25)-(01, 26): RPAR(OP) ')'
+[02](01, 26)-(01, 28): DOUBLESLASH(OP) '//'
+[02](01, 28)-(01, 29): NUMBER(NUMBER) '2'
+[02](01, 29)-(01, 30): RPAR(OP) ')'
+[02](01, 30)-(01, 31): COLON(OP) ':'
+[02](01, 31)-(01, 32): NEWLINE(NEWLINE) '\n'
+[02](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[03](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[03](01, 00)-(01, 04): INDENT(INDENT) '    '
+[03](01, 04)-(01, 06): NAME(NAME) 'if'
+[03](01, 07)-(01, 13): NAME(NAME) 'string'
+[03](01, 13)-(01, 14): LSQB(OP) '['
+[03](01, 14)-(01, 15): NAME(NAME) 'i'
+[03](01, 15)-(01, 16): RSQB(OP) ']'
+[03](01, 17)-(01, 19): NOTEQUAL(OP) '!='
+[03](01, 20)-(01, 26): NAME(NAME) 'string'
+[03](01, 26)-(01, 27): LSQB(OP) '['
+[03](01, 27)-(01, 30): NAME(NAME) 'len'
+[03](01, 30)-(01, 31): LPAR(OP) '('
+[03](01, 31)-(01, 37): NAME(NAME) 'string'
+[03](01, 37)-(01, 38): RPAR(OP) ')'
+[03](01, 38)-(01, 39): MINUS(OP) '-'
+[03](01, 39)-(01, 40): NAME(NAME) 'i'
+[03](01, 40)-(01, 41): MINUS(OP) '-'
+[03](01, 41)-(01, 42): NUMBER(NUMBER) '1'
+[03](01, 42)-(01, 43): RSQB(OP) ']'
+[03](01, 43)-(01, 44): COLON(OP) ':'
+[03](01, 44)-(01, 45): NEWLINE(NEWLINE) '\n'
+[03](02, 00)-(02, 00): DEDENT(DEDENT)
+[03](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[04](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[04](01, 00)-(01, 08): INDENT(INDENT) '        '
+[04](01, 08)-(01, 18): NAME(NAME) 'palindrome'
+[04](01, 19)-(01, 20): EQUAL(OP) '='
+[04](01, 21)-(01, 26): NAME(NAME) 'False'
+[04](01, 26)-(01, 27): NEWLINE(NEWLINE) '\n'
+[04](02, 00)-(02, 00): DEDENT(DEDENT)
+[04](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[05](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[05](01, 00)-(01, 02): NAME(NAME) 'if'
+[05](01, 03)-(01, 07): NAME(NAME) 'True'
+[05](01, 07)-(01, 08): COLON(OP) ':'
+[05](01, 08)-(01, 09): NEWLINE(NEWLINE) '\n'
+[05](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[06](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[06](01, 00)-(01, 04): INDENT(INDENT) '    '
+[06](01, 04)-(01, 09): NAME(NAME) 'print'
+[06](01, 09)-(01, 10): LPAR(OP) '('
+[06](01, 10)-(01, 16): NAME(NAME) 'string'
+[06](01, 16)-(01, 17): COMMA(OP) ','
+[06](01, 18)-(01, 35): STRING(STRING) '"is a palindrome"'
+[06](01, 35)-(01, 36): RPAR(OP) ')'
+[06](01, 36)-(01, 37): NEWLINE(NEWLINE) '\n'
+[06](02, 00)-(02, 00): DEDENT(DEDENT)
+[06](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[07](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[07](01, 00)-(01, 04): NAME(NAME) 'else'
+[07](01, 04)-(01, 05): COLON(OP) ':'
+[07](01, 05)-(01, 06): NEWLINE(NEWLINE) '\n'
+[07](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[08](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[08](01, 00)-(01, 04): INDENT(INDENT) '    '
+[08](01, 04)-(01, 09): NAME(NAME) 'print'
+[08](01, 09)-(01, 10): LPAR(OP) '('
+[08](01, 10)-(01, 16): NAME(NAME) 'string'
+[08](01, 16)-(01, 17): COMMA(OP) ','
+[08](01, 18)-(01, 39): STRING(STRING) '"is not a palindrome"'
+[08](01, 39)-(01, 40): RPAR(OP) ')'
+[08](01, 40)-(01, 41): NEWLINE(NEWLINE)
+[08](02, 00)-(02, 00): DEDENT(DEDENT)
+[08](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+

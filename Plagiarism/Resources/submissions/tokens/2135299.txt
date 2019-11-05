@@ -1,0 +1,109 @@
+[00](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[00](01, 00)-(01, 36): COMMENT(COMMENT) '# write your code hereword = input()'
+[00](01, 36)-(01, 37): NL(NL) '\n'
+[00](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[01](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[01](01, 00)-(01, 01): NAME(NAME) 'i'
+[01](01, 02)-(01, 03): EQUAL(OP) '='
+[01](01, 04)-(01, 05): NUMBER(NUMBER) '0'
+[01](01, 05)-(01, 06): NEWLINE(NEWLINE) '\n'
+[01](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[02](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[02](01, 00)-(01, 14): NAME(NAME) 'length_of_word'
+[02](01, 15)-(01, 16): EQUAL(OP) '='
+[02](01, 17)-(01, 20): NAME(NAME) 'len'
+[02](01, 20)-(01, 21): LPAR(OP) '('
+[02](01, 21)-(01, 25): NAME(NAME) 'word'
+[02](01, 25)-(01, 26): RPAR(OP) ')'
+[02](01, 26)-(01, 27): NEWLINE(NEWLINE) '\n'
+[02](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[03](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[03](01, 00)-(01, 01): NL(NL) '\n'
+[03](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[04](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[04](01, 00)-(01, 05): NAME(NAME) 'while'
+[04](01, 06)-(01, 10): NAME(NAME) 'word'
+[04](01, 10)-(01, 11): LSQB(OP) '['
+[04](01, 11)-(01, 12): NAME(NAME) 'i'
+[04](01, 12)-(01, 13): RSQB(OP) ']'
+[04](01, 14)-(01, 16): EQEQUAL(OP) '=='
+[04](01, 17)-(01, 21): NAME(NAME) 'word'
+[04](01, 21)-(01, 22): LSQB(OP) '['
+[04](01, 22)-(01, 36): NAME(NAME) 'length_of_word'
+[04](01, 37)-(01, 38): MINUS(OP) '-'
+[04](01, 39)-(01, 40): NUMBER(NUMBER) '1'
+[04](01, 41)-(01, 42): MINUS(OP) '-'
+[04](01, 43)-(01, 44): NAME(NAME) 'i'
+[04](01, 44)-(01, 45): RSQB(OP) ']'
+[04](01, 46)-(01, 49): NAME(NAME) 'and'
+[04](01, 50)-(01, 51): NAME(NAME) 'i'
+[04](01, 52)-(01, 53): LESS(OP) '<'
+[04](01, 54)-(01, 55): LPAR(OP) '('
+[04](01, 55)-(01, 69): NAME(NAME) 'length_of_word'
+[04](01, 70)-(01, 71): SLASH(OP) '/'
+[04](01, 72)-(01, 73): NUMBER(NUMBER) '2'
+[04](01, 73)-(01, 74): RPAR(OP) ')'
+[04](01, 74)-(01, 75): COLON(OP) ':'
+[04](01, 75)-(01, 76): NEWLINE(NEWLINE) '\n'
+[04](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[05](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[05](01, 00)-(01, 04): INDENT(INDENT) '    '
+[05](01, 04)-(01, 05): NAME(NAME) 'i'
+[05](01, 06)-(01, 08): PLUSEQUAL(OP) '+='
+[05](01, 09)-(01, 10): NUMBER(NUMBER) '1'
+[05](01, 10)-(01, 11): NEWLINE(NEWLINE) '\n'
+[05](02, 00)-(02, 00): DEDENT(DEDENT)
+[05](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[06](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[06](01, 00)-(01, 01): NL(NL) '\n'
+[06](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[07](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[07](01, 00)-(01, 02): NAME(NAME) 'if'
+[07](01, 03)-(01, 04): NAME(NAME) 'i'
+[07](01, 05)-(01, 06): GREATER(OP) '>'
+[07](01, 07)-(01, 08): LPAR(OP) '('
+[07](01, 08)-(01, 22): NAME(NAME) 'length_of_word'
+[07](01, 23)-(01, 24): SLASH(OP) '/'
+[07](01, 25)-(01, 26): NUMBER(NUMBER) '2'
+[07](01, 26)-(01, 27): RPAR(OP) ')'
+[07](01, 27)-(01, 28): COLON(OP) ':'
+[07](01, 28)-(01, 29): NEWLINE(NEWLINE) '\n'
+[07](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[08](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[08](01, 00)-(01, 04): INDENT(INDENT) '    '
+[08](01, 04)-(01, 09): NAME(NAME) 'print'
+[08](01, 09)-(01, 10): LPAR(OP) '('
+[08](01, 10)-(01, 14): NAME(NAME) 'word'
+[08](01, 14)-(01, 15): COMMA(OP) ','
+[08](01, 16)-(01, 33): STRING(STRING) '"is a palindrome"'
+[08](01, 33)-(01, 34): RPAR(OP) ')'
+[08](01, 34)-(01, 35): NEWLINE(NEWLINE) '\n'
+[08](02, 00)-(02, 00): DEDENT(DEDENT)
+[08](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[09](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[09](01, 00)-(01, 04): NAME(NAME) 'else'
+[09](01, 04)-(01, 05): COLON(OP) ':'
+[09](01, 05)-(01, 06): NEWLINE(NEWLINE) '\n'
+[09](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[10](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[10](01, 00)-(01, 04): INDENT(INDENT) '    '
+[10](01, 04)-(01, 09): NAME(NAME) 'print'
+[10](01, 09)-(01, 10): LPAR(OP) '('
+[10](01, 10)-(01, 14): NAME(NAME) 'word'
+[10](01, 14)-(01, 15): COMMA(OP) ','
+[10](01, 16)-(01, 37): STRING(STRING) '"is not a palindrome"'
+[10](01, 37)-(01, 38): RPAR(OP) ')'
+[10](01, 38)-(01, 39): NEWLINE(NEWLINE) '\n'
+[10](02, 00)-(02, 00): DEDENT(DEDENT)
+[10](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+

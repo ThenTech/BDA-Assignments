@@ -1,0 +1,146 @@
+[00](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[00](01, 00)-(01, 05): NAME(NAME) 'print'
+[00](01, 05)-(01, 06): LPAR(OP) '('
+[00](01, 06)-(01, 38): STRING(STRING) '"How many coins do you have of:"'
+[00](01, 38)-(01, 39): RPAR(OP) ')'
+[00](01, 39)-(01, 40): NEWLINE(NEWLINE) '\n'
+[00](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[01](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[01](01, 00)-(01, 03): NAME(NAME) 'one'
+[01](01, 04)-(01, 05): EQUAL(OP) '='
+[01](01, 06)-(01, 09): NAME(NAME) 'int'
+[01](01, 09)-(01, 10): LPAR(OP) '('
+[01](01, 10)-(01, 15): NAME(NAME) 'input'
+[01](01, 15)-(01, 16): LPAR(OP) '('
+[01](01, 16)-(01, 30): STRING(STRING) '"1 eurocent: "'
+[01](01, 30)-(01, 31): RPAR(OP) ')'
+[01](01, 31)-(01, 32): RPAR(OP) ')'
+[01](01, 32)-(01, 33): NEWLINE(NEWLINE) '\n'
+[01](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[02](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[02](01, 00)-(01, 03): NAME(NAME) 'two'
+[02](01, 04)-(01, 05): EQUAL(OP) '='
+[02](01, 06)-(01, 09): NAME(NAME) 'int'
+[02](01, 09)-(01, 10): LPAR(OP) '('
+[02](01, 10)-(01, 15): NAME(NAME) 'input'
+[02](01, 15)-(01, 16): LPAR(OP) '('
+[02](01, 16)-(01, 30): STRING(STRING) '"2 eurocent: "'
+[02](01, 30)-(01, 31): RPAR(OP) ')'
+[02](01, 31)-(01, 32): RPAR(OP) ')'
+[02](01, 32)-(01, 33): NEWLINE(NEWLINE) '\n'
+[02](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[03](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[03](01, 00)-(01, 04): NAME(NAME) 'five'
+[03](01, 05)-(01, 06): EQUAL(OP) '='
+[03](01, 07)-(01, 10): NAME(NAME) 'int'
+[03](01, 10)-(01, 11): LPAR(OP) '('
+[03](01, 11)-(01, 16): NAME(NAME) 'input'
+[03](01, 16)-(01, 17): LPAR(OP) '('
+[03](01, 17)-(01, 31): STRING(STRING) '"5 eurocent: "'
+[03](01, 31)-(01, 32): RPAR(OP) ')'
+[03](01, 32)-(01, 33): RPAR(OP) ')'
+[03](01, 33)-(01, 34): NEWLINE(NEWLINE) '\n'
+[03](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[04](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[04](01, 00)-(01, 03): NAME(NAME) 'ten'
+[04](01, 04)-(01, 05): EQUAL(OP) '='
+[04](01, 06)-(01, 09): NAME(NAME) 'int'
+[04](01, 09)-(01, 10): LPAR(OP) '('
+[04](01, 10)-(01, 15): NAME(NAME) 'input'
+[04](01, 15)-(01, 16): LPAR(OP) '('
+[04](01, 16)-(01, 31): STRING(STRING) '"10 eurocent: "'
+[04](01, 31)-(01, 32): RPAR(OP) ')'
+[04](01, 32)-(01, 33): RPAR(OP) ')'
+[04](01, 33)-(01, 34): NEWLINE(NEWLINE) '\n'
+[04](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[05](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[05](01, 00)-(01, 06): NAME(NAME) 'twenty'
+[05](01, 07)-(01, 08): EQUAL(OP) '='
+[05](01, 09)-(01, 12): NAME(NAME) 'int'
+[05](01, 12)-(01, 13): LPAR(OP) '('
+[05](01, 13)-(01, 18): NAME(NAME) 'input'
+[05](01, 18)-(01, 19): LPAR(OP) '('
+[05](01, 19)-(01, 34): STRING(STRING) '"20 eurocent: "'
+[05](01, 34)-(01, 35): RPAR(OP) ')'
+[05](01, 35)-(01, 36): RPAR(OP) ')'
+[05](01, 36)-(01, 37): NEWLINE(NEWLINE) '\n'
+[05](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[06](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[06](01, 00)-(01, 01): NL(NL) '\n'
+[06](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[07](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[07](01, 00)-(01, 05): NAME(NAME) 'total'
+[07](01, 06)-(01, 07): EQUAL(OP) '='
+[07](01, 08)-(01, 09): NUMBER(NUMBER) '0'
+[07](01, 09)-(01, 10): NEWLINE(NEWLINE) '\n'
+[07](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[08](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[08](01, 00)-(01, 05): NAME(NAME) 'total'
+[08](01, 06)-(01, 08): PLUSEQUAL(OP) '+='
+[08](01, 09)-(01, 13): NUMBER(NUMBER) '0.01'
+[08](01, 14)-(01, 15): STAR(OP) '*'
+[08](01, 16)-(01, 19): NAME(NAME) 'one'
+[08](01, 19)-(01, 20): NEWLINE(NEWLINE) '\n'
+[08](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[09](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[09](01, 00)-(01, 05): NAME(NAME) 'total'
+[09](01, 06)-(01, 08): PLUSEQUAL(OP) '+='
+[09](01, 09)-(01, 13): NUMBER(NUMBER) '0.02'
+[09](01, 14)-(01, 15): STAR(OP) '*'
+[09](01, 16)-(01, 19): NAME(NAME) 'two'
+[09](01, 19)-(01, 20): NEWLINE(NEWLINE) '\n'
+[09](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[10](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[10](01, 00)-(01, 05): NAME(NAME) 'total'
+[10](01, 06)-(01, 08): PLUSEQUAL(OP) '+='
+[10](01, 09)-(01, 13): NUMBER(NUMBER) '0.05'
+[10](01, 14)-(01, 15): STAR(OP) '*'
+[10](01, 16)-(01, 20): NAME(NAME) 'five'
+[10](01, 20)-(01, 21): NEWLINE(NEWLINE) '\n'
+[10](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[11](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[11](01, 00)-(01, 05): NAME(NAME) 'total'
+[11](01, 06)-(01, 08): PLUSEQUAL(OP) '+='
+[11](01, 09)-(01, 13): NUMBER(NUMBER) '0.10'
+[11](01, 14)-(01, 15): STAR(OP) '*'
+[11](01, 16)-(01, 19): NAME(NAME) 'ten'
+[11](01, 19)-(01, 20): NEWLINE(NEWLINE) '\n'
+[11](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[12](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[12](01, 00)-(01, 05): NAME(NAME) 'total'
+[12](01, 06)-(01, 08): PLUSEQUAL(OP) '+='
+[12](01, 09)-(01, 13): NUMBER(NUMBER) '0.20'
+[12](01, 14)-(01, 15): STAR(OP) '*'
+[12](01, 16)-(01, 22): NAME(NAME) 'twenty'
+[12](01, 22)-(01, 23): NEWLINE(NEWLINE) '\n'
+[12](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[13](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[13](01, 00)-(01, 01): NL(NL) '\n'
+[13](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[14](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[14](01, 00)-(01, 05): NAME(NAME) 'print'
+[14](01, 05)-(01, 06): LPAR(OP) '('
+[14](01, 06)-(01, 32): STRING(STRING) '"\\nYou have {0:.2f} euro!"'
+[14](01, 32)-(01, 33): DOT(OP) '.'
+[14](01, 33)-(01, 39): NAME(NAME) 'format'
+[14](01, 39)-(01, 40): LPAR(OP) '('
+[14](01, 40)-(01, 45): NAME(NAME) 'total'
+[14](01, 45)-(01, 46): RPAR(OP) ')'
+[14](01, 46)-(01, 47): RPAR(OP) ')'
+[14](01, 47)-(01, 48): NEWLINE(NEWLINE)
+[14](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+

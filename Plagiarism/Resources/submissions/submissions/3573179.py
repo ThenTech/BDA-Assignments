@@ -1,0 +1,4 @@
+def convert(number):
+    tiental = 10**(len(number)-1)
+    sum = tiental * int(number[0])
+    return sum + convert(number[1:])

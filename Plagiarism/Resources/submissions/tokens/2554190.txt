@@ -1,0 +1,192 @@
+[00](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[00](01, 00)-(01, 01): NAME(NAME) 'n'
+[00](01, 02)-(01, 03): EQUAL(OP) '='
+[00](01, 04)-(01, 07): NAME(NAME) 'int'
+[00](01, 07)-(01, 08): LPAR(OP) '('
+[00](01, 08)-(01, 13): NAME(NAME) 'input'
+[00](01, 13)-(01, 14): LPAR(OP) '('
+[00](01, 14)-(01, 57): STRING(STRING) '"Amount of nucleobases in one combination:"'
+[00](01, 57)-(01, 58): RPAR(OP) ')'
+[00](01, 58)-(01, 59): RPAR(OP) ')'
+[00](01, 59)-(01, 60): NEWLINE(NEWLINE) '\n'
+[00](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[01](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[01](01, 00)-(01, 01): NL(NL) '\n'
+[01](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[02](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[02](01, 00)-(01, 03): NAME(NAME) 'def'
+[02](01, 04)-(01, 21): NAME(NAME) 'find_combinations'
+[02](01, 21)-(01, 22): LPAR(OP) '('
+[02](01, 22)-(01, 23): NAME(NAME) 'n'
+[02](01, 23)-(01, 24): RPAR(OP) ')'
+[02](01, 24)-(01, 25): COLON(OP) ':'
+[02](01, 25)-(01, 26): NEWLINE(NEWLINE) '\n'
+[02](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[03](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[03](01, 00)-(01, 04): INDENT(INDENT) '    '
+[03](01, 04)-(01, 09): NAME(NAME) 'bases'
+[03](01, 10)-(01, 11): EQUAL(OP) '='
+[03](01, 12)-(01, 13): LSQB(OP) '['
+[03](01, 13)-(01, 16): STRING(STRING) '"A"'
+[03](01, 16)-(01, 17): COMMA(OP) ','
+[03](01, 18)-(01, 21): STRING(STRING) '"C"'
+[03](01, 21)-(01, 22): COMMA(OP) ','
+[03](01, 23)-(01, 26): STRING(STRING) '"G"'
+[03](01, 26)-(01, 27): COMMA(OP) ','
+[03](01, 28)-(01, 31): STRING(STRING) '"T"'
+[03](01, 31)-(01, 32): RSQB(OP) ']'
+[03](01, 32)-(01, 33): NEWLINE(NEWLINE) '\n'
+[03](02, 00)-(02, 00): DEDENT(DEDENT)
+[03](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[04](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[04](01, 00)-(01, 04): INDENT(INDENT) '    '
+[04](01, 04)-(01, 16): NAME(NAME) 'combinations'
+[04](01, 17)-(01, 18): EQUAL(OP) '='
+[04](01, 19)-(01, 20): LSQB(OP) '['
+[04](01, 20)-(01, 21): RSQB(OP) ']'
+[04](01, 21)-(01, 22): NEWLINE(NEWLINE) '\n'
+[04](02, 00)-(02, 00): DEDENT(DEDENT)
+[04](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[05](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[05](01, 00)-(01, 01): NL(NL) '\n'
+[05](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[06](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[06](01, 00)-(01, 04): INDENT(INDENT) '    '
+[06](01, 04)-(01, 07): NAME(NAME) 'for'
+[06](01, 08)-(01, 12): NAME(NAME) 'base'
+[06](01, 13)-(01, 15): NAME(NAME) 'in'
+[06](01, 16)-(01, 21): NAME(NAME) 'bases'
+[06](01, 21)-(01, 22): COLON(OP) ':'
+[06](01, 22)-(01, 23): NEWLINE(NEWLINE) '\n'
+[06](02, 00)-(02, 00): DEDENT(DEDENT)
+[06](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[07](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[07](01, 00)-(01, 08): INDENT(INDENT) '        '
+[07](01, 08)-(01, 10): NAME(NAME) 'if'
+[07](01, 11)-(01, 12): NAME(NAME) 'n'
+[07](01, 13)-(01, 14): GREATER(OP) '>'
+[07](01, 15)-(01, 16): NUMBER(NUMBER) '1'
+[07](01, 16)-(01, 17): COLON(OP) ':'
+[07](01, 17)-(01, 18): NEWLINE(NEWLINE) '\n'
+[07](02, 00)-(02, 00): DEDENT(DEDENT)
+[07](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[08](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[08](01, 00)-(01, 12): INDENT(INDENT) '            '
+[08](01, 12)-(01, 23): NAME(NAME) 'secondbases'
+[08](01, 24)-(01, 25): EQUAL(OP) '='
+[08](01, 26)-(01, 43): NAME(NAME) 'find_combinations'
+[08](01, 43)-(01, 44): LPAR(OP) '('
+[08](01, 44)-(01, 45): NAME(NAME) 'n'
+[08](01, 45)-(01, 46): MINUS(OP) '-'
+[08](01, 46)-(01, 47): NUMBER(NUMBER) '1'
+[08](01, 47)-(01, 48): RPAR(OP) ')'
+[08](01, 48)-(01, 49): NEWLINE(NEWLINE) '\n'
+[08](02, 00)-(02, 00): DEDENT(DEDENT)
+[08](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[09](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[09](01, 00)-(01, 12): INDENT(INDENT) '            '
+[09](01, 12)-(01, 15): NAME(NAME) 'for'
+[09](01, 16)-(01, 23): NAME(NAME) 'newbase'
+[09](01, 24)-(01, 26): NAME(NAME) 'in'
+[09](01, 27)-(01, 38): NAME(NAME) 'secondbases'
+[09](01, 38)-(01, 39): COLON(OP) ':'
+[09](01, 39)-(01, 40): NEWLINE(NEWLINE) '\n'
+[09](02, 00)-(02, 00): DEDENT(DEDENT)
+[09](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[10](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[10](01, 00)-(01, 16): INDENT(INDENT) '                '
+[10](01, 16)-(01, 28): NAME(NAME) 'combinations'
+[10](01, 28)-(01, 29): DOT(OP) '.'
+[10](01, 29)-(01, 35): NAME(NAME) 'append'
+[10](01, 35)-(01, 36): LPAR(OP) '('
+[10](01, 36)-(01, 40): NAME(NAME) 'base'
+[10](01, 41)-(01, 42): PLUS(OP) '+'
+[10](01, 43)-(01, 50): NAME(NAME) 'newbase'
+[10](01, 50)-(01, 51): RPAR(OP) ')'
+[10](01, 51)-(01, 52): NEWLINE(NEWLINE) '\n'
+[10](02, 00)-(02, 00): DEDENT(DEDENT)
+[10](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[11](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[11](01, 00)-(01, 01): NL(NL) '\n'
+[11](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[12](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[12](01, 00)-(01, 08): INDENT(INDENT) '        '
+[12](01, 08)-(01, 12): NAME(NAME) 'else'
+[12](01, 12)-(01, 13): COLON(OP) ':'
+[12](01, 13)-(01, 14): NEWLINE(NEWLINE) '\n'
+[12](02, 00)-(02, 00): DEDENT(DEDENT)
+[12](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[13](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[13](01, 00)-(01, 12): INDENT(INDENT) '            '
+[13](01, 12)-(01, 24): NAME(NAME) 'combinations'
+[13](01, 24)-(01, 25): DOT(OP) '.'
+[13](01, 25)-(01, 31): NAME(NAME) 'append'
+[13](01, 31)-(01, 32): LPAR(OP) '('
+[13](01, 32)-(01, 36): NAME(NAME) 'base'
+[13](01, 36)-(01, 37): RPAR(OP) ')'
+[13](01, 37)-(01, 38): NEWLINE(NEWLINE) '\n'
+[13](02, 00)-(02, 00): DEDENT(DEDENT)
+[13](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[14](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[14](01, 00)-(01, 01): NL(NL) '\n'
+[14](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[15](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[15](01, 00)-(01, 04): INDENT(INDENT) '    '
+[15](01, 04)-(01, 10): NAME(NAME) 'return'
+[15](01, 11)-(01, 23): NAME(NAME) 'combinations'
+[15](01, 23)-(01, 24): NEWLINE(NEWLINE) '\n'
+[15](02, 00)-(02, 00): DEDENT(DEDENT)
+[15](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[16](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[16](01, 00)-(01, 01): NL(NL) '\n'
+[16](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[17](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[17](01, 00)-(01, 06): NAME(NAME) 'result'
+[17](01, 07)-(01, 08): EQUAL(OP) '='
+[17](01, 09)-(01, 26): NAME(NAME) 'find_combinations'
+[17](01, 26)-(01, 27): LPAR(OP) '('
+[17](01, 27)-(01, 28): NAME(NAME) 'n'
+[17](01, 28)-(01, 29): RPAR(OP) ')'
+[17](01, 29)-(01, 30): NEWLINE(NEWLINE) '\n'
+[17](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[18](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[18](01, 00)-(01, 01): NL(NL) '\n'
+[18](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[19](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[19](01, 00)-(01, 03): NAME(NAME) 'for'
+[19](01, 04)-(01, 15): NAME(NAME) 'combination'
+[19](01, 16)-(01, 18): NAME(NAME) 'in'
+[19](01, 19)-(01, 25): NAME(NAME) 'result'
+[19](01, 25)-(01, 26): COLON(OP) ':'
+[19](01, 26)-(01, 27): NEWLINE(NEWLINE) '\n'
+[19](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[20](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[20](01, 00)-(01, 04): INDENT(INDENT) '    '
+[20](01, 04)-(01, 09): NAME(NAME) 'print'
+[20](01, 09)-(01, 10): LPAR(OP) '('
+[20](01, 10)-(01, 21): NAME(NAME) 'combination'
+[20](01, 21)-(01, 22): RPAR(OP) ')'
+[20](01, 22)-(01, 23): NEWLINE(NEWLINE)
+[20](02, 00)-(02, 00): DEDENT(DEDENT)
+[20](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+

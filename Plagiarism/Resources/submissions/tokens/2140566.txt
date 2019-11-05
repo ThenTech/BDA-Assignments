@@ -1,0 +1,143 @@
+[00](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[00](01, 00)-(01, 05): NAME(NAME) 'woord'
+[00](01, 06)-(01, 07): EQUAL(OP) '='
+[00](01, 08)-(01, 13): NAME(NAME) 'input'
+[00](01, 13)-(01, 14): LPAR(OP) '('
+[00](01, 14)-(01, 15): RPAR(OP) ')'
+[00](01, 15)-(01, 16): NEWLINE(NEWLINE) '\n'
+[00](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[01](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[01](01, 00)-(01, 01): NL(NL) '\n'
+[01](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[02](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[02](01, 00)-(01, 11): NAME(NAME) 'lengtewoord'
+[02](01, 12)-(01, 13): EQUAL(OP) '='
+[02](01, 14)-(01, 17): NAME(NAME) 'len'
+[02](01, 17)-(01, 18): LPAR(OP) '('
+[02](01, 18)-(01, 23): NAME(NAME) 'woord'
+[02](01, 23)-(01, 24): RPAR(OP) ')'
+[02](01, 24)-(01, 25): NEWLINE(NEWLINE) '\n'
+[02](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[03](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[03](01, 00)-(01, 12): NAME(NAME) 'ispalindrome'
+[03](01, 13)-(01, 14): EQUAL(OP) '='
+[03](01, 15)-(01, 19): NAME(NAME) 'True'
+[03](01, 19)-(01, 20): NEWLINE(NEWLINE) '\n'
+[03](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[04](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[04](01, 00)-(01, 06): NAME(NAME) 'teller'
+[04](01, 07)-(01, 08): EQUAL(OP) '='
+[04](01, 09)-(01, 10): NUMBER(NUMBER) '0'
+[04](01, 10)-(01, 11): NEWLINE(NEWLINE) '\n'
+[04](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[05](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[05](01, 00)-(01, 01): NL(NL) '\n'
+[05](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[06](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[06](01, 00)-(01, 05): NAME(NAME) 'while'
+[06](01, 06)-(01, 18): NAME(NAME) 'ispalindrome'
+[06](01, 19)-(01, 22): NAME(NAME) 'and'
+[06](01, 23)-(01, 29): NAME(NAME) 'teller'
+[06](01, 30)-(01, 31): LESS(OP) '<'
+[06](01, 32)-(01, 43): NAME(NAME) 'lengtewoord'
+[06](01, 44)-(01, 45): SLASH(OP) '/'
+[06](01, 46)-(01, 47): NUMBER(NUMBER) '2'
+[06](01, 47)-(01, 48): COLON(OP) ':'
+[06](01, 48)-(01, 49): NEWLINE(NEWLINE) '\n'
+[06](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[07](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[07](01, 00)-(01, 04): INDENT(INDENT) '    '
+[07](01, 04)-(01, 06): NAME(NAME) 'if'
+[07](01, 07)-(01, 12): NAME(NAME) 'woord'
+[07](01, 12)-(01, 13): LSQB(OP) '['
+[07](01, 13)-(01, 19): NAME(NAME) 'teller'
+[07](01, 19)-(01, 20): RSQB(OP) ']'
+[07](01, 21)-(01, 23): EQEQUAL(OP) '=='
+[07](01, 24)-(01, 29): NAME(NAME) 'woord'
+[07](01, 29)-(01, 30): LSQB(OP) '['
+[07](01, 30)-(01, 41): NAME(NAME) 'lengtewoord'
+[07](01, 42)-(01, 43): MINUS(OP) '-'
+[07](01, 44)-(01, 45): NUMBER(NUMBER) '1'
+[07](01, 46)-(01, 47): MINUS(OP) '-'
+[07](01, 48)-(01, 54): NAME(NAME) 'teller'
+[07](01, 54)-(01, 55): RSQB(OP) ']'
+[07](01, 55)-(01, 56): COLON(OP) ':'
+[07](01, 56)-(01, 57): NEWLINE(NEWLINE) '\n'
+[07](02, 00)-(02, 00): DEDENT(DEDENT)
+[07](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[08](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[08](01, 00)-(01, 07): INDENT(INDENT) '       '
+[08](01, 07)-(01, 13): NAME(NAME) 'teller'
+[08](01, 14)-(01, 16): PLUSEQUAL(OP) '+='
+[08](01, 17)-(01, 18): NUMBER(NUMBER) '1'
+[08](01, 18)-(01, 19): NEWLINE(NEWLINE) '\n'
+[08](02, 00)-(02, 00): DEDENT(DEDENT)
+[08](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[09](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[09](01, 00)-(01, 04): INDENT(INDENT) '    '
+[09](01, 04)-(01, 08): NAME(NAME) 'else'
+[09](01, 08)-(01, 09): COLON(OP) ':'
+[09](01, 09)-(01, 10): NEWLINE(NEWLINE) '\n'
+[09](02, 00)-(02, 00): DEDENT(DEDENT)
+[09](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[10](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[10](01, 00)-(01, 08): INDENT(INDENT) '        '
+[10](01, 08)-(01, 20): NAME(NAME) 'ispalindrome'
+[10](01, 21)-(01, 22): EQUAL(OP) '='
+[10](01, 23)-(01, 28): NAME(NAME) 'False'
+[10](01, 28)-(01, 29): NEWLINE(NEWLINE) '\n'
+[10](02, 00)-(02, 00): DEDENT(DEDENT)
+[10](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[11](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[11](01, 00)-(01, 08): INDENT(INDENT) '        '
+[11](01, 08)-(01, 13): NAME(NAME) 'print'
+[11](01, 13)-(01, 14): LPAR(OP) '('
+[11](01, 14)-(01, 19): NAME(NAME) 'woord'
+[11](01, 19)-(01, 20): COMMA(OP) ','
+[11](01, 21)-(01, 42): STRING(STRING) '"is not a palindrome"'
+[11](01, 42)-(01, 43): RPAR(OP) ')'
+[11](01, 43)-(01, 44): NEWLINE(NEWLINE) '\n'
+[11](02, 00)-(02, 00): DEDENT(DEDENT)
+[11](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[12](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[12](01, 08)-(01, 09): NL(NL) '\n'
+[12](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[13](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[13](01, 00)-(01, 02): NAME(NAME) 'if'
+[13](01, 03)-(01, 15): NAME(NAME) 'ispalindrome'
+[13](01, 15)-(01, 16): COLON(OP) ':'
+[13](01, 16)-(01, 17): NEWLINE(NEWLINE) '\n'
+[13](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[14](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[14](01, 00)-(01, 04): INDENT(INDENT) '    '
+[14](01, 04)-(01, 09): NAME(NAME) 'print'
+[14](01, 09)-(01, 10): LPAR(OP) '('
+[14](01, 10)-(01, 15): NAME(NAME) 'woord'
+[14](01, 15)-(01, 16): COMMA(OP) ','
+[14](01, 17)-(01, 34): STRING(STRING) '"is a palindrome"'
+[14](01, 34)-(01, 35): RPAR(OP) ')'
+[14](01, 35)-(01, 36): NEWLINE(NEWLINE) '\n'
+[14](02, 00)-(02, 00): DEDENT(DEDENT)
+[14](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[15](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[15](01, 00)-(01, 01): NL(NL) '\n'
+[15](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[16](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[16](01, 00)-(01, 00): ENDMARKER(ENDMARKER)
+

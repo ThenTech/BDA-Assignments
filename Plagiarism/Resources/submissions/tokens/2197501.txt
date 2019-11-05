@@ -1,0 +1,148 @@
+[00](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[00](01, 00)-(01, 03): NAME(NAME) 'def'
+[00](01, 04)-(01, 15): NAME(NAME) 'count_words'
+[00](01, 15)-(01, 16): LPAR(OP) '('
+[00](01, 16)-(01, 22): NAME(NAME) 'string'
+[00](01, 22)-(01, 23): RPAR(OP) ')'
+[00](01, 23)-(01, 24): COLON(OP) ':'
+[00](01, 24)-(01, 25): NEWLINE(NEWLINE) '\n'
+[00](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[01](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[01](01, 00)-(01, 04): INDENT(INDENT) '    '
+[01](01, 04)-(01, 19): NAME(NAME) 'verboden_tekens'
+[01](01, 20)-(01, 21): EQUAL(OP) '='
+[01](01, 22)-(01, 23): LSQB(OP) '['
+[01](01, 23)-(01, 26): STRING(STRING) '"1"'
+[01](01, 26)-(01, 27): COMMA(OP) ','
+[01](01, 28)-(01, 31): STRING(STRING) '"2"'
+[01](01, 31)-(01, 32): COMMA(OP) ','
+[01](01, 33)-(01, 36): STRING(STRING) '"3"'
+[01](01, 36)-(01, 37): COMMA(OP) ','
+[01](01, 38)-(01, 41): STRING(STRING) '"4"'
+[01](01, 41)-(01, 42): COMMA(OP) ','
+[01](01, 43)-(01, 46): STRING(STRING) '"5"'
+[01](01, 46)-(01, 47): COMMA(OP) ','
+[01](01, 48)-(01, 51): STRING(STRING) '"6"'
+[01](01, 51)-(01, 52): COMMA(OP) ','
+[01](01, 53)-(01, 56): STRING(STRING) '"7"'
+[01](01, 56)-(01, 57): COMMA(OP) ','
+[01](01, 58)-(01, 61): STRING(STRING) '"8"'
+[01](01, 61)-(01, 62): COMMA(OP) ','
+[01](01, 63)-(01, 66): STRING(STRING) '"9"'
+[01](01, 66)-(01, 67): COMMA(OP) ','
+[01](01, 68)-(01, 71): STRING(STRING) '"0"'
+[01](01, 71)-(01, 72): COMMA(OP) ','
+[01](01, 73)-(01, 76): STRING(STRING) '"."'
+[01](01, 76)-(01, 77): COMMA(OP) ','
+[01](01, 78)-(01, 81): STRING(STRING) '"?"'
+[01](01, 81)-(01, 82): COMMA(OP) ','
+[01](01, 83)-(01, 86): STRING(STRING) '"!"'
+[01](01, 86)-(01, 87): COMMA(OP) ','
+[01](01, 88)-(01, 91): STRING(STRING) '","'
+[01](01, 91)-(01, 92): RSQB(OP) ']'
+[01](01, 92)-(01, 93): NEWLINE(NEWLINE) '\n'
+[01](02, 00)-(02, 00): DEDENT(DEDENT)
+[01](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[02](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[02](01, 00)-(01, 04): INDENT(INDENT) '    '
+[02](01, 04)-(01, 11): NAME(NAME) 'string1'
+[02](01, 12)-(01, 13): EQUAL(OP) '='
+[02](01, 14)-(01, 20): NAME(NAME) 'string'
+[02](01, 20)-(01, 21): NEWLINE(NEWLINE) '\n'
+[02](02, 00)-(02, 00): DEDENT(DEDENT)
+[02](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[03](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[03](01, 00)-(01, 04): INDENT(INDENT) '    '
+[03](01, 04)-(01, 07): NAME(NAME) 'for'
+[03](01, 08)-(01, 09): NAME(NAME) 'i'
+[03](01, 10)-(01, 12): NAME(NAME) 'in'
+[03](01, 13)-(01, 18): NAME(NAME) 'range'
+[03](01, 18)-(01, 19): LPAR(OP) '('
+[03](01, 19)-(01, 22): NAME(NAME) 'len'
+[03](01, 22)-(01, 23): LPAR(OP) '('
+[03](01, 23)-(01, 29): NAME(NAME) 'string'
+[03](01, 29)-(01, 30): RPAR(OP) ')'
+[03](01, 30)-(01, 31): RPAR(OP) ')'
+[03](01, 31)-(01, 32): COLON(OP) ':'
+[03](01, 32)-(01, 33): NEWLINE(NEWLINE) '\n'
+[03](02, 00)-(02, 00): DEDENT(DEDENT)
+[03](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[04](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[04](01, 00)-(01, 08): INDENT(INDENT) '        '
+[04](01, 08)-(01, 10): NAME(NAME) 'if'
+[04](01, 11)-(01, 17): NAME(NAME) 'string'
+[04](01, 17)-(01, 18): LSQB(OP) '['
+[04](01, 18)-(01, 19): NAME(NAME) 'i'
+[04](01, 19)-(01, 20): RSQB(OP) ']'
+[04](01, 21)-(01, 23): NAME(NAME) 'in'
+[04](01, 24)-(01, 39): NAME(NAME) 'verboden_tekens'
+[04](01, 39)-(01, 40): COLON(OP) ':'
+[04](01, 40)-(01, 41): NEWLINE(NEWLINE) '\n'
+[04](02, 00)-(02, 00): DEDENT(DEDENT)
+[04](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[05](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[05](01, 00)-(01, 12): INDENT(INDENT) '            '
+[05](01, 12)-(01, 19): NAME(NAME) 'string1'
+[05](01, 20)-(01, 21): EQUAL(OP) '='
+[05](01, 22)-(01, 29): NAME(NAME) 'string1'
+[05](01, 29)-(01, 30): LSQB(OP) '['
+[05](01, 30)-(01, 31): NUMBER(NUMBER) '0'
+[05](01, 31)-(01, 32): COLON(OP) ':'
+[05](01, 32)-(01, 33): NAME(NAME) 'i'
+[05](01, 33)-(01, 34): RSQB(OP) ']'
+[05](01, 35)-(01, 36): PLUS(OP) '+'
+[05](01, 37)-(01, 40): STRING(STRING) '" "'
+[05](01, 41)-(01, 42): PLUS(OP) '+'
+[05](01, 43)-(01, 50): NAME(NAME) 'string1'
+[05](01, 50)-(01, 51): LSQB(OP) '['
+[05](01, 51)-(01, 52): NAME(NAME) 'i'
+[05](01, 53)-(01, 54): PLUS(OP) '+'
+[05](01, 55)-(01, 56): NUMBER(NUMBER) '1'
+[05](01, 56)-(01, 57): COLON(OP) ':'
+[05](01, 57)-(01, 58): RSQB(OP) ']'
+[05](01, 58)-(01, 59): NEWLINE(NEWLINE) '\n'
+[05](02, 00)-(02, 00): DEDENT(DEDENT)
+[05](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[06](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[06](01, 00)-(01, 01): NL(NL) '\n'
+[06](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[07](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[07](01, 00)-(01, 04): INDENT(INDENT) '    '
+[07](01, 04)-(01, 09): NAME(NAME) 'lijst'
+[07](01, 10)-(01, 11): EQUAL(OP) '='
+[07](01, 12)-(01, 19): NAME(NAME) 'string1'
+[07](01, 19)-(01, 20): DOT(OP) '.'
+[07](01, 20)-(01, 25): NAME(NAME) 'split'
+[07](01, 25)-(01, 26): LPAR(OP) '('
+[07](01, 26)-(01, 27): RPAR(OP) ')'
+[07](01, 27)-(01, 28): NEWLINE(NEWLINE) '\n'
+[07](02, 00)-(02, 00): DEDENT(DEDENT)
+[07](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[08](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[08](01, 00)-(01, 04): INDENT(INDENT) '    '
+[08](01, 04)-(01, 18): NAME(NAME) 'aantal_woorden'
+[08](01, 19)-(01, 20): EQUAL(OP) '='
+[08](01, 21)-(01, 24): NAME(NAME) 'len'
+[08](01, 24)-(01, 25): LPAR(OP) '('
+[08](01, 25)-(01, 30): NAME(NAME) 'lijst'
+[08](01, 30)-(01, 31): RPAR(OP) ')'
+[08](01, 31)-(01, 32): NEWLINE(NEWLINE) '\n'
+[08](02, 00)-(02, 00): DEDENT(DEDENT)
+[08](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[09](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[09](01, 00)-(01, 04): INDENT(INDENT) '    '
+[09](01, 04)-(01, 10): NAME(NAME) 'return'
+[09](01, 11)-(01, 25): NAME(NAME) 'aantal_woorden'
+[09](01, 25)-(01, 26): NEWLINE(NEWLINE)
+[09](02, 00)-(02, 00): DEDENT(DEDENT)
+[09](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+

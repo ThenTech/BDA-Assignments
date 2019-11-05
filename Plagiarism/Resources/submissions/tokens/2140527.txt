@@ -1,0 +1,79 @@
+[00](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[00](01, 00)-(01, 06): NAME(NAME) 'woord1'
+[00](01, 07)-(01, 08): EQUAL(OP) '='
+[00](01, 09)-(01, 12): NAME(NAME) 'str'
+[00](01, 12)-(01, 13): LPAR(OP) '('
+[00](01, 13)-(01, 18): NAME(NAME) 'input'
+[00](01, 18)-(01, 19): LPAR(OP) '('
+[00](01, 19)-(01, 35): STRING(STRING) '"Geef woord 1: "'
+[00](01, 35)-(01, 36): RPAR(OP) ')'
+[00](01, 36)-(01, 37): RPAR(OP) ')'
+[00](01, 37)-(01, 38): NEWLINE(NEWLINE) '\n'
+[00](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[01](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[01](01, 00)-(01, 06): NAME(NAME) 'woord2'
+[01](01, 07)-(01, 08): EQUAL(OP) '='
+[01](01, 09)-(01, 12): NAME(NAME) 'str'
+[01](01, 12)-(01, 13): LPAR(OP) '('
+[01](01, 13)-(01, 18): NAME(NAME) 'input'
+[01](01, 18)-(01, 19): LPAR(OP) '('
+[01](01, 19)-(01, 35): STRING(STRING) '"Geef woord 2: "'
+[01](01, 35)-(01, 36): RPAR(OP) ')'
+[01](01, 36)-(01, 37): RPAR(OP) ')'
+[01](01, 37)-(01, 38): NEWLINE(NEWLINE) '\n'
+[01](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[02](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[02](01, 00)-(01, 02): NAME(NAME) 'if'
+[02](01, 03)-(01, 09): NAME(NAME) 'sorted'
+[02](01, 09)-(01, 10): LPAR(OP) '('
+[02](01, 10)-(01, 16): NAME(NAME) 'woord1'
+[02](01, 16)-(01, 17): RPAR(OP) ')'
+[02](01, 17)-(01, 19): EQEQUAL(OP) '=='
+[02](01, 19)-(01, 25): NAME(NAME) 'sorted'
+[02](01, 25)-(01, 26): LPAR(OP) '('
+[02](01, 26)-(01, 32): NAME(NAME) 'woord2'
+[02](01, 32)-(01, 33): RPAR(OP) ')'
+[02](01, 33)-(01, 34): COLON(OP) ':'
+[02](01, 34)-(01, 35): NEWLINE(NEWLINE) '\n'
+[02](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[03](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[03](01, 00)-(01, 04): INDENT(INDENT) '    '
+[03](01, 04)-(01, 09): NAME(NAME) 'print'
+[03](01, 09)-(01, 10): LPAR(OP) '('
+[03](01, 10)-(01, 16): NAME(NAME) 'woord1'
+[03](01, 16)-(01, 17): COMMA(OP) ','
+[03](01, 17)-(01, 22): STRING(STRING) '"and"'
+[03](01, 22)-(01, 23): COMMA(OP) ','
+[03](01, 23)-(01, 29): NAME(NAME) 'woord2'
+[03](01, 29)-(01, 30): COMMA(OP) ','
+[03](01, 30)-(01, 44): STRING(STRING) '"are anagrams"'
+[03](01, 44)-(01, 45): RPAR(OP) ')'
+[03](01, 45)-(01, 46): NEWLINE(NEWLINE) '\n'
+[03](02, 00)-(02, 00): DEDENT(DEDENT)
+[03](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[04](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[04](01, 00)-(01, 04): NAME(NAME) 'else'
+[04](01, 04)-(01, 05): COLON(OP) ':'
+[04](01, 05)-(01, 06): NEWLINE(NEWLINE) '\n'
+[04](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[05](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[05](01, 00)-(01, 04): INDENT(INDENT) '    '
+[05](01, 04)-(01, 09): NAME(NAME) 'print'
+[05](01, 09)-(01, 10): LPAR(OP) '('
+[05](01, 10)-(01, 16): NAME(NAME) 'woord1'
+[05](01, 16)-(01, 17): COMMA(OP) ','
+[05](01, 17)-(01, 22): STRING(STRING) '"and"'
+[05](01, 22)-(01, 23): COMMA(OP) ','
+[05](01, 23)-(01, 29): NAME(NAME) 'woord2'
+[05](01, 29)-(01, 30): COMMA(OP) ','
+[05](01, 30)-(01, 48): STRING(STRING) '"are not anagrams"'
+[05](01, 48)-(01, 49): RPAR(OP) ')'
+[05](01, 49)-(01, 50): NEWLINE(NEWLINE)
+[05](02, 00)-(02, 00): DEDENT(DEDENT)
+[05](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+

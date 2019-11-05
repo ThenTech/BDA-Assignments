@@ -1,0 +1,12 @@
+# write your code here
+a= int(input("stukken van 1 cent"))
+b= int(input("stukken van 2 cent"))
+c= int(input("stukken van 5 cent"))
+d= int(input("stukken van 10 cent"))
+e= int(input("stukken van 20 cent"))
+a= float(a/100)
+b= float(b/100)
+c= float(c/100)
+d= float(d/100)
+e= float(f/100)
+print("you have "+ str(a+b+c+d+e) + " euro "+"coins")

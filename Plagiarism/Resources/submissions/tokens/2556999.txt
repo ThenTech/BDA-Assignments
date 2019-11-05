@@ -1,0 +1,28 @@
+[00](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[00](01, 00)-(01, 03): NAME(NAME) 'def'
+[00](01, 04)-(01, 09): NAME(NAME) 'orden'
+[00](01, 09)-(01, 10): LPAR(OP) '('
+[00](01, 10)-(01, 15): NAME(NAME) 'lista'
+[00](01, 15)-(01, 16): RPAR(OP) ')'
+[00](01, 16)-(01, 17): COLON(OP) ':'
+[00](01, 17)-(01, 18): NEWLINE(NEWLINE) '\n'
+[00](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[01](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[01](01, 00)-(01, 04): INDENT(INDENT) '    '
+[01](01, 04)-(01, 10): NAME(NAME) 'return'
+[01](01, 11)-(01, 16): NAME(NAME) 'lista'
+[01](01, 17)-(01, 19): EQEQUAL(OP) '=='
+[01](01, 20)-(01, 25): NAME(NAME) 'lista'
+[01](01, 25)-(01, 26): DOT(OP) '.'
+[01](01, 26)-(01, 30): NAME(NAME) 'sort'
+[01](01, 30)-(01, 31): LPAR(OP) '('
+[01](01, 31)-(01, 32): RPAR(OP) ')'
+[01](01, 32)-(01, 33): NEWLINE(NEWLINE) '\n'
+[01](02, 00)-(02, 00): DEDENT(DEDENT)
+[01](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[02](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[02](01, 00)-(01, 01): NL(NL) '\n'
+[02](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+

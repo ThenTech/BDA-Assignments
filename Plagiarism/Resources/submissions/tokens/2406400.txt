@@ -1,0 +1,18 @@
+[00](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[00](01, 00)-(01, 03): NAME(NAME) 'def'
+[00](01, 04)-(01, 11): NAME(NAME) 'convert'
+[00](01, 11)-(01, 12): LPAR(OP) '('
+[00](01, 12)-(01, 18): NAME(NAME) 'number'
+[00](01, 18)-(01, 19): RPAR(OP) ')'
+[00](01, 19)-(01, 20): COLON(OP) ':'
+[00](01, 20)-(01, 21): NEWLINE(NEWLINE) '\n'
+[00](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[01](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[01](01, 00)-(01, 04): INDENT(INDENT) '    '
+[01](01, 04)-(01, 10): NAME(NAME) 'return'
+[01](01, 11)-(01, 16): NUMBER(NUMBER) '12345'
+[01](01, 16)-(01, 17): NEWLINE(NEWLINE)
+[01](02, 00)-(02, 00): DEDENT(DEDENT)
+[01](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+

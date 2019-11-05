@@ -1,0 +1,108 @@
+[00](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[00](01, 00)-(01, 05): NAME(NAME) 'getal'
+[00](01, 06)-(01, 07): EQUAL(OP) '='
+[00](01, 08)-(01, 11): NAME(NAME) 'int'
+[00](01, 11)-(01, 12): LPAR(OP) '('
+[00](01, 12)-(01, 17): NAME(NAME) 'input'
+[00](01, 17)-(01, 18): LPAR(OP) '('
+[00](01, 18)-(01, 19): RPAR(OP) ')'
+[00](01, 19)-(01, 20): RPAR(OP) ')'
+[00](01, 20)-(01, 21): NEWLINE(NEWLINE) '\n'
+[00](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[01](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[01](01, 00)-(01, 15): NAME(NAME) 'tussen_uitkomst'
+[01](01, 16)-(01, 17): EQUAL(OP) '='
+[01](01, 18)-(01, 19): NUMBER(NUMBER) '0'
+[01](01, 19)-(01, 20): NEWLINE(NEWLINE) '\n'
+[01](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[02](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[02](01, 00)-(01, 08): NAME(NAME) 'uitkomst'
+[02](01, 09)-(01, 10): EQUAL(OP) '='
+[02](01, 11)-(01, 12): NUMBER(NUMBER) '0'
+[02](01, 12)-(01, 13): NEWLINE(NEWLINE) '\n'
+[02](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[03](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[03](01, 00)-(01, 03): NAME(NAME) 'for'
+[03](01, 04)-(01, 05): NAME(NAME) 'x'
+[03](01, 06)-(01, 08): NAME(NAME) 'in'
+[03](01, 09)-(01, 14): NAME(NAME) 'range'
+[03](01, 14)-(01, 15): LPAR(OP) '('
+[03](01, 15)-(01, 16): NUMBER(NUMBER) '1'
+[03](01, 16)-(01, 17): COMMA(OP) ','
+[03](01, 17)-(01, 22): NAME(NAME) 'getal'
+[03](01, 22)-(01, 23): PLUS(OP) '+'
+[03](01, 23)-(01, 24): NUMBER(NUMBER) '1'
+[03](01, 24)-(01, 25): RPAR(OP) ')'
+[03](01, 25)-(01, 26): COLON(OP) ':'
+[03](01, 26)-(01, 27): NEWLINE(NEWLINE) '\n'
+[03](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[04](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[04](01, 00)-(01, 04): INDENT(INDENT) '    '
+[04](01, 04)-(01, 12): NAME(NAME) 'uitkomst'
+[04](01, 13)-(01, 14): EQUAL(OP) '='
+[04](01, 15)-(01, 23): NAME(NAME) 'uitkomst'
+[04](01, 24)-(01, 25): PLUS(OP) '+'
+[04](01, 26)-(01, 41): NAME(NAME) 'tussen_uitkomst'
+[04](01, 41)-(01, 42): NEWLINE(NEWLINE) '\n'
+[04](02, 00)-(02, 00): DEDENT(DEDENT)
+[04](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[05](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[05](01, 00)-(01, 04): INDENT(INDENT) '    '
+[05](01, 04)-(01, 19): NAME(NAME) 'tussen_uitkomst'
+[05](01, 20)-(01, 21): EQUAL(OP) '='
+[05](01, 22)-(01, 23): NUMBER(NUMBER) '1'
+[05](01, 23)-(01, 24): NEWLINE(NEWLINE) '\n'
+[05](02, 00)-(02, 00): DEDENT(DEDENT)
+[05](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[06](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[06](01, 00)-(01, 04): INDENT(INDENT) '    '
+[06](01, 04)-(01, 07): NAME(NAME) 'for'
+[06](01, 08)-(01, 09): NAME(NAME) 'y'
+[06](01, 10)-(01, 12): NAME(NAME) 'in'
+[06](01, 13)-(01, 18): NAME(NAME) 'range'
+[06](01, 18)-(01, 19): LPAR(OP) '('
+[06](01, 19)-(01, 20): NUMBER(NUMBER) '1'
+[06](01, 20)-(01, 21): COMMA(OP) ','
+[06](01, 21)-(01, 22): NAME(NAME) 'x'
+[06](01, 22)-(01, 23): PLUS(OP) '+'
+[06](01, 23)-(01, 24): NUMBER(NUMBER) '1'
+[06](01, 24)-(01, 25): RPAR(OP) ')'
+[06](01, 25)-(01, 26): COLON(OP) ':'
+[06](01, 26)-(01, 27): NEWLINE(NEWLINE) '\n'
+[06](02, 00)-(02, 00): DEDENT(DEDENT)
+[06](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[07](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[07](01, 00)-(01, 08): INDENT(INDENT) '        '
+[07](01, 08)-(01, 23): NAME(NAME) 'tussen_uitkomst'
+[07](01, 24)-(01, 25): EQUAL(OP) '='
+[07](01, 26)-(01, 41): NAME(NAME) 'tussen_uitkomst'
+[07](01, 42)-(01, 43): STAR(OP) '*'
+[07](01, 44)-(01, 45): NAME(NAME) 'y'
+[07](01, 45)-(01, 46): NEWLINE(NEWLINE) '\n'
+[07](02, 00)-(02, 00): DEDENT(DEDENT)
+[07](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[08](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[08](01, 00)-(01, 08): NAME(NAME) 'uitkomst'
+[08](01, 09)-(01, 10): EQUAL(OP) '='
+[08](01, 11)-(01, 19): NAME(NAME) 'uitkomst'
+[08](01, 19)-(01, 20): PLUS(OP) '+'
+[08](01, 20)-(01, 35): NAME(NAME) 'tussen_uitkomst'
+[08](01, 35)-(01, 36): NEWLINE(NEWLINE) '\n'
+[08](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[09](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[09](01, 00)-(01, 05): NAME(NAME) 'print'
+[09](01, 05)-(01, 06): LPAR(OP) '('
+[09](01, 06)-(01, 14): NAME(NAME) 'uitkomst'
+[09](01, 14)-(01, 15): RPAR(OP) ')'
+[09](01, 15)-(01, 16): NEWLINE(NEWLINE)
+[09](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+

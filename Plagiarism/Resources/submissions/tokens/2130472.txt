@@ -1,0 +1,113 @@
+[00](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[00](01, 00)-(01, 22): COMMENT(COMMENT) '# write your code here'
+[00](01, 22)-(01, 23): NL(NL) '\n'
+[00](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[01](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[01](01, 00)-(01, 06): NAME(NAME) 'getalX'
+[01](01, 07)-(01, 08): EQUAL(OP) '='
+[01](01, 09)-(01, 12): NAME(NAME) 'int'
+[01](01, 12)-(01, 13): LPAR(OP) '('
+[01](01, 13)-(01, 18): NAME(NAME) 'input'
+[01](01, 18)-(01, 19): LPAR(OP) '('
+[01](01, 19)-(01, 50): STRING(STRING) '"geef een getal groter dan 0: "'
+[01](01, 50)-(01, 51): RPAR(OP) ')'
+[01](01, 51)-(01, 52): RPAR(OP) ')'
+[01](01, 52)-(01, 53): NEWLINE(NEWLINE) '\n'
+[01](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[02](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[02](01, 00)-(01, 07): NAME(NAME) 'resultX'
+[02](01, 08)-(01, 09): EQUAL(OP) '='
+[02](01, 10)-(01, 11): NUMBER(NUMBER) '1'
+[02](01, 11)-(01, 12): NEWLINE(NEWLINE) '\n'
+[02](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[03](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[03](01, 00)-(01, 06): NAME(NAME) 'getalY'
+[03](01, 07)-(01, 08): EQUAL(OP) '='
+[03](01, 09)-(01, 12): NAME(NAME) 'int'
+[03](01, 12)-(01, 13): LPAR(OP) '('
+[03](01, 13)-(01, 18): NAME(NAME) 'input'
+[03](01, 18)-(01, 19): LPAR(OP) '('
+[03](01, 19)-(01, 57): STRING(STRING) '"geef een tweede getal groter dan 0: "'
+[03](01, 57)-(01, 58): RPAR(OP) ')'
+[03](01, 58)-(01, 59): RPAR(OP) ')'
+[03](01, 59)-(01, 60): NEWLINE(NEWLINE) '\n'
+[03](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[04](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[04](01, 00)-(01, 07): NAME(NAME) 'resultY'
+[04](01, 08)-(01, 09): EQUAL(OP) '='
+[04](01, 10)-(01, 11): NUMBER(NUMBER) '1'
+[04](01, 11)-(01, 12): NEWLINE(NEWLINE) '\n'
+[04](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[05](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[05](01, 00)-(01, 01): NL(NL) '\n'
+[05](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[06](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[06](01, 00)-(01, 03): NAME(NAME) 'for'
+[06](01, 04)-(01, 05): NAME(NAME) 't'
+[06](01, 06)-(01, 08): NAME(NAME) 'in'
+[06](01, 09)-(01, 14): NAME(NAME) 'range'
+[06](01, 14)-(01, 15): LPAR(OP) '('
+[06](01, 15)-(01, 16): NUMBER(NUMBER) '1'
+[06](01, 16)-(01, 17): COMMA(OP) ','
+[06](01, 18)-(01, 21): NAME(NAME) 'min'
+[06](01, 21)-(01, 22): LPAR(OP) '('
+[06](01, 22)-(01, 28): NAME(NAME) 'getalY'
+[06](01, 28)-(01, 29): COMMA(OP) ','
+[06](01, 30)-(01, 36): NAME(NAME) 'getalX'
+[06](01, 37)-(01, 38): MINUS(OP) '-'
+[06](01, 39)-(01, 45): NAME(NAME) 'getalY'
+[06](01, 45)-(01, 46): RPAR(OP) ')'
+[06](01, 47)-(01, 48): PLUS(OP) '+'
+[06](01, 49)-(01, 50): NUMBER(NUMBER) '1'
+[06](01, 50)-(01, 51): RPAR(OP) ')'
+[06](01, 51)-(01, 52): COLON(OP) ':'
+[06](01, 52)-(01, 53): NEWLINE(NEWLINE) '\n'
+[06](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[07](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[07](01, 00)-(01, 04): INDENT(INDENT) '    '
+[07](01, 04)-(01, 11): NAME(NAME) 'resultX'
+[07](01, 12)-(01, 14): STAREQUAL(OP) '*='
+[07](01, 15)-(01, 21): NAME(NAME) 'getalX'
+[07](01, 21)-(01, 22): NEWLINE(NEWLINE) '\n'
+[07](02, 00)-(02, 00): DEDENT(DEDENT)
+[07](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[08](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[08](01, 00)-(01, 04): INDENT(INDENT) '    '
+[08](01, 04)-(01, 11): NAME(NAME) 'resultY'
+[08](01, 12)-(01, 14): STAREQUAL(OP) '*='
+[08](01, 15)-(01, 16): NAME(NAME) 't'
+[08](01, 16)-(01, 17): NEWLINE(NEWLINE) '\n'
+[08](02, 00)-(02, 00): DEDENT(DEDENT)
+[08](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[09](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[09](01, 00)-(01, 04): INDENT(INDENT) '    '
+[09](01, 04)-(01, 10): NAME(NAME) 'getalX'
+[09](01, 11)-(01, 13): MINEQUAL(OP) '-='
+[09](01, 14)-(01, 15): NUMBER(NUMBER) '1'
+[09](01, 15)-(01, 16): NEWLINE(NEWLINE) '\n'
+[09](02, 00)-(02, 00): DEDENT(DEDENT)
+[09](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[10](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[10](01, 00)-(01, 01): NL(NL) '\n'
+[10](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[11](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[11](01, 00)-(01, 05): NAME(NAME) 'print'
+[11](01, 05)-(01, 06): LPAR(OP) '('
+[11](01, 06)-(01, 13): NAME(NAME) 'resultX'
+[11](01, 14)-(01, 16): DOUBLESLASH(OP) '//'
+[11](01, 17)-(01, 24): NAME(NAME) 'resultY'
+[11](01, 24)-(01, 25): RPAR(OP) ')'
+[11](01, 25)-(01, 26): NEWLINE(NEWLINE)
+[11](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+

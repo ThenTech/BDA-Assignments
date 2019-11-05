@@ -1,0 +1,25 @@
+total = int(input("Hoeveel geld?")
+euro2 = total//200
+total - euro2
+euro1 = total//100
+total - euro1
+euro50c = total//50
+total - euro50c
+euro20c = total//20
+total - euro20c
+euro10c = total//10
+total - euro10c
+euro5c = total//5
+total - euro5c
+euro2c = total//2
+total - euro2c
+euro1c = total//1
+total - euro1c
+print("2-euros: ", euro2)
+print("1-euros: ", euro1)
+print("50c-euros: ", euro50c)
+print("20c-euros: ", euro20c)
+print("10c-euros: ", euro10c)
+print("5c-euros: ", euro5c)
+print("2c-euros: ", euro2c)
+print("1c-euros: ", euro1c)

@@ -1,0 +1,5 @@
+title = input("give your title here: ")
+stars = len(title)
+stars = int(stars)
+print(title)
+print(stars * "*")

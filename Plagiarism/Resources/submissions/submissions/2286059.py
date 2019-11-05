@@ -1,0 +1,10 @@
+cent = int(input('Aantal centen:'))
+tweecent = int(input('Aantal tweecenten:'))
+vijfcent = int(input('Aantal vijfcenten:'))
+tiencent = int(input('Aantal tiencenten:'))
+twintigcent = int(input('Aantal twintigcenten:'))
+totaal = cent + 2 * tweecent + 5 * vijfcent + 10 *tiencent + 20 * twintigcent
+euro = totaal // 100
+tientallen = totaal % 100 // 10
+eenheden = totaal % 100 % 10
+print("You have ", euro, ".", tientallen, eenheden, " euro!", sep="")

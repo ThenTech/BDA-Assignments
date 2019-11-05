@@ -1,0 +1,96 @@
+[00](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[00](01, 00)-(01, 74): COMMENT(COMMENT) '# the year is divisible by 4, unless it is divisible by 100 and not by 400'
+[00](01, 74)-(01, 75): NL(NL) '\n'
+[00](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[01](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[01](01, 00)-(01, 01): NL(NL) '\n'
+[01](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[02](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[02](01, 00)-(01, 01): NAME(NAME) 'x'
+[02](01, 02)-(01, 03): EQUAL(OP) '='
+[02](01, 04)-(01, 07): NAME(NAME) 'int'
+[02](01, 07)-(01, 08): LPAR(OP) '('
+[02](01, 08)-(01, 13): NAME(NAME) 'input'
+[02](01, 13)-(01, 14): LPAR(OP) '('
+[02](01, 14)-(01, 31): STRING(STRING) '"Give me a year:"'
+[02](01, 31)-(01, 32): RPAR(OP) ')'
+[02](01, 32)-(01, 33): RPAR(OP) ')'
+[02](01, 33)-(01, 34): NEWLINE(NEWLINE) '\n'
+[02](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[03](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[03](01, 00)-(01, 01): NL(NL) '\n'
+[03](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[04](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[04](01, 00)-(01, 02): NAME(NAME) 'if'
+[04](01, 03)-(01, 04): LPAR(OP) '('
+[04](01, 04)-(01, 05): NAME(NAME) 'x'
+[04](01, 06)-(01, 07): PERCENT(OP) '%'
+[04](01, 08)-(01, 09): NUMBER(NUMBER) '4'
+[04](01, 10)-(01, 12): EQEQUAL(OP) '=='
+[04](01, 13)-(01, 14): NUMBER(NUMBER) '0'
+[04](01, 14)-(01, 15): RPAR(OP) ')'
+[04](01, 15)-(01, 16): COLON(OP) ':'
+[04](01, 16)-(01, 17): NEWLINE(NEWLINE) '\n'
+[04](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[05](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[05](01, 00)-(01, 04): INDENT(INDENT) '    '
+[05](01, 04)-(01, 06): NAME(NAME) 'if'
+[05](01, 07)-(01, 08): LPAR(OP) '('
+[05](01, 08)-(01, 09): NAME(NAME) 'x'
+[05](01, 10)-(01, 11): PERCENT(OP) '%'
+[05](01, 12)-(01, 15): NUMBER(NUMBER) '100'
+[05](01, 16)-(01, 18): EQEQUAL(OP) '=='
+[05](01, 19)-(01, 20): NUMBER(NUMBER) '0'
+[05](01, 21)-(01, 24): NAME(NAME) 'and'
+[05](01, 25)-(01, 26): NAME(NAME) 'x'
+[05](01, 27)-(01, 28): PERCENT(OP) '%'
+[05](01, 29)-(01, 32): NUMBER(NUMBER) '400'
+[05](01, 33)-(01, 35): NOTEQUAL(OP) '!='
+[05](01, 36)-(01, 37): NUMBER(NUMBER) '0'
+[05](01, 37)-(01, 38): RPAR(OP) ')'
+[05](01, 38)-(01, 39): COLON(OP) ':'
+[05](01, 39)-(01, 40): NEWLINE(NEWLINE) '\n'
+[05](02, 00)-(02, 00): DEDENT(DEDENT)
+[05](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[06](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[06](01, 00)-(01, 08): INDENT(INDENT) '        '
+[06](01, 08)-(01, 13): NAME(NAME) 'print'
+[06](01, 13)-(01, 14): LPAR(OP) '('
+[06](01, 14)-(01, 15): NAME(NAME) 'x'
+[06](01, 15)-(01, 16): COMMA(OP) ','
+[06](01, 17)-(01, 37): STRING(STRING) '"is not a leap year"'
+[06](01, 37)-(01, 38): RPAR(OP) ')'
+[06](01, 38)-(01, 39): NEWLINE(NEWLINE) '\n'
+[06](02, 00)-(02, 00): DEDENT(DEDENT)
+[06](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[07](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[07](01, 00)-(01, 01): NL(NL) '\n'
+[07](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[08](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[08](01, 00)-(01, 04): INDENT(INDENT) '    '
+[08](01, 04)-(01, 08): NAME(NAME) 'else'
+[08](01, 08)-(01, 09): COLON(OP) ':'
+[08](01, 09)-(01, 10): NEWLINE(NEWLINE) '\n'
+[08](02, 00)-(02, 00): DEDENT(DEDENT)
+[08](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[09](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[09](01, 00)-(01, 08): INDENT(INDENT) '        '
+[09](01, 08)-(01, 13): NAME(NAME) 'print'
+[09](01, 13)-(01, 14): LPAR(OP) '('
+[09](01, 14)-(01, 15): NAME(NAME) 'x'
+[09](01, 15)-(01, 16): COMMA(OP) ','
+[09](01, 17)-(01, 33): STRING(STRING) '"is a leap year"'
+[09](01, 33)-(01, 34): RPAR(OP) ')'
+[09](01, 34)-(01, 35): NEWLINE(NEWLINE)
+[09](02, 00)-(02, 00): DEDENT(DEDENT)
+[09](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+

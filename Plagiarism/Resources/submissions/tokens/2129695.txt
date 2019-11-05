@@ -1,0 +1,53 @@
+[00](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[00](01, 00)-(01, 03): NAME(NAME) 'dag'
+[00](01, 04)-(01, 05): EQUAL(OP) '='
+[00](01, 06)-(01, 11): NAME(NAME) 'input'
+[00](01, 11)-(01, 12): LPAR(OP) '('
+[00](01, 12)-(01, 40): STRING(STRING) '"geef het aantal dagen hier"'
+[00](01, 40)-(01, 41): RPAR(OP) ')'
+[00](01, 41)-(01, 42): NEWLINE(NEWLINE) '\n'
+[00](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[01](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[01](01, 00)-(01, 03): NAME(NAME) 'uur'
+[01](01, 04)-(01, 05): EQUAL(OP) '='
+[01](01, 06)-(01, 11): NAME(NAME) 'input'
+[01](01, 11)-(01, 12): LPAR(OP) '('
+[01](01, 12)-(01, 39): STRING(STRING) '"Geef het aantal uren hier"'
+[01](01, 39)-(01, 40): RPAR(OP) ')'
+[01](01, 40)-(01, 41): NEWLINE(NEWLINE) '\n'
+[01](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[02](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[02](01, 00)-(01, 06): NAME(NAME) 'minuut'
+[02](01, 07)-(01, 08): EQUAL(OP) '='
+[02](01, 09)-(01, 10): LPAR(OP) '('
+[02](01, 10)-(01, 13): NAME(NAME) 'uur'
+[02](01, 14)-(01, 15): STAR(OP) '*'
+[02](01, 16)-(01, 19): NAME(NAME) 'int'
+[02](01, 19)-(01, 20): LPAR(OP) '('
+[02](01, 20)-(01, 23): NAME(NAME) 'uur'
+[02](01, 23)-(01, 24): RPAR(OP) ')'
+[02](01, 24)-(01, 25): RPAR(OP) ')'
+[02](01, 26)-(01, 27): PLUS(OP) '+'
+[02](01, 28)-(01, 29): LPAR(OP) '('
+[02](01, 29)-(01, 31): NUMBER(NUMBER) '60'
+[02](01, 32)-(01, 33): STAR(OP) '*'
+[02](01, 34)-(01, 36): NUMBER(NUMBER) '24'
+[02](01, 37)-(01, 38): STAR(OP) '*'
+[02](01, 39)-(01, 42): NAME(NAME) 'int'
+[02](01, 42)-(01, 43): LPAR(OP) '('
+[02](01, 43)-(01, 46): NAME(NAME) 'dag'
+[02](01, 46)-(01, 47): RPAR(OP) ')'
+[02](01, 47)-(01, 48): RPAR(OP) ')'
+[02](01, 48)-(01, 49): NEWLINE(NEWLINE) '\n'
+[02](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[03](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[03](01, 00)-(01, 05): NAME(NAME) 'print'
+[03](01, 05)-(01, 06): LPAR(OP) '('
+[03](01, 06)-(01, 12): NAME(NAME) 'minuut'
+[03](01, 12)-(01, 13): RPAR(OP) ')'
+[03](01, 13)-(01, 14): NEWLINE(NEWLINE)
+[03](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+

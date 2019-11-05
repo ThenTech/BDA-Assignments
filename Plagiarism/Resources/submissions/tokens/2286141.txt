@@ -1,0 +1,38 @@
+[00](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[00](01, 00)-(01, 04): NAME(NAME) 'lijn'
+[00](01, 05)-(01, 06): EQUAL(OP) '='
+[00](01, 07)-(01, 12): NAME(NAME) 'input'
+[00](01, 12)-(01, 13): LPAR(OP) '('
+[00](01, 13)-(01, 37): STRING(STRING) "'Schrijf hier een lijn:'"
+[00](01, 37)-(01, 38): RPAR(OP) ')'
+[00](01, 38)-(01, 39): NEWLINE(NEWLINE) '\n'
+[00](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[01](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[01](01, 00)-(01, 13): NAME(NAME) 'lengte_streep'
+[01](01, 14)-(01, 15): EQUAL(OP) '='
+[01](01, 16)-(01, 19): NAME(NAME) 'len'
+[01](01, 19)-(01, 20): LPAR(OP) '('
+[01](01, 20)-(01, 24): NAME(NAME) 'lijn'
+[01](01, 24)-(01, 25): RPAR(OP) ')'
+[01](01, 26)-(01, 27): NEWLINE(NEWLINE) '\n'
+[01](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[02](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[02](01, 00)-(01, 05): NAME(NAME) 'print'
+[02](01, 05)-(01, 06): LPAR(OP) '('
+[02](01, 06)-(01, 10): NAME(NAME) 'lijn'
+[02](01, 10)-(01, 11): RPAR(OP) ')'
+[02](01, 11)-(01, 12): NEWLINE(NEWLINE) '\n'
+[02](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[03](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[03](01, 00)-(01, 05): NAME(NAME) 'print'
+[03](01, 05)-(01, 06): LPAR(OP) '('
+[03](01, 06)-(01, 19): NAME(NAME) 'lengte_streep'
+[03](01, 20)-(01, 21): STAR(OP) '*'
+[03](01, 22)-(01, 25): STRING(STRING) "'*'"
+[03](01, 25)-(01, 26): RPAR(OP) ')'
+[03](01, 26)-(01, 27): NEWLINE(NEWLINE) '\n'
+[03](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+

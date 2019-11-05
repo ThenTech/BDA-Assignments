@@ -1,0 +1,88 @@
+[00](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[00](01, 00)-(01, 01): NAME(NAME) 'n'
+[00](01, 02)-(01, 03): EQUAL(OP) '='
+[00](01, 04)-(01, 05): NUMBER(NUMBER) '0'
+[00](01, 05)-(01, 06): NEWLINE(NEWLINE) '\n'
+[00](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[01](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[01](01, 00)-(01, 03): NAME(NAME) 'def'
+[01](01, 04)-(01, 11): NAME(NAME) 'convert'
+[01](01, 11)-(01, 12): LPAR(OP) '('
+[01](01, 12)-(01, 18): NAME(NAME) 'number'
+[01](01, 18)-(01, 19): RPAR(OP) ')'
+[01](01, 19)-(01, 20): COLON(OP) ':'
+[01](01, 20)-(01, 21): NEWLINE(NEWLINE) '\n'
+[01](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[02](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[02](01, 00)-(01, 04): INDENT(INDENT) '    '
+[02](01, 04)-(01, 16): NAME(NAME) 'whole_cipher'
+[02](01, 17)-(01, 18): EQUAL(OP) '='
+[02](01, 19)-(01, 20): NUMBER(NUMBER) '0'
+[02](01, 20)-(01, 21): NEWLINE(NEWLINE) '\n'
+[02](02, 00)-(02, 00): DEDENT(DEDENT)
+[02](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[03](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[03](01, 00)-(01, 04): INDENT(INDENT) '    '
+[03](01, 04)-(01, 06): NAME(NAME) 'if'
+[03](01, 07)-(01, 13): NAME(NAME) 'number'
+[03](01, 14)-(01, 16): EQEQUAL(OP) '=='
+[03](01, 17)-(01, 19): STRING(STRING) '""'
+[03](01, 19)-(01, 20): COLON(OP) ':'
+[03](01, 20)-(01, 21): NEWLINE(NEWLINE) '\n'
+[03](02, 00)-(02, 00): DEDENT(DEDENT)
+[03](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[04](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[04](01, 00)-(01, 08): INDENT(INDENT) '        '
+[04](01, 08)-(01, 14): NAME(NAME) 'return'
+[04](01, 15)-(01, 27): NAME(NAME) 'whole_cipher'
+[04](01, 27)-(01, 28): NEWLINE(NEWLINE) '\n'
+[04](02, 00)-(02, 00): DEDENT(DEDENT)
+[04](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[05](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[05](01, 00)-(01, 04): INDENT(INDENT) '    '
+[05](01, 04)-(01, 16): NAME(NAME) 'whole_cipher'
+[05](01, 17)-(01, 19): PLUSEQUAL(OP) '+='
+[05](01, 20)-(01, 23): NAME(NAME) 'int'
+[05](01, 23)-(01, 24): LPAR(OP) '('
+[05](01, 24)-(01, 30): NAME(NAME) 'number'
+[05](01, 30)-(01, 31): LSQB(OP) '['
+[05](01, 31)-(01, 32): NAME(NAME) 'n'
+[05](01, 32)-(01, 33): RSQB(OP) ']'
+[05](01, 33)-(01, 34): RPAR(OP) ')'
+[05](01, 35)-(01, 36): STAR(OP) '*'
+[05](01, 37)-(01, 38): LPAR(OP) '('
+[05](01, 38)-(01, 40): NUMBER(NUMBER) '10'
+[05](01, 41)-(01, 43): DOUBLESTAR(OP) '**'
+[05](01, 44)-(01, 47): NAME(NAME) 'len'
+[05](01, 47)-(01, 48): LPAR(OP) '('
+[05](01, 48)-(01, 54): NAME(NAME) 'number'
+[05](01, 54)-(01, 55): RPAR(OP) ')'
+[05](01, 55)-(01, 56): RPAR(OP) ')'
+[05](01, 57)-(01, 58): PLUS(OP) '+'
+[05](01, 59)-(01, 66): NAME(NAME) 'convert'
+[05](01, 66)-(01, 67): LPAR(OP) '('
+[05](01, 67)-(01, 73): NAME(NAME) 'number'
+[05](01, 73)-(01, 74): LSQB(OP) '['
+[05](01, 74)-(01, 75): NUMBER(NUMBER) '1'
+[05](01, 75)-(01, 76): COLON(OP) ':'
+[05](01, 76)-(01, 77): RSQB(OP) ']'
+[05](01, 77)-(01, 78): RPAR(OP) ')'
+[05](01, 78)-(01, 79): NEWLINE(NEWLINE) '\n'
+[05](02, 00)-(02, 00): DEDENT(DEDENT)
+[05](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[06](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[06](01, 00)-(01, 04): INDENT(INDENT) '    '
+[06](01, 04)-(01, 10): NAME(NAME) 'return'
+[06](01, 11)-(01, 23): NAME(NAME) 'whole_cipher'
+[06](01, 24)-(01, 26): DOUBLESLASH(OP) '//'
+[06](01, 26)-(01, 28): NUMBER(NUMBER) '10'
+[06](01, 28)-(01, 29): NEWLINE(NEWLINE)
+[06](02, 00)-(02, 00): DEDENT(DEDENT)
+[06](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+

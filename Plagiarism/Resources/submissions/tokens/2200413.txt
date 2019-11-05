@@ -1,0 +1,29 @@
+[00](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[00](01, 00)-(01, 03): NAME(NAME) 'def'
+[00](01, 04)-(01, 24): NAME(NAME) 'convert_to_uppercase'
+[00](01, 24)-(01, 25): LPAR(OP) '('
+[00](01, 25)-(01, 31): NAME(NAME) 'string'
+[00](01, 31)-(01, 32): RPAR(OP) ')'
+[00](01, 32)-(01, 33): COLON(OP) ':'
+[00](01, 33)-(01, 34): NEWLINE(NEWLINE) '\n'
+[00](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[01](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[01](01, 00)-(01, 04): INDENT(INDENT) '    '
+[01](01, 04)-(01, 10): NAME(NAME) 'string'
+[01](01, 10)-(01, 11): DOT(OP) '.'
+[01](01, 11)-(01, 16): NAME(NAME) 'upper'
+[01](01, 16)-(01, 17): LPAR(OP) '('
+[01](01, 17)-(01, 18): RPAR(OP) ')'
+[01](01, 18)-(01, 19): NEWLINE(NEWLINE) '\n'
+[01](02, 00)-(02, 00): DEDENT(DEDENT)
+[01](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[02](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[02](01, 00)-(01, 04): INDENT(INDENT) '    '
+[02](01, 04)-(01, 10): NAME(NAME) 'return'
+[02](01, 11)-(01, 17): NAME(NAME) 'string'
+[02](01, 17)-(01, 18): NEWLINE(NEWLINE)
+[02](02, 00)-(02, 00): DEDENT(DEDENT)
+[02](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+

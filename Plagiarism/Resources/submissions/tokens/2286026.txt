@@ -1,0 +1,132 @@
+[00](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[00](01, 00)-(01, 07): NAME(NAME) 'eencent'
+[00](01, 08)-(01, 09): EQUAL(OP) '='
+[00](01, 10)-(01, 15): NAME(NAME) 'input'
+[00](01, 15)-(01, 16): LPAR(OP) '('
+[00](01, 16)-(01, 32): STRING(STRING) "'Aantal centen:'"
+[00](01, 32)-(01, 33): RPAR(OP) ')'
+[00](01, 33)-(01, 34): NEWLINE(NEWLINE) '\n'
+[00](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[01](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[01](01, 00)-(01, 08): NAME(NAME) 'tweecent'
+[01](01, 09)-(01, 10): EQUAL(OP) '='
+[01](01, 11)-(01, 16): NAME(NAME) 'input'
+[01](01, 16)-(01, 17): LPAR(OP) '('
+[01](01, 17)-(01, 37): STRING(STRING) "'Aantal tweecenten:'"
+[01](01, 37)-(01, 38): RPAR(OP) ')'
+[01](01, 38)-(01, 39): NEWLINE(NEWLINE) '\n'
+[01](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[02](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[02](01, 00)-(01, 08): NAME(NAME) 'vijfcent'
+[02](01, 09)-(01, 10): EQUAL(OP) '='
+[02](01, 11)-(01, 16): NAME(NAME) 'input'
+[02](01, 16)-(01, 17): LPAR(OP) '('
+[02](01, 17)-(01, 37): STRING(STRING) "'Aantal vijfcenten:'"
+[02](01, 37)-(01, 38): RPAR(OP) ')'
+[02](01, 38)-(01, 39): NEWLINE(NEWLINE) '\n'
+[02](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[03](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[03](01, 00)-(01, 08): NAME(NAME) 'tiencent'
+[03](01, 09)-(01, 10): EQUAL(OP) '='
+[03](01, 11)-(01, 16): NAME(NAME) 'input'
+[03](01, 16)-(01, 17): LPAR(OP) '('
+[03](01, 17)-(01, 37): STRING(STRING) "'Aantal tiencenten:'"
+[03](01, 37)-(01, 38): RPAR(OP) ')'
+[03](01, 38)-(01, 39): NEWLINE(NEWLINE) '\n'
+[03](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[04](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[04](01, 00)-(01, 11): NAME(NAME) 'twintigcent'
+[04](01, 12)-(01, 13): EQUAL(OP) '='
+[04](01, 14)-(01, 19): NAME(NAME) 'input'
+[04](01, 19)-(01, 20): LPAR(OP) '('
+[04](01, 20)-(01, 43): STRING(STRING) "'Aantal twintigcenten:'"
+[04](01, 43)-(01, 44): RPAR(OP) ')'
+[04](01, 44)-(01, 45): NEWLINE(NEWLINE) '\n'
+[04](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[05](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[05](01, 00)-(01, 06): NAME(NAME) 'totaal'
+[05](01, 07)-(01, 08): EQUAL(OP) '='
+[05](01, 09)-(01, 10): NUMBER(NUMBER) '4'
+[05](01, 11)-(01, 12): STAR(OP) '*'
+[05](01, 13)-(01, 17): NAME(NAME) 'cent'
+[05](01, 18)-(01, 19): PLUS(OP) '+'
+[05](01, 20)-(01, 21): NUMBER(NUMBER) '2'
+[05](01, 22)-(01, 23): STAR(OP) '*'
+[05](01, 24)-(01, 32): NAME(NAME) 'tweecent'
+[05](01, 33)-(01, 34): PLUS(OP) '+'
+[05](01, 35)-(01, 36): NUMBER(NUMBER) '5'
+[05](01, 37)-(01, 38): STAR(OP) '*'
+[05](01, 39)-(01, 47): NAME(NAME) 'vijfcent'
+[05](01, 48)-(01, 49): PLUS(OP) '+'
+[05](01, 50)-(01, 51): NUMBER(NUMBER) '1'
+[05](01, 52)-(01, 53): STAR(OP) '*'
+[05](01, 54)-(01, 62): NAME(NAME) 'tiencent'
+[05](01, 63)-(01, 64): PLUS(OP) '+'
+[05](01, 65)-(01, 66): NUMBER(NUMBER) '4'
+[05](01, 67)-(01, 68): STAR(OP) '*'
+[05](01, 69)-(01, 80): NAME(NAME) 'twintigcent'
+[05](01, 80)-(01, 81): NEWLINE(NEWLINE) '\n'
+[05](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[06](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[06](01, 00)-(01, 04): NAME(NAME) 'euro'
+[06](01, 05)-(01, 06): EQUAL(OP) '='
+[06](01, 07)-(01, 13): NAME(NAME) 'totaal'
+[06](01, 14)-(01, 16): DOUBLESLASH(OP) '//'
+[06](01, 17)-(01, 20): NUMBER(NUMBER) '100'
+[06](01, 20)-(01, 21): NEWLINE(NEWLINE) '\n'
+[06](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[07](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[07](01, 00)-(01, 10): NAME(NAME) 'tientallen'
+[07](01, 11)-(01, 12): EQUAL(OP) '='
+[07](01, 13)-(01, 19): NAME(NAME) 'totaal'
+[07](01, 20)-(01, 21): PERCENT(OP) '%'
+[07](01, 22)-(01, 25): NUMBER(NUMBER) '100'
+[07](01, 26)-(01, 28): DOUBLESLASH(OP) '//'
+[07](01, 29)-(01, 31): NUMBER(NUMBER) '10'
+[07](01, 31)-(01, 32): NEWLINE(NEWLINE) '\n'
+[07](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[08](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[08](01, 00)-(01, 08): NAME(NAME) 'eenheden'
+[08](01, 09)-(01, 10): EQUAL(OP) '='
+[08](01, 11)-(01, 17): NAME(NAME) 'totaal'
+[08](01, 18)-(01, 19): PERCENT(OP) '%'
+[08](01, 20)-(01, 23): NUMBER(NUMBER) '100'
+[08](01, 24)-(01, 25): PERCENT(OP) '%'
+[08](01, 26)-(01, 28): NUMBER(NUMBER) '10'
+[08](01, 28)-(01, 29): NEWLINE(NEWLINE) '\n'
+[08](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[09](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[09](01, 00)-(01, 01): NL(NL) '\n'
+[09](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[10](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[10](01, 00)-(01, 05): NAME(NAME) 'print'
+[10](01, 05)-(01, 06): LPAR(OP) '('
+[10](01, 06)-(01, 17): STRING(STRING) '"You have "'
+[10](01, 17)-(01, 18): COMMA(OP) ','
+[10](01, 19)-(01, 23): NAME(NAME) 'euro'
+[10](01, 23)-(01, 24): COMMA(OP) ','
+[10](01, 24)-(01, 27): STRING(STRING) '"."'
+[10](01, 27)-(01, 28): COMMA(OP) ','
+[10](01, 29)-(01, 39): NAME(NAME) 'tientallen'
+[10](01, 39)-(01, 40): COMMA(OP) ','
+[10](01, 41)-(01, 49): NAME(NAME) 'eenheden'
+[10](01, 49)-(01, 50): COMMA(OP) ','
+[10](01, 51)-(01, 59): STRING(STRING) '" euro!"'
+[10](01, 59)-(01, 60): COMMA(OP) ','
+[10](01, 61)-(01, 64): NAME(NAME) 'sep'
+[10](01, 64)-(01, 65): EQUAL(OP) '='
+[10](01, 65)-(01, 67): STRING(STRING) '""'
+[10](01, 67)-(01, 68): RPAR(OP) ')'
+[10](01, 68)-(01, 69): NEWLINE(NEWLINE) '\n'
+[10](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+

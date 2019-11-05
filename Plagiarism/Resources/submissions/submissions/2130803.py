@@ -1,0 +1,10 @@
+munt1 = int(input("1"))
+munt2 = int(input("2"))
+munt5 = int(input("5"))
+munt10 = int(input("10"))
+munt20 = int(input("20"))
+total = munt1 + munt2 * 2 + munt5 * 5 + munt10 * 10 + munt20 * 20
+honderd = total // 100
+tien = (total % 100)//10
+een = total % 10
+print("You have ", honderd, ".", tien, een, " euro!", sep="")

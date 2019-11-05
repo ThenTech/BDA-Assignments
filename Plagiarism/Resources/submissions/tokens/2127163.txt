@@ -1,0 +1,49 @@
+[00](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[00](01, 00)-(01, 05): NAME(NAME) 'dagen'
+[00](01, 06)-(01, 07): EQUAL(OP) '='
+[00](01, 08)-(01, 11): NAME(NAME) 'int'
+[00](01, 11)-(01, 12): LPAR(OP) '('
+[00](01, 12)-(01, 17): NAME(NAME) 'input'
+[00](01, 17)-(01, 18): LPAR(OP) '('
+[00](01, 18)-(01, 35): STRING(STRING) "'Hoeveel dagen? '"
+[00](01, 35)-(01, 36): RPAR(OP) ')'
+[00](01, 36)-(01, 37): RPAR(OP) ')'
+[00](01, 37)-(01, 38): NEWLINE(NEWLINE) '\n'
+[00](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[01](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[01](01, 00)-(01, 04): NAME(NAME) 'uren'
+[01](01, 05)-(01, 06): EQUAL(OP) '='
+[01](01, 07)-(01, 10): NAME(NAME) 'int'
+[01](01, 10)-(01, 11): LPAR(OP) '('
+[01](01, 11)-(01, 16): NAME(NAME) 'input'
+[01](01, 16)-(01, 17): LPAR(OP) '('
+[01](01, 17)-(01, 33): STRING(STRING) "'Hoeveel uren? '"
+[01](01, 33)-(01, 34): RPAR(OP) ')'
+[01](01, 34)-(01, 35): RPAR(OP) ')'
+[01](01, 35)-(01, 36): NEWLINE(NEWLINE) '\n'
+[01](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[02](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[02](01, 00)-(01, 07): NAME(NAME) 'minuten'
+[02](01, 08)-(01, 09): EQUAL(OP) '='
+[02](01, 10)-(01, 15): NAME(NAME) 'dagen'
+[02](01, 15)-(01, 17): DOUBLESLASH(OP) '//'
+[02](01, 17)-(01, 21): NUMBER(NUMBER) '1440'
+[02](01, 22)-(01, 23): PLUS(OP) '+'
+[02](01, 24)-(01, 28): NAME(NAME) 'uren'
+[02](01, 28)-(01, 30): DOUBLESLASH(OP) '//'
+[02](01, 30)-(01, 32): NUMBER(NUMBER) '60'
+[02](01, 32)-(01, 33): NEWLINE(NEWLINE) '\n'
+[02](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[03](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[03](01, 00)-(01, 05): NAME(NAME) 'print'
+[03](01, 05)-(01, 06): LPAR(OP) '('
+[03](01, 06)-(01, 31): STRING(STRING) "'Het aantal minuten is: '"
+[03](01, 31)-(01, 32): COMMA(OP) ','
+[03](01, 33)-(01, 40): NAME(NAME) 'minuten'
+[03](01, 40)-(01, 41): RPAR(OP) ')'
+[03](01, 41)-(01, 42): NEWLINE(NEWLINE)
+[03](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+

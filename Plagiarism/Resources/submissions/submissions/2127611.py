@@ -1,0 +1,1 @@
+print("You have ", int((1*int(input("How many 1 euro coins do you have? ")))+(2*int(input("How many 2 euro coins do you have? ")))+(5*int(input("How many 5 euro coins do you have? ")))+(10*int(input("How many 10 euro coins do you have? ")))+(20*int(input("How many 20 euro coins do you have? "))))/100, " euro!", sep="")

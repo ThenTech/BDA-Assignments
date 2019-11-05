@@ -1,0 +1,162 @@
+[00](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[00](01, 00)-(01, 03): NAME(NAME) 'def'
+[00](01, 04)-(01, 18): NAME(NAME) 'does_intersect'
+[00](01, 18)-(01, 19): LPAR(OP) '('
+[00](01, 19)-(01, 21): NAME(NAME) 'x1'
+[00](01, 21)-(01, 22): COMMA(OP) ','
+[00](01, 23)-(01, 25): NAME(NAME) 'y1'
+[00](01, 25)-(01, 26): COMMA(OP) ','
+[00](01, 27)-(01, 29): NAME(NAME) 'w1'
+[00](01, 29)-(01, 30): COMMA(OP) ','
+[00](01, 31)-(01, 33): NAME(NAME) 'h1'
+[00](01, 33)-(01, 34): COMMA(OP) ','
+[00](01, 35)-(01, 37): NAME(NAME) 'x2'
+[00](01, 37)-(01, 38): COMMA(OP) ','
+[00](01, 39)-(01, 41): NAME(NAME) 'y2'
+[00](01, 41)-(01, 42): COMMA(OP) ','
+[00](01, 43)-(01, 45): NAME(NAME) 'w2'
+[00](01, 45)-(01, 46): COMMA(OP) ','
+[00](01, 47)-(01, 49): NAME(NAME) 'h2'
+[00](01, 49)-(01, 50): RPAR(OP) ')'
+[00](01, 50)-(01, 51): COLON(OP) ':'
+[00](01, 51)-(01, 52): NEWLINE(NEWLINE) '\n'
+[00](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[01](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[01](01, 00)-(01, 04): INDENT(INDENT) '    '
+[01](01, 04)-(01, 05): NAME(NAME) 'x'
+[01](01, 06)-(01, 07): EQUAL(OP) '='
+[01](01, 08)-(01, 18): NAME(NAME) 'check_axes'
+[01](01, 18)-(01, 19): LPAR(OP) '('
+[01](01, 19)-(01, 21): NAME(NAME) 'x1'
+[01](01, 21)-(01, 22): COMMA(OP) ','
+[01](01, 23)-(01, 25): NAME(NAME) 'x2'
+[01](01, 25)-(01, 26): COMMA(OP) ','
+[01](01, 27)-(01, 29): NAME(NAME) 'y1'
+[01](01, 29)-(01, 30): COMMA(OP) ','
+[01](01, 31)-(01, 33): NAME(NAME) 'h1'
+[01](01, 33)-(01, 34): COMMA(OP) ','
+[01](01, 35)-(01, 37): NAME(NAME) 'y2'
+[01](01, 37)-(01, 38): RPAR(OP) ')'
+[01](01, 38)-(01, 39): NEWLINE(NEWLINE) '\n'
+[01](02, 00)-(02, 00): DEDENT(DEDENT)
+[01](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[02](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[02](01, 00)-(01, 04): INDENT(INDENT) '    '
+[02](01, 04)-(01, 05): NAME(NAME) 'y'
+[02](01, 06)-(01, 07): EQUAL(OP) '='
+[02](01, 08)-(01, 18): NAME(NAME) 'check_axes'
+[02](01, 18)-(01, 19): LPAR(OP) '('
+[02](01, 19)-(01, 21): NAME(NAME) 'y1'
+[02](01, 21)-(01, 22): COMMA(OP) ','
+[02](01, 23)-(01, 25): NAME(NAME) 'y2'
+[02](01, 25)-(01, 26): COMMA(OP) ','
+[02](01, 27)-(01, 29): NAME(NAME) 'x1'
+[02](01, 29)-(01, 30): COMMA(OP) ','
+[02](01, 31)-(01, 33): NAME(NAME) 'w1'
+[02](01, 33)-(01, 34): COMMA(OP) ','
+[02](01, 35)-(01, 37): NAME(NAME) 'x2'
+[02](01, 37)-(01, 38): RPAR(OP) ')'
+[02](01, 38)-(01, 39): NEWLINE(NEWLINE) '\n'
+[02](02, 00)-(02, 00): DEDENT(DEDENT)
+[02](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[03](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[03](01, 00)-(01, 04): INDENT(INDENT) '    '
+[03](01, 04)-(01, 06): NAME(NAME) 'if'
+[03](01, 07)-(01, 08): NAME(NAME) 'x'
+[03](01, 09)-(01, 12): NAME(NAME) 'and'
+[03](01, 13)-(01, 14): NAME(NAME) 'y'
+[03](01, 14)-(01, 15): COLON(OP) ':'
+[03](01, 15)-(01, 16): NEWLINE(NEWLINE) '\n'
+[03](02, 00)-(02, 00): DEDENT(DEDENT)
+[03](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[04](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[04](01, 00)-(01, 08): INDENT(INDENT) '        '
+[04](01, 08)-(01, 14): NAME(NAME) 'return'
+[04](01, 15)-(01, 19): NAME(NAME) 'True'
+[04](01, 19)-(01, 20): NEWLINE(NEWLINE) '\n'
+[04](02, 00)-(02, 00): DEDENT(DEDENT)
+[04](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[05](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[05](01, 00)-(01, 04): INDENT(INDENT) '    '
+[05](01, 04)-(01, 10): NAME(NAME) 'return'
+[05](01, 11)-(01, 16): NAME(NAME) 'False'
+[05](01, 16)-(01, 17): NEWLINE(NEWLINE) '\n'
+[05](02, 00)-(02, 00): DEDENT(DEDENT)
+[05](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[06](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[06](01, 00)-(01, 01): NL(NL) '\n'
+[06](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[07](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[07](01, 00)-(01, 01): NL(NL) '\n'
+[07](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[08](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[08](01, 00)-(01, 03): NAME(NAME) 'def'
+[08](01, 04)-(01, 14): NAME(NAME) 'check_axes'
+[08](01, 14)-(01, 15): LPAR(OP) '('
+[08](01, 15)-(01, 17): NAME(NAME) 'c1'
+[08](01, 17)-(01, 18): COMMA(OP) ','
+[08](01, 19)-(01, 21): NAME(NAME) 'c3'
+[08](01, 21)-(01, 22): COMMA(OP) ','
+[08](01, 23)-(01, 25): NAME(NAME) 'c5'
+[08](01, 25)-(01, 26): COMMA(OP) ','
+[08](01, 27)-(01, 29): NAME(NAME) 'c6'
+[08](01, 29)-(01, 30): COMMA(OP) ','
+[08](01, 31)-(01, 33): NAME(NAME) 'c7'
+[08](01, 33)-(01, 34): RPAR(OP) ')'
+[08](01, 34)-(01, 35): COLON(OP) ':'
+[08](01, 35)-(01, 36): NEWLINE(NEWLINE) '\n'
+[08](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[09](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[09](01, 00)-(01, 04): INDENT(INDENT) '    '
+[09](01, 04)-(01, 06): NAME(NAME) 'if'
+[09](01, 07)-(01, 09): NAME(NAME) 'c1'
+[09](01, 10)-(01, 11): LESS(OP) '<'
+[09](01, 12)-(01, 14): NAME(NAME) 'c3'
+[09](01, 15)-(01, 17): NAME(NAME) 'or'
+[09](01, 18)-(01, 20): NAME(NAME) 'c1'
+[09](01, 21)-(01, 22): GREATER(OP) '>'
+[09](01, 23)-(01, 25): NAME(NAME) 'c3'
+[09](01, 26)-(01, 28): NAME(NAME) 'or'
+[09](01, 29)-(01, 31): NAME(NAME) 'c1'
+[09](01, 32)-(01, 34): EQEQUAL(OP) '=='
+[09](01, 35)-(01, 37): NAME(NAME) 'c3'
+[09](01, 38)-(01, 41): NAME(NAME) 'and'
+[09](01, 42)-(01, 44): NAME(NAME) 'c5'
+[09](01, 45)-(01, 46): PLUS(OP) '+'
+[09](01, 47)-(01, 49): NAME(NAME) 'c6'
+[09](01, 50)-(01, 51): GREATER(OP) '>'
+[09](01, 52)-(01, 54): NAME(NAME) 'c7'
+[09](01, 54)-(01, 55): COLON(OP) ':'
+[09](01, 55)-(01, 56): NEWLINE(NEWLINE) '\n'
+[09](02, 00)-(02, 00): DEDENT(DEDENT)
+[09](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[10](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[10](01, 00)-(01, 08): INDENT(INDENT) '        '
+[10](01, 08)-(01, 14): NAME(NAME) 'return'
+[10](01, 15)-(01, 19): NAME(NAME) 'True'
+[10](01, 19)-(01, 20): NEWLINE(NEWLINE) '\n'
+[10](02, 00)-(02, 00): DEDENT(DEDENT)
+[10](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[11](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[11](01, 00)-(01, 04): INDENT(INDENT) '    '
+[11](01, 04)-(01, 10): NAME(NAME) 'return'
+[11](01, 11)-(01, 16): NAME(NAME) 'False'
+[11](01, 16)-(01, 17): NEWLINE(NEWLINE) '\n'
+[11](02, 00)-(02, 00): DEDENT(DEDENT)
+[11](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[12](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[12](01, 00)-(01, 01): NL(NL) '\n'
+[12](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+

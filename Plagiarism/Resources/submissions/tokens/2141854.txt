@@ -1,0 +1,256 @@
+[00](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[00](01, 00)-(01, 04): NAME(NAME) 'dag1'
+[00](01, 05)-(01, 06): EQUAL(OP) '='
+[00](01, 07)-(01, 10): NAME(NAME) 'int'
+[00](01, 10)-(01, 11): LPAR(OP) '('
+[00](01, 11)-(01, 16): NAME(NAME) 'input'
+[00](01, 16)-(01, 17): LPAR(OP) '('
+[00](01, 17)-(01, 42): STRING(STRING) '"geef de eerste dag in: "'
+[00](01, 42)-(01, 43): RPAR(OP) ')'
+[00](01, 43)-(01, 44): RPAR(OP) ')'
+[00](01, 44)-(01, 45): NEWLINE(NEWLINE) '\n'
+[00](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[01](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[01](01, 00)-(01, 06): NAME(NAME) 'maand1'
+[01](01, 07)-(01, 08): EQUAL(OP) '='
+[01](01, 09)-(01, 12): NAME(NAME) 'int'
+[01](01, 12)-(01, 13): LPAR(OP) '('
+[01](01, 13)-(01, 18): NAME(NAME) 'input'
+[01](01, 18)-(01, 19): LPAR(OP) '('
+[01](01, 19)-(01, 44): STRING(STRING) '"geef de eerste maand in"'
+[01](01, 44)-(01, 45): RPAR(OP) ')'
+[01](01, 45)-(01, 46): RPAR(OP) ')'
+[01](01, 46)-(01, 47): NEWLINE(NEWLINE) '\n'
+[01](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[02](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[02](01, 00)-(01, 05): NAME(NAME) 'jaar1'
+[02](01, 06)-(01, 07): EQUAL(OP) '='
+[02](01, 08)-(01, 11): NAME(NAME) 'int'
+[02](01, 11)-(01, 12): LPAR(OP) '('
+[02](01, 12)-(01, 17): NAME(NAME) 'input'
+[02](01, 17)-(01, 18): LPAR(OP) '('
+[02](01, 18)-(01, 44): STRING(STRING) '"geef het eerste jaaar in"'
+[02](01, 44)-(01, 45): RPAR(OP) ')'
+[02](01, 45)-(01, 46): RPAR(OP) ')'
+[02](01, 46)-(01, 47): NEWLINE(NEWLINE) '\n'
+[02](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[03](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[03](01, 00)-(01, 04): NAME(NAME) 'dag2'
+[03](01, 05)-(01, 06): EQUAL(OP) '='
+[03](01, 07)-(01, 10): NAME(NAME) 'int'
+[03](01, 10)-(01, 11): LPAR(OP) '('
+[03](01, 11)-(01, 16): NAME(NAME) 'input'
+[03](01, 16)-(01, 17): LPAR(OP) '('
+[03](01, 17)-(01, 43): STRING(STRING) '"geef de momentele dag in"'
+[03](01, 43)-(01, 44): RPAR(OP) ')'
+[03](01, 44)-(01, 45): RPAR(OP) ')'
+[03](01, 45)-(01, 46): NEWLINE(NEWLINE) '\n'
+[03](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[04](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[04](01, 00)-(01, 06): NAME(NAME) 'maand2'
+[04](01, 07)-(01, 08): EQUAL(OP) '='
+[04](01, 09)-(01, 12): NAME(NAME) 'int'
+[04](01, 12)-(01, 13): LPAR(OP) '('
+[04](01, 13)-(01, 18): NAME(NAME) 'input'
+[04](01, 18)-(01, 19): LPAR(OP) '('
+[04](01, 19)-(01, 47): STRING(STRING) '"geef de momentele maand in"'
+[04](01, 47)-(01, 48): RPAR(OP) ')'
+[04](01, 48)-(01, 49): RPAR(OP) ')'
+[04](01, 49)-(01, 50): NEWLINE(NEWLINE) '\n'
+[04](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[05](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[05](01, 00)-(01, 05): NAME(NAME) 'jaar2'
+[05](01, 06)-(01, 07): EQUAL(OP) '='
+[05](01, 08)-(01, 11): NAME(NAME) 'int'
+[05](01, 11)-(01, 12): LPAR(OP) '('
+[05](01, 12)-(01, 17): NAME(NAME) 'input'
+[05](01, 17)-(01, 18): LPAR(OP) '('
+[05](01, 18)-(01, 45): STRING(STRING) '"geef het momenele jaar in"'
+[05](01, 45)-(01, 46): RPAR(OP) ')'
+[05](01, 46)-(01, 47): RPAR(OP) ')'
+[05](01, 47)-(01, 48): NEWLINE(NEWLINE) '\n'
+[05](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[06](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[06](01, 00)-(01, 02): NAME(NAME) 'if'
+[06](01, 03)-(01, 07): NAME(NAME) 'dag1'
+[06](01, 08)-(01, 09): GREATER(OP) '>'
+[06](01, 10)-(01, 12): NUMBER(NUMBER) '31'
+[06](01, 13)-(01, 15): NAME(NAME) 'or'
+[06](01, 16)-(01, 20): NAME(NAME) 'dag2'
+[06](01, 21)-(01, 22): GREATER(OP) '>'
+[06](01, 23)-(01, 25): NUMBER(NUMBER) '31'
+[06](01, 25)-(01, 26): COLON(OP) ':'
+[06](01, 26)-(01, 27): NEWLINE(NEWLINE) '\n'
+[06](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[07](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[07](01, 00)-(01, 04): INDENT(INDENT) '    '
+[07](01, 04)-(01, 09): NAME(NAME) 'print'
+[07](01, 09)-(01, 10): LPAR(OP) '('
+[07](01, 10)-(01, 40): STRING(STRING) '"dag moet kleiner zijn dan 31"'
+[07](01, 40)-(01, 41): RPAR(OP) ')'
+[07](01, 41)-(01, 42): NEWLINE(NEWLINE) '\n'
+[07](02, 00)-(02, 00): DEDENT(DEDENT)
+[07](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[08](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[08](01, 00)-(01, 02): NAME(NAME) 'if'
+[08](01, 03)-(01, 09): NAME(NAME) 'maand1'
+[08](01, 10)-(01, 11): GREATER(OP) '>'
+[08](01, 12)-(01, 14): NUMBER(NUMBER) '12'
+[08](01, 15)-(01, 17): NAME(NAME) 'or'
+[08](01, 18)-(01, 24): NAME(NAME) 'maand2'
+[08](01, 25)-(01, 26): GREATER(OP) '>'
+[08](01, 27)-(01, 29): NUMBER(NUMBER) '12'
+[08](01, 29)-(01, 30): COLON(OP) ':'
+[08](01, 30)-(01, 31): NEWLINE(NEWLINE) '\n'
+[08](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[09](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[09](01, 00)-(01, 04): INDENT(INDENT) '    '
+[09](01, 04)-(01, 09): NAME(NAME) 'print'
+[09](01, 09)-(01, 10): LPAR(OP) '('
+[09](01, 10)-(01, 42): STRING(STRING) '"maand moet kleiner zijn dan 12"'
+[09](01, 42)-(01, 43): RPAR(OP) ')'
+[09](01, 43)-(01, 44): NEWLINE(NEWLINE) '\n'
+[09](02, 00)-(02, 00): DEDENT(DEDENT)
+[09](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[10](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[10](01, 00)-(01, 02): NAME(NAME) 'if'
+[10](01, 03)-(01, 07): NAME(NAME) 'dag1'
+[10](01, 08)-(01, 09): LESS(OP) '<'
+[10](01, 10)-(01, 14): NAME(NAME) 'dag2'
+[10](01, 14)-(01, 15): COLON(OP) ':'
+[10](01, 15)-(01, 16): NEWLINE(NEWLINE) '\n'
+[10](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[11](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[11](01, 00)-(01, 04): INDENT(INDENT) '    '
+[11](01, 04)-(01, 06): NAME(NAME) 'if'
+[11](01, 07)-(01, 13): NAME(NAME) 'maand1'
+[11](01, 14)-(01, 16): LESSEQUAL(OP) '<='
+[11](01, 17)-(01, 23): NAME(NAME) 'maand2'
+[11](01, 23)-(01, 24): COLON(OP) ':'
+[11](01, 24)-(01, 25): NEWLINE(NEWLINE) '\n'
+[11](02, 00)-(02, 00): DEDENT(DEDENT)
+[11](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[12](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[12](01, 00)-(01, 08): INDENT(INDENT) '        '
+[12](01, 08)-(01, 13): NAME(NAME) 'print'
+[12](01, 13)-(01, 14): LPAR(OP) '('
+[12](01, 14)-(01, 15): LPAR(OP) '('
+[12](01, 15)-(01, 18): NAME(NAME) 'abs'
+[12](01, 18)-(01, 19): LPAR(OP) '('
+[12](01, 19)-(01, 24): NAME(NAME) 'jaar2'
+[12](01, 25)-(01, 26): MINUS(OP) '-'
+[12](01, 27)-(01, 32): NAME(NAME) 'jaar1'
+[12](01, 32)-(01, 33): RPAR(OP) ')'
+[12](01, 33)-(01, 34): RPAR(OP) ')'
+[12](01, 34)-(01, 35): RPAR(OP) ')'
+[12](01, 35)-(01, 36): NEWLINE(NEWLINE) '\n'
+[12](02, 00)-(02, 00): DEDENT(DEDENT)
+[12](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[13](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[13](01, 00)-(01, 04): INDENT(INDENT) '    '
+[13](01, 04)-(01, 08): NAME(NAME) 'elif'
+[13](01, 09)-(01, 15): NAME(NAME) 'maand1'
+[13](01, 16)-(01, 17): GREATER(OP) '>'
+[13](01, 18)-(01, 24): NAME(NAME) 'maand2'
+[13](01, 24)-(01, 25): COLON(OP) ':'
+[13](01, 25)-(01, 26): NEWLINE(NEWLINE) '\n'
+[13](02, 00)-(02, 00): DEDENT(DEDENT)
+[13](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[14](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[14](01, 00)-(01, 08): INDENT(INDENT) '        '
+[14](01, 08)-(01, 13): NAME(NAME) 'print'
+[14](01, 13)-(01, 14): LPAR(OP) '('
+[14](01, 14)-(01, 17): NAME(NAME) 'abs'
+[14](01, 17)-(01, 18): LPAR(OP) '('
+[14](01, 18)-(01, 23): NAME(NAME) 'jaar2'
+[14](01, 24)-(01, 25): MINUS(OP) '-'
+[14](01, 26)-(01, 31): NAME(NAME) 'jaar1'
+[14](01, 31)-(01, 32): MINUS(OP) '-'
+[14](01, 32)-(01, 33): NUMBER(NUMBER) '1'
+[14](01, 33)-(01, 34): RPAR(OP) ')'
+[14](01, 34)-(01, 35): RPAR(OP) ')'
+[14](01, 35)-(01, 36): NEWLINE(NEWLINE) '\n'
+[14](02, 00)-(02, 00): DEDENT(DEDENT)
+[14](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[15](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[15](01, 00)-(01, 04): NAME(NAME) 'else'
+[15](01, 04)-(01, 05): COLON(OP) ':'
+[15](01, 05)-(01, 06): NEWLINE(NEWLINE) '\n'
+[15](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[16](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[16](01, 00)-(01, 04): INDENT(INDENT) '    '
+[16](01, 04)-(01, 06): NAME(NAME) 'if'
+[16](01, 07)-(01, 13): NAME(NAME) 'maand1'
+[16](01, 14)-(01, 16): LESSEQUAL(OP) '<='
+[16](01, 17)-(01, 23): NAME(NAME) 'maand2'
+[16](01, 23)-(01, 24): COLON(OP) ':'
+[16](01, 24)-(01, 25): NEWLINE(NEWLINE) '\n'
+[16](02, 00)-(02, 00): DEDENT(DEDENT)
+[16](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[17](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[17](01, 00)-(01, 08): INDENT(INDENT) '        '
+[17](01, 08)-(01, 13): NAME(NAME) 'print'
+[17](01, 13)-(01, 14): LPAR(OP) '('
+[17](01, 14)-(01, 17): NAME(NAME) 'abs'
+[17](01, 17)-(01, 18): LPAR(OP) '('
+[17](01, 18)-(01, 23): NAME(NAME) 'jaar2'
+[17](01, 24)-(01, 25): MINUS(OP) '-'
+[17](01, 26)-(01, 31): NAME(NAME) 'jaar1'
+[17](01, 31)-(01, 32): RPAR(OP) ')'
+[17](01, 32)-(01, 33): RPAR(OP) ')'
+[17](01, 33)-(01, 34): NEWLINE(NEWLINE) '\n'
+[17](02, 00)-(02, 00): DEDENT(DEDENT)
+[17](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[18](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[18](01, 00)-(01, 04): INDENT(INDENT) '    '
+[18](01, 04)-(01, 08): NAME(NAME) 'elif'
+[18](01, 09)-(01, 15): NAME(NAME) 'maand1'
+[18](01, 16)-(01, 17): GREATER(OP) '>'
+[18](01, 18)-(01, 24): NAME(NAME) 'maand2'
+[18](01, 24)-(01, 25): COLON(OP) ':'
+[18](01, 25)-(01, 26): NEWLINE(NEWLINE) '\n'
+[18](02, 00)-(02, 00): DEDENT(DEDENT)
+[18](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[19](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[19](01, 00)-(01, 08): INDENT(INDENT) '        '
+[19](01, 08)-(01, 13): NAME(NAME) 'print'
+[19](01, 13)-(01, 14): LPAR(OP) '('
+[19](01, 14)-(01, 17): NAME(NAME) 'abs'
+[19](01, 17)-(01, 18): LPAR(OP) '('
+[19](01, 18)-(01, 23): NAME(NAME) 'jaar2'
+[19](01, 24)-(01, 25): MINUS(OP) '-'
+[19](01, 26)-(01, 31): NAME(NAME) 'jaar1'
+[19](01, 31)-(01, 32): MINUS(OP) '-'
+[19](01, 32)-(01, 33): NUMBER(NUMBER) '1'
+[19](01, 33)-(01, 34): RPAR(OP) ')'
+[19](01, 34)-(01, 35): RPAR(OP) ')'
+[19](01, 35)-(01, 36): NEWLINE(NEWLINE) '\n'
+[19](02, 00)-(02, 00): DEDENT(DEDENT)
+[19](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[20](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[20](01, 00)-(01, 05): NAME(NAME) 'print'
+[20](01, 05)-(01, 06): LPAR(OP) '('
+[20](01, 06)-(01, 07): RPAR(OP) ')'
+[20](01, 07)-(01, 08): NEWLINE(NEWLINE)
+[20](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+

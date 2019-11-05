@@ -1,0 +1,6 @@
+def is_unique(l):
+    waarde = True
+    for i in range(len(l)):
+        if waarde == True:
+            waarde = not(l[i] in l[0:i] or l[i] in l[i+1:len(l)])
+    return waarde

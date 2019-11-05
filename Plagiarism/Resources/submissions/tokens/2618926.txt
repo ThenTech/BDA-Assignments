@@ -1,0 +1,193 @@
+[00](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[00](01, 00)-(01, 11): NAME(NAME) 'nucleobasen'
+[00](01, 12)-(01, 13): EQUAL(OP) '='
+[00](01, 14)-(01, 15): LSQB(OP) '['
+[00](01, 15)-(01, 18): STRING(STRING) '"A"'
+[00](01, 18)-(01, 19): COMMA(OP) ','
+[00](01, 19)-(01, 22): STRING(STRING) '"C"'
+[00](01, 22)-(01, 23): COMMA(OP) ','
+[00](01, 23)-(01, 26): STRING(STRING) '"G"'
+[00](01, 26)-(01, 27): COMMA(OP) ','
+[00](01, 27)-(01, 30): STRING(STRING) '"T"'
+[00](01, 30)-(01, 31): RSQB(OP) ']'
+[00](01, 31)-(01, 32): NEWLINE(NEWLINE) '\n'
+[00](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[01](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[01](01, 00)-(01, 12): NAME(NAME) 'mogelijkheid'
+[01](01, 13)-(01, 14): EQUAL(OP) '='
+[01](01, 15)-(01, 17): STRING(STRING) '""'
+[01](01, 17)-(01, 18): NEWLINE(NEWLINE) '\n'
+[01](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[02](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[02](01, 00)-(01, 03): NAME(NAME) 'def'
+[02](01, 04)-(01, 20): NAME(NAME) 'alle_nucleobasen'
+[02](01, 20)-(01, 21): LPAR(OP) '('
+[02](01, 21)-(01, 22): NAME(NAME) 'n'
+[02](01, 22)-(01, 23): RPAR(OP) ')'
+[02](01, 23)-(01, 24): COLON(OP) ':'
+[02](01, 24)-(01, 25): NEWLINE(NEWLINE) '\n'
+[02](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[03](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[03](01, 00)-(01, 04): INDENT(INDENT) '    '
+[03](01, 04)-(01, 10): NAME(NAME) 'global'
+[03](01, 11)-(01, 23): NAME(NAME) 'mogelijkheid'
+[03](01, 23)-(01, 24): NEWLINE(NEWLINE) '\n'
+[03](02, 00)-(02, 00): DEDENT(DEDENT)
+[03](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[04](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[04](01, 00)-(01, 04): INDENT(INDENT) '    '
+[04](01, 04)-(01, 07): NAME(NAME) 'for'
+[04](01, 08)-(01, 09): NAME(NAME) 'i'
+[04](01, 10)-(01, 12): NAME(NAME) 'in'
+[04](01, 13)-(01, 24): NAME(NAME) 'nucleobasen'
+[04](01, 24)-(01, 25): COLON(OP) ':'
+[04](01, 25)-(01, 26): NEWLINE(NEWLINE) '\n'
+[04](02, 00)-(02, 00): DEDENT(DEDENT)
+[04](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[05](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[05](01, 00)-(01, 08): INDENT(INDENT) '        '
+[05](01, 08)-(01, 20): NAME(NAME) 'mogelijkheid'
+[05](01, 21)-(01, 23): PLUSEQUAL(OP) '+='
+[05](01, 24)-(01, 25): NAME(NAME) 'i'
+[05](01, 25)-(01, 26): NEWLINE(NEWLINE) '\n'
+[05](02, 00)-(02, 00): DEDENT(DEDENT)
+[05](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[06](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[06](01, 00)-(01, 08): INDENT(INDENT) '        '
+[06](01, 08)-(01, 10): NAME(NAME) 'if'
+[06](01, 11)-(01, 14): NAME(NAME) 'len'
+[06](01, 14)-(01, 15): LPAR(OP) '('
+[06](01, 15)-(01, 27): NAME(NAME) 'mogelijkheid'
+[06](01, 27)-(01, 28): RPAR(OP) ')'
+[06](01, 29)-(01, 31): NOTEQUAL(OP) '!='
+[06](01, 32)-(01, 33): NAME(NAME) 'n'
+[06](01, 33)-(01, 34): COLON(OP) ':'
+[06](01, 34)-(01, 35): NEWLINE(NEWLINE) '\n'
+[06](02, 00)-(02, 00): DEDENT(DEDENT)
+[06](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[07](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[07](01, 00)-(01, 12): INDENT(INDENT) '            '
+[07](01, 12)-(01, 20): NAME(NAME) 'volgende'
+[07](01, 20)-(01, 21): LPAR(OP) '('
+[07](01, 21)-(01, 33): NAME(NAME) 'mogelijkheid'
+[07](01, 33)-(01, 34): COMMA(OP) ','
+[07](01, 35)-(01, 36): NAME(NAME) 'n'
+[07](01, 36)-(01, 37): RPAR(OP) ')'
+[07](01, 37)-(01, 38): NEWLINE(NEWLINE) '\n'
+[07](02, 00)-(02, 00): DEDENT(DEDENT)
+[07](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[08](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[08](01, 00)-(01, 12): INDENT(INDENT) '            '
+[08](01, 12)-(01, 24): NAME(NAME) 'mogelijkheid'
+[08](01, 25)-(01, 26): EQUAL(OP) '='
+[08](01, 27)-(01, 29): STRING(STRING) '""'
+[08](01, 29)-(01, 30): NEWLINE(NEWLINE) '\n'
+[08](02, 00)-(02, 00): DEDENT(DEDENT)
+[08](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[09](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[09](01, 00)-(01, 01): NL(NL) '\n'
+[09](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[10](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[10](01, 00)-(01, 03): NAME(NAME) 'def'
+[10](01, 04)-(01, 12): NAME(NAME) 'volgende'
+[10](01, 12)-(01, 13): LPAR(OP) '('
+[10](01, 13)-(01, 25): NAME(NAME) 'mogelijkheid'
+[10](01, 25)-(01, 26): COMMA(OP) ','
+[10](01, 27)-(01, 28): NAME(NAME) 'n'
+[10](01, 28)-(01, 29): RPAR(OP) ')'
+[10](01, 29)-(01, 30): COLON(OP) ':'
+[10](01, 30)-(01, 31): NEWLINE(NEWLINE) '\n'
+[10](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[11](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[11](01, 00)-(01, 04): INDENT(INDENT) '    '
+[11](01, 04)-(01, 07): NAME(NAME) 'for'
+[11](01, 08)-(01, 09): NAME(NAME) 'i'
+[11](01, 10)-(01, 12): NAME(NAME) 'in'
+[11](01, 13)-(01, 24): NAME(NAME) 'nucleobasen'
+[11](01, 24)-(01, 25): COLON(OP) ':'
+[11](01, 25)-(01, 26): NEWLINE(NEWLINE) '\n'
+[11](02, 00)-(02, 00): DEDENT(DEDENT)
+[11](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[12](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[12](01, 00)-(01, 08): INDENT(INDENT) '        '
+[12](01, 08)-(01, 10): NAME(NAME) 'if'
+[12](01, 11)-(01, 14): NAME(NAME) 'len'
+[12](01, 14)-(01, 15): LPAR(OP) '('
+[12](01, 15)-(01, 27): NAME(NAME) 'mogelijkheid'
+[12](01, 27)-(01, 28): PLUS(OP) '+'
+[12](01, 28)-(01, 29): NAME(NAME) 'i'
+[12](01, 29)-(01, 30): RPAR(OP) ')'
+[12](01, 31)-(01, 33): EQEQUAL(OP) '=='
+[12](01, 34)-(01, 35): NAME(NAME) 'n'
+[12](01, 35)-(01, 36): COLON(OP) ':'
+[12](01, 36)-(01, 37): NEWLINE(NEWLINE) '\n'
+[12](02, 00)-(02, 00): DEDENT(DEDENT)
+[12](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[13](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[13](01, 00)-(01, 12): INDENT(INDENT) '            '
+[13](01, 12)-(01, 17): NAME(NAME) 'print'
+[13](01, 17)-(01, 18): LPAR(OP) '('
+[13](01, 18)-(01, 30): NAME(NAME) 'mogelijkheid'
+[13](01, 30)-(01, 31): PLUS(OP) '+'
+[13](01, 31)-(01, 32): NAME(NAME) 'i'
+[13](01, 32)-(01, 33): RPAR(OP) ')'
+[13](01, 33)-(01, 34): NEWLINE(NEWLINE) '\n'
+[13](02, 00)-(02, 00): DEDENT(DEDENT)
+[13](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[14](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[14](01, 00)-(01, 08): INDENT(INDENT) '        '
+[14](01, 08)-(01, 12): NAME(NAME) 'else'
+[14](01, 12)-(01, 13): COLON(OP) ':'
+[14](01, 13)-(01, 14): NEWLINE(NEWLINE) '\n'
+[14](02, 00)-(02, 00): DEDENT(DEDENT)
+[14](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[15](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[15](01, 00)-(01, 12): INDENT(INDENT) '            '
+[15](01, 12)-(01, 24): NAME(NAME) 'mogelijkheid'
+[15](01, 25)-(01, 27): PLUSEQUAL(OP) '+='
+[15](01, 28)-(01, 29): NAME(NAME) 'i'
+[15](01, 29)-(01, 30): NEWLINE(NEWLINE) '\n'
+[15](02, 00)-(02, 00): DEDENT(DEDENT)
+[15](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[16](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[16](01, 00)-(01, 12): INDENT(INDENT) '            '
+[16](01, 12)-(01, 20): NAME(NAME) 'volgende'
+[16](01, 20)-(01, 21): LPAR(OP) '('
+[16](01, 21)-(01, 33): NAME(NAME) 'mogelijkheid'
+[16](01, 33)-(01, 34): COMMA(OP) ','
+[16](01, 35)-(01, 36): NAME(NAME) 'n'
+[16](01, 36)-(01, 37): RPAR(OP) ')'
+[16](01, 37)-(01, 38): NEWLINE(NEWLINE) '\n'
+[16](02, 00)-(02, 00): DEDENT(DEDENT)
+[16](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[17](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[17](01, 00)-(01, 01): NL(NL) '\n'
+[17](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[18](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[18](01, 00)-(01, 16): NAME(NAME) 'alle_nucleobasen'
+[18](01, 16)-(01, 17): LPAR(OP) '('
+[18](01, 17)-(01, 22): NAME(NAME) 'input'
+[18](01, 22)-(01, 23): LPAR(OP) '('
+[18](01, 23)-(01, 24): RPAR(OP) ')'
+[18](01, 24)-(01, 25): RPAR(OP) ')'
+[18](01, 25)-(01, 26): NEWLINE(NEWLINE)
+[18](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+

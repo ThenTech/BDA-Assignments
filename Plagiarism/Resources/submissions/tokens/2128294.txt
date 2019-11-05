@@ -1,0 +1,40 @@
+[00](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[00](01, 00)-(01, 05): NAME(NAME) 'dagen'
+[00](01, 05)-(01, 06): EQUAL(OP) '='
+[00](01, 06)-(01, 09): NAME(NAME) 'int'
+[00](01, 09)-(01, 10): LPAR(OP) '('
+[00](01, 10)-(01, 15): NAME(NAME) 'input'
+[00](01, 15)-(01, 16): LPAR(OP) '('
+[00](01, 16)-(01, 48): STRING(STRING) '"Geef hier het aantal dagen in."'
+[00](01, 48)-(01, 49): RPAR(OP) ')'
+[00](01, 49)-(01, 50): RPAR(OP) ')'
+[00](01, 50)-(01, 51): NEWLINE(NEWLINE) '\n'
+[00](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[01](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[01](01, 00)-(01, 04): NAME(NAME) 'uren'
+[01](01, 04)-(01, 05): EQUAL(OP) '='
+[01](01, 05)-(01, 08): NAME(NAME) 'int'
+[01](01, 08)-(01, 09): LPAR(OP) '('
+[01](01, 09)-(01, 14): NAME(NAME) 'input'
+[01](01, 14)-(01, 15): LPAR(OP) '('
+[01](01, 15)-(01, 46): STRING(STRING) '"Geef hier het aantal uren in."'
+[01](01, 46)-(01, 47): RPAR(OP) ')'
+[01](01, 47)-(01, 48): RPAR(OP) ')'
+[01](01, 48)-(01, 49): NEWLINE(NEWLINE) '\n'
+[01](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[02](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[02](01, 00)-(01, 05): NAME(NAME) 'print'
+[02](01, 05)-(01, 06): LPAR(OP) '('
+[02](01, 06)-(01, 11): NAME(NAME) 'dagen'
+[02](01, 11)-(01, 12): STAR(OP) '*'
+[02](01, 12)-(01, 16): NUMBER(NUMBER) '1440'
+[02](01, 16)-(01, 17): PLUS(OP) '+'
+[02](01, 17)-(01, 21): NAME(NAME) 'uren'
+[02](01, 21)-(01, 22): STAR(OP) '*'
+[02](01, 22)-(01, 24): NUMBER(NUMBER) '60'
+[02](01, 24)-(01, 25): RPAR(OP) ')'
+[02](01, 25)-(01, 26): NEWLINE(NEWLINE)
+[02](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+

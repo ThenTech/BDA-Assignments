@@ -1,0 +1,60 @@
+[00](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[00](01, 00)-(01, 22): COMMENT(COMMENT) '# write your code here'
+[00](01, 22)-(01, 23): NL(NL) '\n'
+[00](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[01](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[01](01, 00)-(01, 10): NAME(NAME) 'input_days'
+[01](01, 11)-(01, 12): EQUAL(OP) '='
+[01](01, 13)-(01, 16): NAME(NAME) 'int'
+[01](01, 16)-(01, 17): LPAR(OP) '('
+[01](01, 17)-(01, 22): NAME(NAME) 'input'
+[01](01, 22)-(01, 23): LPAR(OP) '('
+[01](01, 23)-(01, 40): STRING(STRING) '"Amount of days:"'
+[01](01, 40)-(01, 41): RPAR(OP) ')'
+[01](01, 41)-(01, 42): RPAR(OP) ')'
+[01](01, 42)-(01, 43): NEWLINE(NEWLINE) '\n'
+[01](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[02](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[02](01, 00)-(01, 11): NAME(NAME) 'input_hours'
+[02](01, 12)-(01, 13): EQUAL(OP) '='
+[02](01, 14)-(01, 17): NAME(NAME) 'int'
+[02](01, 17)-(01, 18): LPAR(OP) '('
+[02](01, 18)-(01, 23): NAME(NAME) 'input'
+[02](01, 23)-(01, 24): LPAR(OP) '('
+[02](01, 24)-(01, 43): STRING(STRING) '"Amount of minutes"'
+[02](01, 43)-(01, 44): RPAR(OP) ')'
+[02](01, 44)-(01, 45): RPAR(OP) ')'
+[02](01, 45)-(01, 46): NEWLINE(NEWLINE) '\n'
+[02](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[03](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[03](01, 00)-(01, 01): NL(NL) '\n'
+[03](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[04](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[04](01, 00)-(01, 07): NAME(NAME) 'minutes'
+[04](01, 08)-(01, 09): EQUAL(OP) '='
+[04](01, 10)-(01, 20): NAME(NAME) 'input_days'
+[04](01, 21)-(01, 22): STAR(OP) '*'
+[04](01, 23)-(01, 27): NUMBER(NUMBER) '3600'
+[04](01, 28)-(01, 29): PLUS(OP) '+'
+[04](01, 30)-(01, 41): NAME(NAME) 'input_hours'
+[04](01, 42)-(01, 43): STAR(OP) '*'
+[04](01, 44)-(01, 46): NUMBER(NUMBER) '60'
+[04](01, 46)-(01, 47): NEWLINE(NEWLINE) '\n'
+[04](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[05](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[05](01, 00)-(01, 01): NL(NL) '\n'
+[05](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[06](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[06](01, 00)-(01, 05): NAME(NAME) 'print'
+[06](01, 05)-(01, 06): LPAR(OP) '('
+[06](01, 06)-(01, 13): NAME(NAME) 'minutes'
+[06](01, 13)-(01, 14): RPAR(OP) ')'
+[06](01, 14)-(01, 15): NEWLINE(NEWLINE)
+[06](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+

@@ -1,0 +1,91 @@
+[00](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[00](01, 00)-(01, 22): COMMENT(COMMENT) '# write your code here'
+[00](01, 22)-(01, 23): NL(NL) '\n'
+[00](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[01](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[01](01, 00)-(01, 01): NAME(NAME) 'x'
+[01](01, 01)-(01, 02): EQUAL(OP) '='
+[01](01, 02)-(01, 07): NAME(NAME) 'input'
+[01](01, 07)-(01, 08): LPAR(OP) '('
+[01](01, 08)-(01, 09): RPAR(OP) ')'
+[01](01, 09)-(01, 10): NEWLINE(NEWLINE) '\n'
+[01](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[02](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[02](01, 00)-(01, 08): NAME(NAME) 'uitkomst'
+[02](01, 08)-(01, 09): EQUAL(OP) '='
+[02](01, 09)-(01, 10): NUMBER(NUMBER) '1'
+[02](01, 10)-(01, 11): NEWLINE(NEWLINE) '\n'
+[02](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[03](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[03](01, 00)-(01, 03): NAME(NAME) 'som'
+[03](01, 03)-(01, 04): EQUAL(OP) '='
+[03](01, 04)-(01, 05): NUMBER(NUMBER) '0'
+[03](01, 05)-(01, 06): NEWLINE(NEWLINE) '\n'
+[03](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[04](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[04](01, 00)-(01, 06): NAME(NAME) 'teller'
+[04](01, 06)-(01, 07): EQUAL(OP) '='
+[04](01, 07)-(01, 08): NUMBER(NUMBER) '1'
+[04](01, 08)-(01, 09): NEWLINE(NEWLINE) '\n'
+[04](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[05](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[05](01, 00)-(01, 03): NAME(NAME) 'for'
+[05](01, 04)-(01, 10): NAME(NAME) 'teller'
+[05](01, 11)-(01, 13): NAME(NAME) 'in'
+[05](01, 14)-(01, 19): NAME(NAME) 'range'
+[05](01, 19)-(01, 20): LPAR(OP) '('
+[05](01, 20)-(01, 21): NUMBER(NUMBER) '1'
+[05](01, 21)-(01, 22): COMMA(OP) ','
+[05](01, 22)-(01, 25): NAME(NAME) 'int'
+[05](01, 25)-(01, 26): LPAR(OP) '('
+[05](01, 26)-(01, 27): NAME(NAME) 'x'
+[05](01, 27)-(01, 28): RPAR(OP) ')'
+[05](01, 28)-(01, 29): PLUS(OP) '+'
+[05](01, 29)-(01, 30): NUMBER(NUMBER) '1'
+[05](01, 30)-(01, 31): RPAR(OP) ')'
+[05](01, 31)-(01, 32): COLON(OP) ':'
+[05](01, 32)-(01, 33): NEWLINE(NEWLINE) '\n'
+[05](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[06](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[06](01, 00)-(01, 04): INDENT(INDENT) '    '
+[06](01, 04)-(01, 12): NAME(NAME) 'uitkomst'
+[06](01, 12)-(01, 13): EQUAL(OP) '='
+[06](01, 14)-(01, 22): NAME(NAME) 'uitkomst'
+[06](01, 22)-(01, 23): STAR(OP) '*'
+[06](01, 23)-(01, 29): NAME(NAME) 'teller'
+[06](01, 29)-(01, 30): NEWLINE(NEWLINE) '\n'
+[06](02, 00)-(02, 00): DEDENT(DEDENT)
+[06](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[07](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[07](01, 00)-(01, 04): INDENT(INDENT) '    '
+[07](01, 04)-(01, 10): NAME(NAME) 'teller'
+[07](01, 10)-(01, 12): PLUSEQUAL(OP) '+='
+[07](01, 12)-(01, 13): NUMBER(NUMBER) '1'
+[07](01, 13)-(01, 14): NEWLINE(NEWLINE) '\n'
+[07](02, 00)-(02, 00): DEDENT(DEDENT)
+[07](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[08](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[08](01, 00)-(01, 04): INDENT(INDENT) '    '
+[08](01, 04)-(01, 07): NAME(NAME) 'som'
+[08](01, 07)-(01, 09): PLUSEQUAL(OP) '+='
+[08](01, 10)-(01, 18): NAME(NAME) 'uitkomst'
+[08](01, 18)-(01, 19): NEWLINE(NEWLINE) '\n'
+[08](02, 00)-(02, 00): DEDENT(DEDENT)
+[08](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[09](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[09](01, 00)-(01, 05): NAME(NAME) 'print'
+[09](01, 05)-(01, 06): LPAR(OP) '('
+[09](01, 06)-(01, 09): NAME(NAME) 'som'
+[09](01, 09)-(01, 10): RPAR(OP) ')'
+[09](01, 10)-(01, 11): NEWLINE(NEWLINE)
+[09](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+

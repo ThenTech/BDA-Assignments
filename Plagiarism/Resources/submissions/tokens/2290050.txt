@@ -1,0 +1,58 @@
+[00](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[00](01, 00)-(01, 03): NAME(NAME) 'def'
+[00](01, 04)-(01, 14): NAME(NAME) 'is_ordered'
+[00](01, 14)-(01, 15): LPAR(OP) '('
+[00](01, 15)-(01, 19): NAME(NAME) 'list'
+[00](01, 19)-(01, 20): RPAR(OP) ')'
+[00](01, 20)-(01, 21): COLON(OP) ':'
+[00](01, 21)-(01, 22): NEWLINE(NEWLINE) '\n'
+[00](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[01](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[01](01, 00)-(01, 04): INDENT(INDENT) '    '
+[01](01, 04)-(01, 15): NAME(NAME) 'sorted_list'
+[01](01, 16)-(01, 17): EQUAL(OP) '='
+[01](01, 18)-(01, 22): NAME(NAME) 'list'
+[01](01, 22)-(01, 23): DOT(OP) '.'
+[01](01, 23)-(01, 27): NAME(NAME) 'sort'
+[01](01, 27)-(01, 28): LPAR(OP) '('
+[01](01, 28)-(01, 29): RPAR(OP) ')'
+[01](01, 29)-(01, 30): NEWLINE(NEWLINE) '\n'
+[01](02, 00)-(02, 00): DEDENT(DEDENT)
+[01](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[02](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[02](01, 00)-(01, 04): INDENT(INDENT) '    '
+[02](01, 04)-(01, 06): NAME(NAME) 'if'
+[02](01, 07)-(01, 18): NAME(NAME) 'sorted_list'
+[02](01, 19)-(01, 21): EQEQUAL(OP) '=='
+[02](01, 22)-(01, 26): NAME(NAME) 'list'
+[02](01, 26)-(01, 27): COLON(OP) ':'
+[02](01, 27)-(01, 28): NEWLINE(NEWLINE) '\n'
+[02](02, 00)-(02, 00): DEDENT(DEDENT)
+[02](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[03](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[03](01, 00)-(01, 08): INDENT(INDENT) '        '
+[03](01, 08)-(01, 14): NAME(NAME) 'return'
+[03](01, 15)-(01, 19): NAME(NAME) 'True'
+[03](01, 19)-(01, 20): NEWLINE(NEWLINE) '\n'
+[03](02, 00)-(02, 00): DEDENT(DEDENT)
+[03](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[04](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[04](01, 00)-(01, 04): INDENT(INDENT) '    '
+[04](01, 04)-(01, 08): NAME(NAME) 'else'
+[04](01, 08)-(01, 09): COLON(OP) ':'
+[04](01, 09)-(01, 10): NEWLINE(NEWLINE) '\n'
+[04](02, 00)-(02, 00): DEDENT(DEDENT)
+[04](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[05](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[05](01, 00)-(01, 08): INDENT(INDENT) '        '
+[05](01, 08)-(01, 14): NAME(NAME) 'return'
+[05](01, 15)-(01, 20): NAME(NAME) 'False'
+[05](01, 20)-(01, 21): NEWLINE(NEWLINE) '\n'
+[05](02, 00)-(02, 00): DEDENT(DEDENT)
+[05](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+

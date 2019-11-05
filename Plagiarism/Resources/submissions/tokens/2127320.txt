@@ -1,0 +1,45 @@
+[00](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[00](01, 00)-(01, 22): COMMENT(COMMENT) '# write your code here'
+[00](01, 22)-(01, 23): NL(NL) '\n'
+[00](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[01](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[01](01, 00)-(01, 01): NAME(NAME) 'd'
+[01](01, 02)-(01, 03): EQUAL(OP) '='
+[01](01, 04)-(01, 07): NAME(NAME) 'int'
+[01](01, 07)-(01, 08): LPAR(OP) '('
+[01](01, 08)-(01, 13): NAME(NAME) 'input'
+[01](01, 13)-(01, 14): LPAR(OP) '('
+[01](01, 14)-(01, 15): RPAR(OP) ')'
+[01](01, 15)-(01, 16): RPAR(OP) ')'
+[01](01, 16)-(01, 17): NEWLINE(NEWLINE) '\n'
+[01](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[02](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[02](01, 00)-(01, 01): NAME(NAME) 'h'
+[02](01, 02)-(01, 03): EQUAL(OP) '='
+[02](01, 04)-(01, 07): NAME(NAME) 'int'
+[02](01, 07)-(01, 08): LPAR(OP) '('
+[02](01, 08)-(01, 13): NAME(NAME) 'input'
+[02](01, 13)-(01, 14): LPAR(OP) '('
+[02](01, 14)-(01, 15): RPAR(OP) ')'
+[02](01, 15)-(01, 16): RPAR(OP) ')'
+[02](01, 16)-(01, 17): NEWLINE(NEWLINE) '\n'
+[02](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[03](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[03](01, 00)-(01, 05): NAME(NAME) 'print'
+[03](01, 05)-(01, 06): LPAR(OP) '('
+[03](01, 06)-(01, 08): NUMBER(NUMBER) '24'
+[03](01, 09)-(01, 10): STAR(OP) '*'
+[03](01, 11)-(01, 13): NUMBER(NUMBER) '60'
+[03](01, 14)-(01, 15): STAR(OP) '*'
+[03](01, 16)-(01, 17): NAME(NAME) 'd'
+[03](01, 18)-(01, 19): PLUS(OP) '+'
+[03](01, 20)-(01, 22): NUMBER(NUMBER) '60'
+[03](01, 23)-(01, 24): STAR(OP) '*'
+[03](01, 25)-(01, 26): NAME(NAME) 'h'
+[03](01, 26)-(01, 27): RPAR(OP) ')'
+[03](01, 27)-(01, 28): NEWLINE(NEWLINE)
+[03](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+

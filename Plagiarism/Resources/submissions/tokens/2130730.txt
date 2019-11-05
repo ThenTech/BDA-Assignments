@@ -1,0 +1,284 @@
+[00](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[00](01, 00)-(01, 04): NAME(NAME) 'cent'
+[00](01, 05)-(01, 06): EQUAL(OP) '='
+[00](01, 07)-(01, 12): NAME(NAME) 'input'
+[00](01, 12)-(01, 13): LPAR(OP) '('
+[00](01, 13)-(01, 27): STRING(STRING) '"hoeveel cent"'
+[00](01, 27)-(01, 28): RPAR(OP) ')'
+[00](01, 28)-(01, 29): NEWLINE(NEWLINE) '\n'
+[00](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[01](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[01](01, 00)-(01, 04): NAME(NAME) 'cent'
+[01](01, 05)-(01, 06): EQUAL(OP) '='
+[01](01, 07)-(01, 10): NAME(NAME) 'int'
+[01](01, 10)-(01, 11): LPAR(OP) '('
+[01](01, 11)-(01, 15): NAME(NAME) 'cent'
+[01](01, 15)-(01, 16): RPAR(OP) ')'
+[01](01, 16)-(01, 17): NEWLINE(NEWLINE) '\n'
+[01](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[02](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[02](01, 00)-(01, 01): NL(NL) '\n'
+[02](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[03](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[03](01, 00)-(01, 03): NAME(NAME) 'for'
+[03](01, 04)-(01, 09): NAME(NAME) 'value'
+[03](01, 10)-(01, 12): NAME(NAME) 'in'
+[03](01, 13)-(01, 14): LPAR(OP) '('
+[03](01, 14)-(01, 17): NUMBER(NUMBER) '200'
+[03](01, 17)-(01, 18): COMMA(OP) ','
+[03](01, 18)-(01, 21): NUMBER(NUMBER) '100'
+[03](01, 21)-(01, 22): COMMA(OP) ','
+[03](01, 22)-(01, 24): NUMBER(NUMBER) '50'
+[03](01, 24)-(01, 25): COMMA(OP) ','
+[03](01, 25)-(01, 27): NUMBER(NUMBER) '20'
+[03](01, 27)-(01, 28): COMMA(OP) ','
+[03](01, 28)-(01, 30): NUMBER(NUMBER) '10'
+[03](01, 30)-(01, 31): COMMA(OP) ','
+[03](01, 31)-(01, 32): NUMBER(NUMBER) '5'
+[03](01, 32)-(01, 33): COMMA(OP) ','
+[03](01, 33)-(01, 34): NUMBER(NUMBER) '2'
+[03](01, 34)-(01, 35): COMMA(OP) ','
+[03](01, 35)-(01, 36): NUMBER(NUMBER) '1'
+[03](01, 36)-(01, 37): RPAR(OP) ')'
+[03](01, 37)-(01, 38): NEWLINE(NEWLINE) '\n'
+[03](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[04](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[04](01, 00)-(01, 01): NL(NL) '\n'
+[04](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[05](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[05](01, 00)-(01, 04): INDENT(INDENT) '    '
+[05](01, 04)-(01, 09): NAME(NAME) 'euros'
+[05](01, 10)-(01, 11): EQUAL(OP) '='
+[05](01, 12)-(01, 16): NAME(NAME) 'cent'
+[05](01, 16)-(01, 17): SLASH(OP) '/'
+[05](01, 17)-(01, 22): NAME(NAME) 'value'
+[05](01, 22)-(01, 23): NEWLINE(NEWLINE) '\n'
+[05](02, 00)-(02, 00): DEDENT(DEDENT)
+[05](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[06](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[06](01, 00)-(01, 04): INDENT(INDENT) '    '
+[06](01, 04)-(01, 09): NAME(NAME) 'euros'
+[06](01, 10)-(01, 11): EQUAL(OP) '='
+[06](01, 12)-(01, 15): NAME(NAME) 'int'
+[06](01, 15)-(01, 16): LPAR(OP) '('
+[06](01, 16)-(01, 21): NAME(NAME) 'euros'
+[06](01, 21)-(01, 22): RPAR(OP) ')'
+[06](01, 22)-(01, 23): NEWLINE(NEWLINE) '\n'
+[06](02, 00)-(02, 00): DEDENT(DEDENT)
+[06](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[07](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[07](01, 00)-(01, 01): NL(NL) '\n'
+[07](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[08](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[08](01, 00)-(01, 04): INDENT(INDENT) '    '
+[08](01, 04)-(01, 08): NAME(NAME) 'cent'
+[08](01, 09)-(01, 11): MINEQUAL(OP) '-='
+[08](01, 12)-(01, 13): LPAR(OP) '('
+[08](01, 13)-(01, 18): NAME(NAME) 'value'
+[08](01, 18)-(01, 19): STAR(OP) '*'
+[08](01, 19)-(01, 24): NAME(NAME) 'euros'
+[08](01, 24)-(01, 25): RPAR(OP) ')'
+[08](01, 25)-(01, 26): NEWLINE(NEWLINE) '\n'
+[08](02, 00)-(02, 00): DEDENT(DEDENT)
+[08](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[09](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[09](01, 04)-(01, 05): NL(NL) '\n'
+[09](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[10](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[10](01, 00)-(01, 04): INDENT(INDENT) '    '
+[10](01, 04)-(01, 06): NAME(NAME) 'if'
+[10](01, 07)-(01, 12): NAME(NAME) 'value'
+[10](01, 13)-(01, 14): EQUAL(OP) '='
+[10](01, 15)-(01, 18): NUMBER(NUMBER) '200'
+[10](01, 18)-(01, 19): COLON(OP) ':'
+[10](01, 19)-(01, 20): NEWLINE(NEWLINE) '\n'
+[10](02, 00)-(02, 00): DEDENT(DEDENT)
+[10](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[11](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[11](01, 00)-(01, 08): INDENT(INDENT) '        '
+[11](01, 08)-(01, 13): NAME(NAME) 'print'
+[11](01, 14)-(01, 15): LPAR(OP) '('
+[11](01, 15)-(01, 25): STRING(STRING) '"2-euros:"'
+[11](01, 25)-(01, 26): COMMA(OP) ','
+[11](01, 26)-(01, 31): NAME(NAME) 'euros'
+[11](01, 31)-(01, 32): RPAR(OP) ')'
+[11](01, 32)-(01, 33): NEWLINE(NEWLINE) '\n'
+[11](02, 00)-(02, 00): DEDENT(DEDENT)
+[11](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[12](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[12](01, 00)-(01, 04): INDENT(INDENT) '    '
+[12](01, 04)-(01, 06): NAME(NAME) 'if'
+[12](01, 07)-(01, 12): NAME(NAME) 'value'
+[12](01, 13)-(01, 14): EQUAL(OP) '='
+[12](01, 15)-(01, 18): NUMBER(NUMBER) '100'
+[12](01, 18)-(01, 19): COLON(OP) ':'
+[12](01, 19)-(01, 20): NEWLINE(NEWLINE) '\n'
+[12](02, 00)-(02, 00): DEDENT(DEDENT)
+[12](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[13](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[13](01, 00)-(01, 08): INDENT(INDENT) '        '
+[13](01, 08)-(01, 13): NAME(NAME) 'print'
+[13](01, 14)-(01, 15): LPAR(OP) '('
+[13](01, 15)-(01, 25): STRING(STRING) '"1-euros:"'
+[13](01, 25)-(01, 26): COMMA(OP) ','
+[13](01, 26)-(01, 31): NAME(NAME) 'euros'
+[13](01, 31)-(01, 32): RPAR(OP) ')'
+[13](01, 32)-(01, 33): NEWLINE(NEWLINE) '\n'
+[13](02, 00)-(02, 00): DEDENT(DEDENT)
+[13](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[14](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[14](01, 00)-(01, 04): INDENT(INDENT) '    '
+[14](01, 04)-(01, 06): NAME(NAME) 'if'
+[14](01, 07)-(01, 12): NAME(NAME) 'value'
+[14](01, 13)-(01, 14): EQUAL(OP) '='
+[14](01, 15)-(01, 17): NUMBER(NUMBER) '50'
+[14](01, 17)-(01, 18): COLON(OP) ':'
+[14](01, 18)-(01, 19): NEWLINE(NEWLINE) '\n'
+[14](02, 00)-(02, 00): DEDENT(DEDENT)
+[14](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[15](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[15](01, 00)-(01, 08): INDENT(INDENT) '        '
+[15](01, 08)-(01, 13): NAME(NAME) 'print'
+[15](01, 14)-(01, 15): LPAR(OP) '('
+[15](01, 15)-(01, 27): STRING(STRING) '"50c-euros:"'
+[15](01, 27)-(01, 28): COMMA(OP) ','
+[15](01, 28)-(01, 33): NAME(NAME) 'euros'
+[15](01, 33)-(01, 34): RPAR(OP) ')'
+[15](01, 34)-(01, 35): NEWLINE(NEWLINE) '\n'
+[15](02, 00)-(02, 00): DEDENT(DEDENT)
+[15](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[16](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[16](01, 00)-(01, 04): INDENT(INDENT) '    '
+[16](01, 04)-(01, 06): NAME(NAME) 'if'
+[16](01, 07)-(01, 12): NAME(NAME) 'value'
+[16](01, 13)-(01, 14): EQUAL(OP) '='
+[16](01, 15)-(01, 17): NUMBER(NUMBER) '20'
+[16](01, 17)-(01, 18): COLON(OP) ':'
+[16](01, 18)-(01, 19): NEWLINE(NEWLINE) '\n'
+[16](02, 00)-(02, 00): DEDENT(DEDENT)
+[16](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[17](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[17](01, 00)-(01, 08): INDENT(INDENT) '        '
+[17](01, 08)-(01, 13): NAME(NAME) 'print'
+[17](01, 14)-(01, 15): LPAR(OP) '('
+[17](01, 15)-(01, 27): STRING(STRING) '"20c-euros:"'
+[17](01, 27)-(01, 28): COMMA(OP) ','
+[17](01, 28)-(01, 33): NAME(NAME) 'euros'
+[17](01, 33)-(01, 34): RPAR(OP) ')'
+[17](01, 34)-(01, 35): NEWLINE(NEWLINE) '\n'
+[17](02, 00)-(02, 00): DEDENT(DEDENT)
+[17](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[18](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[18](01, 00)-(01, 04): INDENT(INDENT) '    '
+[18](01, 04)-(01, 06): NAME(NAME) 'if'
+[18](01, 07)-(01, 12): NAME(NAME) 'value'
+[18](01, 13)-(01, 14): EQUAL(OP) '='
+[18](01, 15)-(01, 17): NUMBER(NUMBER) '10'
+[18](01, 17)-(01, 18): COLON(OP) ':'
+[18](01, 18)-(01, 19): NEWLINE(NEWLINE) '\n'
+[18](02, 00)-(02, 00): DEDENT(DEDENT)
+[18](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[19](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[19](01, 00)-(01, 08): INDENT(INDENT) '        '
+[19](01, 08)-(01, 13): NAME(NAME) 'print'
+[19](01, 14)-(01, 15): LPAR(OP) '('
+[19](01, 15)-(01, 27): STRING(STRING) '"10c-euros:"'
+[19](01, 27)-(01, 28): COMMA(OP) ','
+[19](01, 28)-(01, 33): NAME(NAME) 'euros'
+[19](01, 33)-(01, 34): RPAR(OP) ')'
+[19](01, 34)-(01, 35): NEWLINE(NEWLINE) '\n'
+[19](02, 00)-(02, 00): DEDENT(DEDENT)
+[19](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[20](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[20](01, 00)-(01, 04): INDENT(INDENT) '    '
+[20](01, 04)-(01, 06): NAME(NAME) 'if'
+[20](01, 07)-(01, 12): NAME(NAME) 'value'
+[20](01, 13)-(01, 14): EQUAL(OP) '='
+[20](01, 15)-(01, 16): NUMBER(NUMBER) '5'
+[20](01, 16)-(01, 17): COLON(OP) ':'
+[20](01, 17)-(01, 18): NEWLINE(NEWLINE) '\n'
+[20](02, 00)-(02, 00): DEDENT(DEDENT)
+[20](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[21](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[21](01, 00)-(01, 08): INDENT(INDENT) '        '
+[21](01, 08)-(01, 13): NAME(NAME) 'print'
+[21](01, 14)-(01, 15): LPAR(OP) '('
+[21](01, 15)-(01, 26): STRING(STRING) '"5c-euros:"'
+[21](01, 26)-(01, 27): COMMA(OP) ','
+[21](01, 27)-(01, 32): NAME(NAME) 'euros'
+[21](01, 32)-(01, 33): RPAR(OP) ')'
+[21](01, 33)-(01, 34): NEWLINE(NEWLINE) '\n'
+[21](02, 00)-(02, 00): DEDENT(DEDENT)
+[21](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[22](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[22](01, 00)-(01, 04): INDENT(INDENT) '    '
+[22](01, 04)-(01, 06): NAME(NAME) 'if'
+[22](01, 07)-(01, 12): NAME(NAME) 'value'
+[22](01, 13)-(01, 14): EQUAL(OP) '='
+[22](01, 15)-(01, 16): NUMBER(NUMBER) '2'
+[22](01, 16)-(01, 17): COLON(OP) ':'
+[22](01, 17)-(01, 18): NEWLINE(NEWLINE) '\n'
+[22](02, 00)-(02, 00): DEDENT(DEDENT)
+[22](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[23](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[23](01, 00)-(01, 08): INDENT(INDENT) '        '
+[23](01, 08)-(01, 13): NAME(NAME) 'print'
+[23](01, 14)-(01, 15): LPAR(OP) '('
+[23](01, 15)-(01, 26): STRING(STRING) '"2c-euros:"'
+[23](01, 26)-(01, 27): COMMA(OP) ','
+[23](01, 27)-(01, 32): NAME(NAME) 'euros'
+[23](01, 32)-(01, 33): RPAR(OP) ')'
+[23](01, 33)-(01, 34): NEWLINE(NEWLINE) '\n'
+[23](02, 00)-(02, 00): DEDENT(DEDENT)
+[23](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[24](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[24](01, 00)-(01, 04): INDENT(INDENT) '    '
+[24](01, 04)-(01, 06): NAME(NAME) 'if'
+[24](01, 07)-(01, 12): NAME(NAME) 'value'
+[24](01, 13)-(01, 14): EQUAL(OP) '='
+[24](01, 15)-(01, 16): NUMBER(NUMBER) '1'
+[24](01, 16)-(01, 17): COLON(OP) ':'
+[24](01, 17)-(01, 18): NEWLINE(NEWLINE) '\n'
+[24](02, 00)-(02, 00): DEDENT(DEDENT)
+[24](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[25](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[25](01, 00)-(01, 08): INDENT(INDENT) '        '
+[25](01, 08)-(01, 13): NAME(NAME) 'print'
+[25](01, 14)-(01, 15): LPAR(OP) '('
+[25](01, 15)-(01, 26): STRING(STRING) '"1c-euros:"'
+[25](01, 26)-(01, 27): COMMA(OP) ','
+[25](01, 27)-(01, 32): NAME(NAME) 'euros'
+[25](01, 32)-(01, 33): RPAR(OP) ')'
+[25](01, 33)-(01, 34): NEWLINE(NEWLINE) '\n'
+[25](02, 00)-(02, 00): DEDENT(DEDENT)
+[25](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+
+[26](00, 00)-(00, 00): ENCODING(ENCODING) 'utf-8'
+[26](01, 04)-(01, 05): NL(NL) '\n'
+[26](02, 00)-(02, 00): ENDMARKER(ENDMARKER)
+

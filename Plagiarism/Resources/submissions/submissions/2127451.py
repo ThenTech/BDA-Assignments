@@ -1,0 +1,10 @@
+a=int(input('aantal 1 cent')) * 1
+b=int(input('aantal 2 cent')) * 2
+c=int(input('aantal 5 cent')) * 5
+d=int(input('aantal 10 cent')) * 10
+e=int(input('aantal 20 cent')) * 20
+som=a + b + c + d + e
+euro=som // 100
+tienc= (som % 100) // 10
+eenc= som %10
+print("You have ", euro, ".", tienc, eenc, " euro!", sep="")
