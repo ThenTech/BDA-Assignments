@@ -1,7 +1,0 @@
-def fibonacci_values(i):
-    fibonacci_list = [0, 1]
-    
-    for index in range(2, i):
-        fibonacci_list.append(fibonacci_list[index - 2] + fibonacci_list[index - 1])
-    return fibonacci_list
-        

@@ -12,7 +12,8 @@ public interface DemoPipelineOptions extends DataflowPipelineOptions {
 
     @Description("Name of the Pub/Sub subscription to ingest data")
     @Validation.Required
-    @Default.String("projects/uh-bigdata/subscriptions/demo-sub")
+//    @Default.String("projects/uh-bigdata/subscriptions/demo-sub")
+    @Default.String("projects/bda-demo-258112/subscriptions/demo-sub")
     String getPubSubInputTopicSubscription();
     void setPubSubInputTopicSubscription(String value);
 

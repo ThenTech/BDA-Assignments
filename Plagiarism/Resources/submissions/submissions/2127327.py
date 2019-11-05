@@ -1,1 +1,0 @@
-print("You have ", 1, ".", 3, 6, " euro!", sep="")
