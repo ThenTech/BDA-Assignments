@@ -1,6 +1,0 @@
-cent1 = float(input("ik heb x aantal 1 eurocenten "))
-cent2 = float(input("ik heb x aantal 2 eurocenten ")) * 2
-cent5 = float(input("ik heb x aantal 5 eurocenten ")) * 5
-cent10 = float(input("ik heb x aantal 10 eurocenten ")) * 10
-cent20 = float(input("ik heb x aantal 20 eurocenten ")) * 20
-print("You have ", (cent1 + cent2 + cent5 + cent10 + cent20) // 100,".", (cent1 + cent2 + cent5 + cent10 + cent20) % 100, " euro!")

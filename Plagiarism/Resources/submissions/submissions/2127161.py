@@ -1,8 +1,0 @@
-een_cent = float(input("Hoeveel een centjes heb je?"))
-twee_cent = float(input('Hoeveel twee centjes heb je?'))
-vijf_cent = float(input('Hoeveel vijf centjes heb je?'))
-tien_cent = float(input('Hoeveel tien centjes heb je?'))
-twintig_cent = float(input('Hoeveel twintig centjes heb je?'))
-som = ((een_cent*0.01)+(twee_cent*0.02)+(vijf_cent*0.05)+(tien_cent*0.10)+(twintig_cent*0.20))
-som = round(som, 2)
-print("You have", som, "euro!")

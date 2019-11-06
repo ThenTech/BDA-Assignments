@@ -36,10 +36,14 @@ public class DocumentSource extends PTransform<PBegin, PCollection<KV<Long, Stri
                 LOG.info("{}, {}", file.getMetadata().resourceId().getFilename(), file.readFullyAsUTF8String());
 
                 // Simply use the filename as the ID
-                return KV.of(Long.parseLong(file.getMetadata().resourceId().getFilename()), file.readFullyAsUTF8String());
+                return KV.of(Long.parseLong(resolveFileName(file.getMetadata().resourceId().getFilename())), file.readFullyAsUTF8String());
             } catch (Exception e) {
                 throw new RuntimeException("[ERROR]: Parsing ReadableFile to Document.");
             }
+        }
+
+        private String resolveFileName(String fileName) {
+            return fileName.split(".")[0];
         }
     }
 }

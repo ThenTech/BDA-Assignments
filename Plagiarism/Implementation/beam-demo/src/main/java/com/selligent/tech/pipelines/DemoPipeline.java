@@ -98,6 +98,7 @@ public class DemoPipeline {
     }
 
     public static void main(String[] args) {
+    	LOG.info("START");
 
         // Parse arguments into options
         DemoPipelineOptions options = PipelineOptionsFactory
@@ -113,8 +114,11 @@ public class DemoPipeline {
         options.setJobName("demo-pipeline");
         options.setRegion("europe-west1");
         options.setZone("europe-west1-b");
-        options.setProject("uh-bigdata");
+        options.setProject("bda-demo-258112"); // projects/bda-demo-258112/topics/topic-demo
+//        options.setProject("uh-bigdata");
+//        options.setProject("uhasselt-bda");
         options.setWorkerMachineType("n1-standard-1");
+//        options.setRunner(DataflowRunner.class);
         options.setRunner(DirectRunner.class);
         options.setUpdate(true);
 
@@ -124,6 +128,8 @@ public class DemoPipeline {
 
         // Assemble pipeline
         assemblePipeline(p, options);
+        
+        LOG.info("RUN");
 
         // Run the pipeline
         p.run();

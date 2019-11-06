@@ -1,7 +1,0 @@
-euro10 = input("schrijf hier het aantal 10 eurocents")
-euro1 = input("schrijf hier het aantal 1 eurocents")
-euro2 = input("schrijf hier het aantal 2 eurocents")
-euro5 = input("schrijf hier het aantal 5 eurocents")
-euro20 = input("schrijf hier het aantal 20 eurocents")
-x = int((euro10 + euro1 + euro5 + euro2 + euro20) / 100)
-print("You have", x, "euro")

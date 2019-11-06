@@ -1,7 +1,0 @@
-aantal1 = int(input("Hoeveel keer 1 eurocent heeft u? "))
-aantal2 = int(input("Hoeveel keer 2 eurocent heeft u? "))
-aantal5 = int(input("Hoeveel keer 5 eurocent heeft u? "))
-aantal10 = int(input("Hoeveel keer 10 eurocent heeft u? "))
-aantal20 = int(input("Hoeveel keer 20 eurocent heeft u? "))
-som = float(aantal1*0.01 + aantal2*0.02 + aantal5*0.05 + aantal10*0.10 + aantal20*0.20)
-print("You have", som, "euro!")

@@ -1,1 +1,0 @@
-print(int(int(input("What are the number of days? "))*int(24)*int(60)+int(input("What are the number of hours? "))*int(60)))

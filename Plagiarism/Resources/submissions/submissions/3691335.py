@@ -1,6 +1,0 @@
-days = int(input())
-hours = int(input())
-
-mins = days*24*60 + hours*60
-
-print(mins)
