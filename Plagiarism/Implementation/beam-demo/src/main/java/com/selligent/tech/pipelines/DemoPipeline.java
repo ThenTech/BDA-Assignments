@@ -6,6 +6,7 @@ import com.selligent.tech.pipelines.config.DemoPipelineOptions;
 import com.selligent.tech.pipelines.operations.BigTableTenantWindowWriter;
 import com.selligent.tech.pipelines.operations.AlertingCreator;
 import org.apache.beam.runners.dataflow.DataflowRunner;
+import org.apache.beam.runners.direct.DirectRunner;
 import org.apache.beam.sdk.Pipeline;
 import org.apache.beam.sdk.coders.CoderRegistry;
 import org.apache.beam.sdk.extensions.jackson.ParseJsons;
@@ -114,7 +115,7 @@ public class DemoPipeline {
         options.setZone("europe-west1-b");
         options.setProject("uh-bigdata");
         options.setWorkerMachineType("n1-standard-1");
-        options.setRunner(DataflowRunner.class);
+        options.setRunner(DirectRunner.class);
         options.setUpdate(true);
 
         // Registering coders (for serialization purposes)
