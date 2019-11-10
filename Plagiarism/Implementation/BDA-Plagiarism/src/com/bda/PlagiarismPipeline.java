@@ -217,8 +217,11 @@ public class PlagiarismPipeline {
 		
 		
 		LOG.info("-- START RUN --");
-		// To run, build and go to GSC>Dataflow>Create job
-		// And select "bda-plagiarism-temp/temp/bda-plagiarism.json" as template
+		// To run, build and go to:
+        //  https://console.cloud.google.com/dataflow?project=bda-demo-258112
+        // And ceate a new job. Select "bda-plagiarism-temp/temp/bda-plagiarism.json" as template.
+        // Output artefacts can be found at:
+        //  https://console.cloud.google.com/storage/browser/bda-plagiarism-temp/output?project=bda-demo-258112
 		p.run().waitUntilFinish();
 		LOG.info("-- COMPLETE --");
 	}
