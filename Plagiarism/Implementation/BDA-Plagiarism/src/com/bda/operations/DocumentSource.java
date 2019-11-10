@@ -33,17 +33,24 @@ public class DocumentSource extends PTransform<PBegin, PCollection<KV<Long, Stri
     private static class DocumentExtractor extends SimpleFunction<ReadableFile, KV<Long, String>> {
         public KV<Long, String> apply(ReadableFile file) {
             try {
-                LOG.info("{}, {}", file.getMetadata().resourceId().getFilename(), file.readFullyAsUTF8String());
+            	String filename = file.getMetadata().resourceId().getFilename();
+            	String contents = file.readFullyAsUTF8String();
+            	
+//                LOG.info("{}, {}", filename, contents);
 
                 // Simply use the filename as the ID
-                return KV.of(Long.parseLong(resolveFileName(file.getMetadata().resourceId().getFilename())), file.readFullyAsUTF8String());
+                return KV.of(Long.parseLong(resolveFileName(filename)), contents);
             } catch (Exception e) {
-                throw new RuntimeException("[ERROR]: Parsing ReadableFile to Document.");
+                throw new RuntimeException("[ERROR]: Parsing ReadableFile to Document on " 
+            			+ file.getMetadata().resourceId()
+						+ ".\n" + e.toString());
             }
         }
 
         private String resolveFileName(String fileName) {
-            return fileName.split(".")[0];
+            return fileName.contains(".") 
+        		 ? fileName.split("\\.")[0]
+        		 : fileName;
         }
     }
 }
