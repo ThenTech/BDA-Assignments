@@ -1,5 +1,6 @@
 package com.bda.operations;
 
+import java.security.MessageDigest;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -8,6 +9,8 @@ import java.util.Map;
 
 import org.apache.beam.sdk.transforms.SimpleFunction;
 import org.apache.beam.sdk.values.KV;
+import org.apache.commons.codec.binary.Hex;
+import org.apache.commons.codec.binary.StringUtils;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,12 +20,14 @@ public class BandHasher extends SimpleFunction<KV<Integer, Iterable<KV<Long, Str
 	private static final long serialVersionUID = 7758026036612994809L;
 	private static final Logger LOG = LoggerFactory.getLogger(BandHasher.class);
 
+	private MessageDigest hashf;
+	
 	public BandHasher() {
-		
+		this.hashf = DigestUtils.getMd5Digest();
 	}
 	
 	public KV<Integer, Map<String, List<Long>>> apply(KV<Integer, Iterable<KV<Long, String[]>>> band) {
-		Map<String, List<Long>> bucket = new HashMap<String, List<Long>>();
+		Map<String, List<Long>> bucket = new HashMap<>();
 		
 		band.getValue().forEach((file) -> this.hash_file_band(file, bucket));
 		
@@ -34,8 +39,12 @@ public class BandHasher extends SimpleFunction<KV<Integer, Iterable<KV<Long, Str
 	}
 	
 	private void hash_file_band(KV<Long, String[]> file, Map<String, List<Long>> bucket) {
-		final String key = DigestUtils.md5Hex(Arrays.toString(file.getValue()));
+		for (String b : file.getValue()) {
+			this.hashf.update(StringUtils.getBytesUtf8(b));
+		}
 		
+		final String key = Hex.encodeHexString(this.hashf.digest());
+
 		if (!bucket.containsKey(key)) {
 			bucket.put(key, new ArrayList<>());
 		}

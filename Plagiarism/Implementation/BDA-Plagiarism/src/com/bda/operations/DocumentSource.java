@@ -25,9 +25,9 @@ public class DocumentSource extends PTransform<PBegin, PCollection<KV<Long, Stri
     @Override
     public PCollection<KV<Long, String>> expand(PBegin input) {
         return input
-                .apply(FileIO.match().filepattern(inputDirectory))
-                .apply(FileIO.readMatches())
-                .apply(MapElements.via(new DocumentExtractor()));
+                .apply("List files", FileIO.match().filepattern(inputDirectory))
+                .apply("Get matches", FileIO.readMatches())
+                .apply("Extrace document contents", MapElements.via(new DocumentExtractor()));
     }
 
     private static class DocumentExtractor extends SimpleFunction<ReadableFile, KV<Long, String>> {

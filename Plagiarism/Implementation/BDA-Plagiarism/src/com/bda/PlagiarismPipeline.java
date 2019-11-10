@@ -151,7 +151,7 @@ public class PlagiarismPipeline {
 		// Step 4: LSH prepare = (filename, [signature_matrix_col]) => (band, [(filename, [signature_matrix_band])])
 		PCollection<KV<Integer, Iterable<KV<Long, String[]>>>> by_band =
 				signature_matrix.apply("Divide SigMat in bands",
-									   ParDo.of(new SplitInBands(options.getBandsCount())))
+									   ParDo.of(new SplitInBands(options.getBandsCount(), options.getPermutationCount())))
 				.apply("Group by band id", GroupByKey.create());
 		
 		if (options.getWriteTempOutput()) { 

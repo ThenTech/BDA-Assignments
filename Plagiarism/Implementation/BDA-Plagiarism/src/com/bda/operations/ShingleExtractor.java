@@ -25,7 +25,7 @@ public class ShingleExtractor extends SimpleFunction<KV<Long, String>, KV<Long, 
 	
 	public KV<Long, Set<String>> apply(KV<Long, String> file) {
         try {
-        	Set<String> shingle_set = new TreeSet<String>();
+        	Set<String> shingle_set = new TreeSet<>();
         	String untokenized = new String();
 
         	// For each line in tokenized input
