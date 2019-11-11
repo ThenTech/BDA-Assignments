@@ -15,7 +15,9 @@ import org.slf4j.LoggerFactory;
  * Created by Laurens on 8/10/19.
  */
 public class DocumentSource extends PTransform<PBegin, PCollection<KV<Long, String>>> {
+    private static final long serialVersionUID = -5780401297085502944L;
     private static final Logger LOG = LoggerFactory.getLogger(DocumentSource.class);
+
     private final String inputDirectory;
 
     public DocumentSource(String inputDirectory) {
@@ -31,24 +33,26 @@ public class DocumentSource extends PTransform<PBegin, PCollection<KV<Long, Stri
     }
 
     private static class DocumentExtractor extends SimpleFunction<ReadableFile, KV<Long, String>> {
+        private static final long serialVersionUID = 811354739510796727L;
+
         public KV<Long, String> apply(ReadableFile file) {
             try {
             	String filename = file.getMetadata().resourceId().getFilename();
             	String contents = file.readFullyAsUTF8String();
-            	
+
 //                LOG.info("{}, {}", filename, contents);
 
                 // Simply use the filename as the ID
                 return KV.of(Long.parseLong(resolveFileName(filename)), contents);
             } catch (Exception e) {
-                throw new RuntimeException("[ERROR]: Parsing ReadableFile to Document on " 
+                throw new RuntimeException("[ERROR]: Parsing ReadableFile to Document on "
             			+ file.getMetadata().resourceId()
 						+ ".\n" + e.toString());
             }
         }
 
         private String resolveFileName(String fileName) {
-            return fileName.contains(".") 
+            return fileName.contains(".")
         		 ? fileName.split("\\.")[0]
         		 : fileName;
         }

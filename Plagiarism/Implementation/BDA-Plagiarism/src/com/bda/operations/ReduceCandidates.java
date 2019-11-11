@@ -21,13 +21,21 @@ public class ReduceCandidates extends DoFn<KV<Integer, Map<String, List<Long>>>,
 
 	@ProcessElement
 	public void processElement(@Element KV<Integer, Map<String, List<Long>>> bucket, OutputReceiver<KV<Long, Iterable<Long>>> out) {
-		bucket.getValue().forEach(
+        // Create new candidate pairs by adding each file with
+        // a list of the other files in the same bucket together.
+
+        bucket.getValue().forEach(
 			(String bhash, List<Long> files) -> {
 				if (files.size() > 1) {
 					for (Long file : files) {
+                        // Create unique set of all files in the bucket
 						Set<Long> distinct = new HashSet<Long>();
-						distinct.addAll(files);
-						distinct.remove(file);
+                        distinct.addAll(files);
+
+                        // Remove the current file
+                        distinct.remove(file);
+
+                        // Add as candidate pairing list.
 						out.output(KV.of(file, distinct));
 					}
 				}

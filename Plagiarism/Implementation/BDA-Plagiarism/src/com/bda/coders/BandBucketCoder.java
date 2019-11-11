@@ -37,7 +37,7 @@ public class BandBucketCoder extends CustomCoder<KV<Integer, Map<String, List<Lo
 
         int bucket_id = varIntCoder.decode(inStream);
         Map<String, List<Long>> maplisted = varMapCoder.decode(inStream);
-        
+
         return KV.of(bucket_id, maplisted);
     }
 
