@@ -21,20 +21,21 @@ public class ShingleExtractor extends SimpleFunction<KV<Long, String>, KV<Long, 
     private static final char     REPLACE_CHAR = '$';
 
     private int K_factor;
-    private MessageDigest hashf;
+    private transient MessageDigest hashf;
 
     public ShingleExtractor(int K_factor) {
         this.K_factor = K_factor;
-        this.hashf = DigestUtils.getMd5Digest();
     }
 
     private String getHash(String value) {
         final byte[] bval = org.apache.commons.codec.binary.StringUtils.getBytesUtf8(value);
-		final byte[] result = this.hashf.digest(bval);
+        final byte[] result = this.hashf.digest(bval);
 		return Hex.encodeHexString(result);
 	}
 
 	public KV<Long, Set<String>> apply(KV<Long, String> file) {
+        this.hashf = DigestUtils.getMd5Digest();
+
         try {
         	Set<String> shingle_set = new TreeSet<>();
         	String untokenized = new String();

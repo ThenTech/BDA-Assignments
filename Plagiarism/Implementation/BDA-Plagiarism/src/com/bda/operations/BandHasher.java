@@ -19,13 +19,14 @@ public class BandHasher extends SimpleFunction<KV<Integer, Iterable<KV<Long, Str
 	private static final long serialVersionUID = 7758026036612994809L;
 	private static final Logger LOG = LoggerFactory.getLogger(BandHasher.class);
 
-	private MessageDigest hashf;
+	private transient MessageDigest hashf;
 
 	public BandHasher() {
 		this.hashf = DigestUtils.getMd5Digest();
 	}
 
 	public KV<Integer, Map<String, List<Long>>> apply(KV<Integer, Iterable<KV<Long, String[]>>> band) {
+		this.hashf = DigestUtils.getMd5Digest();
 		Map<String, List<Long>> bucket = new HashMap<>();
 
 		band.getValue().forEach((file) -> this.hash_file_band(file, bucket));
@@ -39,7 +40,8 @@ public class BandHasher extends SimpleFunction<KV<Integer, Iterable<KV<Long, Str
 
 	private void hash_file_band(KV<Long, String[]> file, Map<String, List<Long>> bucket) {
 		for (String b : file.getValue()) {
-			this.hashf.update(StringUtils.getBytesUtf8(b));
+			if (b != null)
+				this.hashf.update(StringUtils.getBytesUtf8(b));
 		}
 
 		final String key = Hex.encodeHexString(this.hashf.digest());

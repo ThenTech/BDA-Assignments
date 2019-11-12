@@ -37,7 +37,7 @@ import com.bda.operations.SplitInBands;
 public class PlagiarismPipeline {
 	private static final Logger LOG = LoggerFactory.getLogger(PlagiarismPipeline.class);
 
-	private static final boolean RUN_LOCAL = true;
+	private static final boolean RUN_LOCAL = false;
 
 	public interface PlagiarismPipelineOptions extends DataflowPipelineOptions {
 		@Description("Shingle size")
@@ -116,9 +116,8 @@ public class PlagiarismPipeline {
 
 		// Step 1: Prepare = (fileid, file_contents) pairs
 		PCollection<KV<Long, String>> inputs =
-				(new DocumentSource(options.getInput()))
-				.expand(p.begin());
-
+				p.apply("Read files", new DocumentSource(options.getInput()));
+		
 		// Step 2: Shingling = (fileid, file_contents) => (fileid, [shingle_hashes])
 		PCollection<KV<Long, Set<String>>> shingle_sets =
 				inputs.apply("Extract shingles",

@@ -16,12 +16,11 @@ public class MinHasher extends SimpleFunction<KV<Long, Set<String>>, KV<Long, St
 	private static final Logger LOG = LoggerFactory.getLogger(MinHasher.class);
 
 	private int n_permutations;
-	private MessageDigest hashf;
+	private transient MessageDigest hashf;
 	private byte[][] pHash_LUT;
 
 	public MinHasher(int n_permutations) {
 		this.n_permutations = n_permutations;
-		this.hashf = DigestUtils.getMd5Digest();
 		this.pHash_LUT = new byte[this.n_permutations][];
 
 		for (int pHash = 0; pHash < this.n_permutations; pHash++) {
@@ -36,6 +35,7 @@ public class MinHasher extends SimpleFunction<KV<Long, Set<String>>, KV<Long, St
 	}
 
 	public KV<Long, String[]> apply(KV<Long, Set<String>> multiset) {
+		this.hashf = DigestUtils.getMd5Digest();
 		String[] SM = new String[this.n_permutations];
 
         // For each hashed shingle in the file's multiset
