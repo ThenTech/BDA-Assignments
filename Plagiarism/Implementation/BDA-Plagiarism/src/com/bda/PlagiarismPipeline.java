@@ -94,7 +94,7 @@ public class PlagiarismPipeline {
         options.setWorkerMachineType("n1-standard-1");
         options.setRunner(DataflowRunner.class);
         options.setStreaming(false);
-        options.setUpdate(true);
+        options.setUpdate(false);
         options.setDataflowJobFile("gs://bda-plagiarism-temp/temp/bda-plagiarism.json");
 
 		if (RUN_LOCAL) {
@@ -208,12 +208,12 @@ public class PlagiarismPipeline {
 						   }))
 
 		// Step 7: Output
-			.apply("Write candidate pairs to output",
+			.apply("Map candidate pairs to output",
 				   MapElements.into(TypeDescriptors.strings())
 				   .via((KV<Long, Set<Long>> cand) -> {
 					   return String.format("%d: %s", cand.getKey(), cand.getValue().toString());
 	               }))
-            .apply(TextIO.write().to(options.getOutputPrefix() + "5_candidates"));
+            .apply("Write candidates", TextIO.write().to(options.getOutputPrefix() + "5_candidates"));
 
 
 		LOG.info("-- START RUN --");
