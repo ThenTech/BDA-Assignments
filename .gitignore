@@ -210,13 +210,13 @@ DBPL/.vscode/*
 !DBPL/.vscode/launch.json
 !DBPL/.vscode/extensions.json
 
+TopicDrift/.vscode/*
+!TopicDrift/.vscode/tasks.json
+!TopicDrift/.vscode/launch.json
+!TopicDrift/.vscode/extensions.json
+
 ### VisualStudioCode Patch ###
 # Ignore all local history of files
 .history
-
-DBPL/.vscode/*
-!DBPL/.vscode/tasks.json
-!DBPL/.vscode/launch.json
-!DBPL/.vscode/extensions.json
 
 # End of https://www.gitignore.io/api/python,pycharm,visualstudiocode
