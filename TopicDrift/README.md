@@ -6,6 +6,10 @@
 
 
 
+Visualisatie met [pyLDAvis](https://github.com/bmabey/pyLDAvis)
+
+
+
 ## Encountered problems
 
 

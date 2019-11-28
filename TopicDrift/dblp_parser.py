@@ -8,6 +8,9 @@ class IItemStrategy:
     def __init__(self):
         pass
 
+    def set_attribute(self, *args):
+        pass
+
     def start_item(self, *args):
         pass
 
@@ -48,7 +51,9 @@ class DataHandler(sax.ContentHandler):
         self.item_callback.end_item(tag)
 
         self.CurrentData = tag
+
         # attributes: mdate, key
+        self.item_callback.set_attribute(attributes)
 
         self.item_callback.start_item(tag)
 
@@ -98,8 +103,10 @@ class DataHandler(sax.ContentHandler):
 class TitleStrategyWords(IItemStrategy):
     TAG  = "title"
     TAG2 = "year"
+    ATTR = "key"
 
-    def __init__(self, ignore_words=None, ignore_chars="", translate_words=None, show_progress=True):
+    def __init__(self, filter_key=None, ignore_words=None, ignore_chars="", translate_words=None, show_progress=True):
+        self.filter_key       = filter_key
         self.ignore           = ignore_words or []
         self.ignore_chars     = ignore_chars or ""
         self.ignore_translate = { ord(c): None for c in self.ignore_chars }
@@ -107,6 +114,7 @@ class TitleStrategyWords(IItemStrategy):
         self.titles           = {}
 
         self.tag          = ""
+        self.key          = True
         self.current_item = []
         self.current_year = -1
 
@@ -122,6 +130,15 @@ class TitleStrategyWords(IItemStrategy):
         if self.progress:
             self.progress.close()
 
+    def set_attribute(self, attr):
+        if self.filter_key and attr.getLength() == 2:
+            self.key = self.filter_key in attr.get(self.ATTR, "").lower()
+
+            if self.key:
+                # Clear previous
+                self.current_item = []
+                self.current_year = -1
+
     def start_item(self, tag):
         self.tag = tag
 
@@ -134,25 +151,26 @@ class TitleStrategyWords(IItemStrategy):
     def end_item(self, tag):
         if ((self.tag == self.TAG and self.tag != tag) or (self.tag == self.TAG2 and self.tag != tag)) \
           and self.current_item and self.current_year > 1900:
-            # Clean title
-            cleaned = []
+            if self.key:
+                # Clean title
+                cleaned = []
 
-            for word in self.current_item:
-                # Remove chars
-                word = word.translate(self.ignore_translate).strip()
+                for word in self.current_item:
+                    # Remove chars
+                    word = word.translate(self.ignore_translate).strip()
 
-                # Translate
-                if word in self.word_translate:
-                    word = self.word_translate[word]
+                    # Translate
+                    if word in self.word_translate:
+                        word = self.word_translate[word]
 
-                if word and word not in self.ignore:
-                    cleaned.append(word)
+                    if word and word not in self.ignore:
+                        cleaned.append(word)
 
-            if self.current_year not in self.titles:
-                self.titles[self.current_year] = []
+                if self.current_year not in self.titles:
+                    self.titles[self.current_year] = []
 
-            # self.titles[self.current_year].append(tuple(cleaned))
-            self.titles[self.current_year].append(" ".join(cleaned))
+                # self.titles[self.current_year].append(tuple(cleaned))
+                self.titles[self.current_year].append(" ".join(cleaned))
 
             self.current_item = []
             self.current_year = -1
@@ -164,7 +182,7 @@ class TitleStrategyWords(IItemStrategy):
         return self.titles
 
 
-def run_parser_strategy(data, strat=AuthorStrategyFrequency()):
+def run_parser_strategy(data, strat=None):
     xmlparser = sax.make_parser()
 
     xmlparser.setFeature(sax.handler.feature_namespaces, 0)
@@ -173,25 +191,3 @@ def run_parser_strategy(data, strat=AuthorStrategyFrequency()):
     xmlparser.parse(data)
 
     return strat
-
-
-if __name__ == "__main__":
-    DATAFULL = "G:/_temp/UHasselt/BigDataAnalysis/DBLP/dblp.xml"
-    # DATASNAP = "G:/_temp/UHasselt/BigDataAnalysis/DBLP/dblp50000.xml"
-    DATASNAP = "C:/Apps/Github/BDA-Assignments/DBLP/dblp50000.xml"
-
-    DATA = DATASNAP
-
-
-    author_strategy = AuthorStrategySets()
-
-    run_parser_strategy(DATA, author_strategy)
-
-    print("Authors:", len(author_strategy.get_data()))  # 2'347'426
-    # print("Authors:", len(auteurs))  # 69'706
-
-    c = 10
-    for k, v in author_strategy.get_data().items():
-        print ("{0:30s}: {1}".format("{}".format(k), v))
-        c -= 1
-        if c == 0: break
