@@ -1,0 +1,27 @@
+Start parsing C:/Apps/Github/BDA-Assignments/DBLP/dblp.xml...
+Found titles for 44 years, to find 5 clusters/topics in conf/vldb.
+
+Plotting top 10 items for years 1990-2000 (703 publications)...
+  Topic 1 (140 titles): manag, transact, model, activ, search, knowledg, high, distribut, realtim, panel
+  Topic 2 (148 titles): queri, optim, model, rule, objectori, languag, integr, memori, heterogen, implement
+  Topic 3 (160 titles): queri, process, tempor, relat, algorithm, structur, index, optim, buffer, load
+  Topic 4 (153 titles): object, larg, parallel, integr, perform, updat, cluster, inform, spatial, algorithm
+  Topic 5 (102 titles): larg, view, veri, confer, intern, increment, wareh, materi, join, parallel
+Plotting top 10 items for years 1998-2007 (1065 publications)...
+  Topic 1 (246 titles): queri, process, stream, manag, view, search, dynam, select, web, adapt
+  Topic 2 (181 titles): support, warehous, index, approxim, space, oracl, mainten, manag, cach, applic
+  Topic 3 (194 titles): larg, web, servic, queri, effici, applic, algorithm, veri, architectur, analysi
+  Topic 4 (139 titles): join, schema, web, match, map, inform, server, practic, search, gener
+  Topic 5 (305 titles): xml, queri, index, effici, relat, optim, integr, stream, inform, manag
+Plotting top 10 items for years 2006-2016 (470 publications)...
+  Topic 1 (84 titles): manag, modern, perform, workshop, intern, processor, septemb, analyt, acceler, memori
+  Topic 2 (94 titles): inmemori, queri, index, inform, comput, model, analysi, network, skylin, dynam
+  Topic 3 (123 titles): queri, effici, process, stream, search, algorithm, topk, aggreg, structur, web
+  Topic 4 (90 titles): schema, integr, map, match, memori, queri, august, effici, xml, intern
+  Topic 5 (79 titles): queri, xml, model, web, semant, optim, manag, search, execut, similar
+Plotting top 10 items for years 2014-2019 (234 publications)...
+  Topic 1 (46 titles): big, analyt, effici, queri, applic, process, integr, stream, learn, optim
+  Topic 2 (45 titles): memori, perform, queri, workshop, select, septemb, graph, cpu, studi, china
+  Topic 3 (44 titles): manag, analysi, modern, storag, architectur, processor, acceler, intern, workshop, queri
+  Topic 4 (51 titles): vldb, workshop, inmemori, intern, hardwar, analyt, larg, septemb, medicin, coloc
+  Topic 5 (48 titles): analysi, network, social, scalabl, studi, workload, imag, process, environ, inmemori

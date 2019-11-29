@@ -1,0 +1,27 @@
+Start parsing C:/Apps/Github/BDA-Assignments/DBLP/dblp.xml...
+Found titles for 85 years, to find 5 clusters/topics in any.
+
+Plotting top 10 items for years 1990-2000 (437630 publications)...
+  Topic 1 (113076 titles): model, learn, network, neural, logic, recognit, analysi, method, program, function
+  Topic 2 (113321 titles): network, imag, estim, graph, algorithm, code, analysi, object, model, video
+  Topic 3 (109100 titles): design, parallel, algorithm, control, distribut, problem, comput, architectur, applic, program
+  Topic 4 (102082 titles): inform, softwar, comput, develop, model, process, studi, manag, design, technolog
+  Topic 5 (51 titles): page, home, ge, age, cybersight, cybereurop, bersetz, escolar, olocalis, fbarkeit
+Plotting top 10 items for years 1998-2008 (1105300 publications)...
+  Topic 1 (230986 titles): network, control, distribut, mobil, wireless, secur, design, robot, servic, sensor
+  Topic 2 (148552 titles): inform, problem, web, method, optim, search, equat, user, solut, retriev
+  Topic 3 (286857 titles): model, imag, algorithm, network, detect, neural, analysi, estim, method, recognit
+  Topic 4 (274130 titles): model, learn, softwar, develop, process, studi, design, support, analysi, framework
+  Topic 5 (164775 titles): code, program, comput, graph, parallel, logic, channel, design, intern, memori
+Plotting top 10 items for years 2006-2016 (2306649 publications)...
+  Topic 1 (467649 titles): model, algorithm, optim, problem, method, simul, analysi, time, cluster, comput
+  Topic 2 (290279 titles): network, imag, detect, mobil, neural, classif, featur, learn, segment, visual
+  Topic 3 (461002 titles): network, control, wireless, sensor, perform, channel, design, power, distribut, commun
+  Topic 4 (675122 titles): model, inform, design, studi, softwar, learn, develop, servic, manag, web
+  Topic 5 (412597 titles): analysi, function, filter, logic, method, gener, linear, recognit, nonlinear, code
+Plotting top 10 items for years 2014-2020 (1742545 publications)...
+  Topic 1 (257969 titles): model, network, neural, analysi, predict, studi, monitor, recognit, measur, effect
+  Topic 2 (408460 titles): model, design, learn, robot, interact, softwar, develop, applic, process, inform
+  Topic 3 (393255 titles): control, optim, code, method, algorithm, problem, design, model, analysi, function
+  Topic 4 (347797 titles): network, wireless, commun, manag, secur, servic, mobil, optim, cloud, distribut
+  Topic 5 (335064 titles): imag, detect, algorithm, learn, graph, classif, method, featur, sensor, network

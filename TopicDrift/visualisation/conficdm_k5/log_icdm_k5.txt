@@ -1,0 +1,15 @@
+Start parsing C:/Apps/Github/BDA-Assignments/DBLP/dblp.xml...
+Found titles for 18 years, to find 5 clusters/topics in conf/icdm.
+
+Plotting top 10 items for years 2006-2016 (3659 publications)...
+  Topic 1 (610 titles): algorithm, factor, matrix, inform, effici, optim, control, larg, predict, analysi
+  Topic 2 (675 titles): classif, learn, analysi, framework, support, vector, machin, high, detect, random
+  Topic 3 (797 titles): pattern, detect, model, network, stream, time, discoveri, applic, analysi, seri
+  Topic 4 (732 titles): cluster, social, network, model, graph, control, research, design, studi, detect
+  Topic 5 (845 titles): learn, featur, select, classif, model, imag, network, text, activ, method
+Plotting top 10 items for years 2014-2018 (1413 publications)...
+  Topic 1 (330 titles): social, network, learn, predict, onlin, media, model, recommend, dynam, user
+  Topic 2 (303 titles): time, classif, network, seri, pattern, detect, larg, discoveri, spatiotempor, largescal
+  Topic 3 (347 titles): model, cluster, analysi, learn, classif, featur, sentiment, twitter, robust, gener
+  Topic 4 (243 titles): detect, matrix, factor, inform, learn, model, stream, select, applic, effici
+  Topic 5 (190 titles): learn, algorithm, graph, predict, featur, visual, infer, evalu, trajectori, dynam

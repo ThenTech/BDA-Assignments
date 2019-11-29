@@ -5,6 +5,7 @@ import math
 
 import matplotlib.pyplot as plt
 from wordcloud import WordCloud
+from nltk.stem import PorterStemmer
 
 import numpy as np
 from sklearn.feature_extraction.text import CountVectorizer
@@ -17,12 +18,13 @@ import pyLDAvis
 
 DATAFULL = "G:/_temp/UHasselt/BigDataAnalysis/DBLP/dblp.xml"
 DATASNAP = "G:/_temp/UHasselt/BigDataAnalysis/DBLP/dblp50000.xml"
+DATAFULL = "C:/Apps/Github/BDA-Assignments/DBLP/dblp.xml"
 DATASNAP = "C:/Apps/Github/BDA-Assignments/DBLP/dblp50000.xml"
 
 # DATAFULL = "C:/Users/Cedric/Google Drive (cedric.mingneau@student.uhasselt.be)/BDA persoonlijk/oefeningen/dblp.xml"
 # DATASNAP = "C:/Users/Cedric/Google Drive (cedric.mingneau@student.uhasselt.be)/BDA persoonlijk/oefeningen/dblp50000.xml"
 
-DATA = DATASNAP
+DATA = DATAFULL
 
 
 def safe_file_name(name, include=tuple()):
@@ -32,37 +34,25 @@ def safe_file_name(name, include=tuple()):
 
 class Clusterer:
     IGNORE_WORDS = [
-        "data", "database", "novel", "using", "approach", "based", "new",
-        "proceedings", "use", "fast", "through",
-        "the", "a", "an", "to", "with", "from", "by", "your",
+        "data", "database", "databas", "novel", "using", "approach", "base", "new",
+        "proceed", "use", "fast", "through",
+        "the", "a", "an", "at", "to", "with", "from", "by", "your", "via", "you",
         "and", "of", "on", "no", "for", "in", "is", "und", "der", "für", "von",
     ]
     IGNORE_CHARS = ".,:-'\"!?@#$/\\"
     TRANSLATE_WORDS = {
-        "algorithms"   : "algorithm",
-        "technologies" : "technology",
-        "systems"      : "system",
-        "models"       : "model",
-        "methods"      : "method",
-        "programs"     : "program",
-        "designs"      : "design",
-        "images"       : "image",
-        "networks"     : "network",
-        "applications" : "application",
-        "databases"    : "database",
-        "problems"     : "problem",
-        "generations"  : "generation",
-        "estimations"  : "estimation",
-        "discoveries"  : "discovery",
-        "terminologies": "terminology",
+        "optimising" : "optimise",
+        "optimizing" : "optimise",
+        "behaviors"  : "behaviours",
     }
 
-    def __init__(self, data_path, pub_key=None, k=10, seed=None, show_plot=True, save_plot=True, save_visualisation=True):
+    def __init__(self, data_path, pub_key="", k=10, seed=None, show_plot=True, save_plot=True, save_visualisation=True):
         self.data_path  = data_path
         self.k          = max(1, k)
         self.iterations = 10
         self.seed       = seed
         self.publication_key = pub_key.lower()
+        self.stemmer    = PorterStemmer()
 
         self.show_plot = show_plot
         self.save_plot = save_plot
@@ -80,7 +70,8 @@ class Clusterer:
 
         strat = run_parser_strategy(self.data_path,
                                     TitleStrategyWords(self.publication_key,
-                                                       self.IGNORE_WORDS, self.IGNORE_CHARS, self.TRANSLATE_WORDS))
+                                                       self.IGNORE_WORDS, self.IGNORE_CHARS, self.TRANSLATE_WORDS,
+                                                       self.stemmer))
         strat.stop()
 
         self.documents = strat.get_data()
@@ -89,21 +80,31 @@ class Clusterer:
                 .format(len(self.documents), self.k, self.publication_key if self.publication_key else "any"))
 
     def plot_year(self, year, top_x = 10):
-        data = self.documents[year] if year in self.documents else []
+        data = []
 
-        print("Plotting top {0} items for year {1} ({2} publications)..."\
-                .format(top_x, year, len(data) if len(data) > 0 else "no"))
+        if isinstance(year, tuple):
+            for y in range(year[0], year[1]):
+                if y in self.documents:
+                    data.extend(self.documents[y])
 
-        if year not in self.documents:
-            print("  No such year!")
-            return
+            print("Plotting top {0} items for years {1}-{2} ({3} publications)..."\
+                .format(top_x, year[0], year[1], len(data) if len(data) > 0 else "no"))
+        else:
+            data = self.documents[year] if year in self.documents else []
+
+            print("Plotting top {0} items for year {1} ({2} publications)..."\
+                    .format(top_x, year, len(data) if len(data) > 0 else "no"))
+
+            if year not in self.documents:
+                print("  No such year!")
+                return
 
         if len(data) < 3:
-            print("  To little data!")
+            print("  Too little data!")
             return
 
         try:
-            counts = CountVectorizer(max_df=0.85, min_df=2, stop_words=None)
+            counts = CountVectorizer(max_df=0.96, min_df=2, stop_words="english")
             fitted = counts.fit_transform(data)
             vocabulary = counts.get_feature_names()
 
@@ -122,6 +123,10 @@ class Clusterer:
         # Count how many docs/titles are assigned to each of the self.k topics
         doc_topics = lda_transformed.argmax(axis=1)
         total_docs_in_topic = Counter(doc_topics)
+
+        output = self.output_prefix + "{0}_k{1}/".format(safe_file_name(self.publication_key) if self.publication_key else "any", self.k)
+        if not os.path.exists(output):
+            os.makedirs(output)
 
         out_info = "cat={0}_year={1}_k={2}".format(safe_file_name(self.publication_key) if self.publication_key else "any",
                                                    year, self.k)
@@ -171,19 +176,28 @@ class Clusterer:
         plt.subplots_adjust(left=0.03, bottom=0.03, right=0.97, top=0.88, wspace=0.15, hspace=0.20)
 
         if self.save_plot:
-            plt.savefig(self.output_prefix + "plot_{0}.png".format(out_info), dpi=200)
+            plt.savefig(output + "plot_{0}.png".format(out_info), dpi=200)
         if self.show_plot:
             plt.show()
 
         if self.save_visualisation:
             LDAvis_prepared = sklearn_lda.prepare(LDA, fitted, counts)
-            pyLDAvis.save_html(LDAvis_prepared, self.output_prefix + "ldavis_{0}.html".format(out_info))
+            pyLDAvis.save_html(LDAvis_prepared, output + "ldavis_{0}.html".format(out_info))
 
 
-    def plot_years(self, year_from = 0, year_to = 3000, top_x = 10):
+    def plot_single_years(self, year_from = 0, year_to = 3000, top_x = 10):
         for year in range(year_from, year_to+1):
             if year in self.documents:
                 self.plot_year(year, top_x=top_x)
+
+    def plot_interval_years(self, year_from = 0, year_to = 3000, delta = 10, offset = 8, top_x = 10):
+        for year in range(year_from, year_to+1, offset):
+            if year in self.documents:
+                last_year = min(year + delta, year_to+1)
+                while last_year not in self.documents:
+                    last_year -= 1
+
+                self.plot_year((year, last_year), top_x=top_x)
 
 
 
@@ -196,12 +210,13 @@ if __name__ == "__main__":
         # sys.exit()
     else:
         _, data_path, pub_key, cluster_amount = sys.argv
-        pub_key = pub_key.lower()
+        pub_key = "" if "any" in pub_key else pub_key.lower()
         cluster_amount = int(cluster_amount)
 
     c = Clusterer(data_path, pub_key=pub_key, k=cluster_amount, seed=1746077,
-                  show_plot=False, save_plot=True, save_visualisation=False)
+                  show_plot=False, save_plot=True, save_visualisation=True)
 
     c.prepare()
     # c.plot_year(2000)
-    c.plot_years(year_from=2000)
+    # c.plot_single_years(year_from=1990, year_to=2010)
+    c.plot_interval_years(year_from=1990)

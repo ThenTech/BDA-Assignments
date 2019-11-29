@@ -105,12 +105,17 @@ class TitleStrategyWords(IItemStrategy):
     TAG2 = "year"
     ATTR = "key"
 
-    def __init__(self, filter_key=None, ignore_words=None, ignore_chars="", translate_words=None, show_progress=True):
+    def __init__(self, filter_key=None,
+                 ignore_words=None, ignore_chars="", translate_words=None,
+                 stemmer=None,
+                 show_progress=True):
         self.filter_key       = filter_key
         self.ignore           = ignore_words or []
         self.ignore_chars     = ignore_chars or ""
         self.ignore_translate = { ord(c): None for c in self.ignore_chars }
         self.word_translate   = translate_words or {}
+        self.stemmer          = stemmer
+
         self.titles           = {}
 
         self.tag          = ""
@@ -159,9 +164,17 @@ class TitleStrategyWords(IItemStrategy):
                     # Remove chars
                     word = word.translate(self.ignore_translate).strip()
 
+                    # Ignore numbers
+                    if word.isdigit():
+                        continue
+
                     # Translate
                     if word in self.word_translate:
                         word = self.word_translate[word]
+
+                    # Simplify
+                    if self.stemmer:
+                        word = self.stemmer.stem(word)
 
                     if word and word not in self.ignore:
                         cleaned.append(word)
