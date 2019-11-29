@@ -1,6 +1,6 @@
 # Big Data Analysis - Topic drift assignment
 
-2019-12-01 **Cedric Mingneau, William Thenaers**
+2019-12-01 **Cedric Mingneau** (1232611), **William Thenaers** (1746077)
 
 ## Algorithm
 
