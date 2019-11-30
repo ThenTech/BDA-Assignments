@@ -1,0 +1,27 @@
+Start parsing C:/Apps/Github/BDA-Assignments/DBLP/dblp.xml...
+Found titles for 35 years, to find 5 clusters/topics in conf/icde.
+
+Plotting top 10 items for years 1990-2000 (747 publications)...
+  Topic 1 (137 titles): gener, abstract, queri, manag, effici, parallel, relat, access, process, languag
+  Topic 2 (163 titles): objectori, model, queri, object, semant, integr, implement, design, evalu, optim
+  Topic 3 (176 titles): transact, parallel, process, distribut, queri, join, engin, manag, support, perform
+  Topic 4 (141 titles): algorithm, perform, optim, concurr, distribut, control, queri, activ, rule, manag
+  Topic 5 (130 titles): index, updat, heterogen, inform, rule, integr, structur, mainten, relat, constraint
+Plotting top 10 items for years 1998-2008 (1651 publications)...
+  Topic 1 (296 titles): index, engin, structur, search, relat, retriev, video, similar, inform, access
+  Topic 2 (358 titles): queri, effici, algorithm, process, evalu, optim, oper, rule, associ, constraint
+  Topic 3 (267 titles): pattern, inform, web, cluster, sequenc, framework, cach, imag, integr, index
+  Topic 4 (298 titles): xml, document, privaci, gener, schema, architectur, queri, integr, effici, web
+  Topic 5 (432 titles): queri, stream, process, manag, network, distribut, mobil, effici, web, model
+Plotting top 10 items for years 2006-2016 (2488 publications)...
+  Topic 1 (606 titles): search, effici, queri, network, graph, index, topk, larg, keyword, algorithm
+  Topic 2 (628 titles): queri, process, stream, servic, cloud, optim, continu, manag, effici, framework
+  Topic 3 (453 titles): inform, queri, recommend, distribut, network, detect, comput, extract, stream, web
+  Topic 4 (361 titles): pattern, manag, match, time, engin, schema, stream, sequenc, high, analysi
+  Topic 5 (440 titles): queri, scalabl, join, xml, similar, gener, applic, cluster, schema, distribut
+Plotting top 10 items for years 2014-2019 (1237 publications)...
+  Topic 1 (188 titles): servic, process, recommend, manag, queri, big, predict, privat, perform, local
+  Topic 2 (189 titles): event, analyt, adapt, inmemori, detect, network, match, time, distribut, memori
+  Topic 3 (283 titles): network, search, social, extend, abstract, queri, topk, learn, keyword, graph
+  Topic 4 (282 titles): graph, queri, optim, algorithm, explor, entiti, interact, user, visual, web
+  Topic 5 (295 titles): effici, process, stream, manag, queri, crowdsourc, cluster, comput, distribut, join

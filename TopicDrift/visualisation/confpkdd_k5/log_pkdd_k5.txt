@@ -1,0 +1,21 @@
+Start parsing C:/Apps/Github/BDA-Assignments/DBLP/dblp.xml...
+Found titles for 23 years, to find 5 clusters/topics in conf/pkdd.
+
+Plotting top 10 items for years 1998-2008 (633 publications)...
+  Topic 1 (96 titles): discoveri, knowledg, principl, frequent, european, pkdd, algorithm, confer, model, septemb
+  Topic 2 (144 titles): algorithm, cluster, select, classif, inform, featur, measur, structur, learn, document
+  Topic 3 (125 titles): rule, associ, pattern, learn, applic, gener, analysi, classif, depend, text
+  Topic 4 (153 titles): cluster, rule, effici, induct, associ, classif, visual, spatial, detect, tempor
+  Topic 5 (115 titles): set, tree, time, decis, classifi, model, seri, rough, network, dynam
+Plotting top 10 items for years 2006-2016 (1482 publications)...
+  Topic 1 (288 titles): recommend, graph, social, tag, factor, cluster, model, sequenc, detect, learn
+  Topic 2 (427 titles): learn, model, classif, time, process, cluster, seri, relat, regress, gener
+  Topic 3 (201 titles): machin, learn, discoveri, knowledg, septemb, confer, european, pattern, pkdd, ecml
+  Topic 4 (281 titles): learn, inform, rule, graph, social, pattern, analysi, discov, transfer, structur
+  Topic 5 (285 titles): network, select, featur, bayesian, model, classifi, label, algorithm, predict, rank
+Plotting top 10 items for years 2014-2019 (1198 publications)...
+  Topic 1 (217 titles): time, seri, learn, cluster, factor, classif, support, matrix, infer, studi
+  Topic 2 (309 titles): network, predict, learn, neural, social, activ, model, deep, player, dynam
+  Topic 3 (196 titles): learn, machin, knowledg, discoveri, septemb, european, confer, pkdd, ecml, workshop
+  Topic 4 (226 titles): select, learn, featur, optim, model, classif, adapt, regress, recommend, algorithm
+  Topic 5 (250 titles): model, pattern, analysi, detect, network, learn, forecast, visual, discoveri, inform

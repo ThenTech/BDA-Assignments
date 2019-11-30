@@ -14,6 +14,8 @@
 .idea/**/usage.statistics.xml
 .idea/**/dictionaries
 .idea/**/shelf
+.metadata/
+.recommenders/
 
 # Generated files
 .idea/**/contentModel.xml
@@ -199,10 +201,19 @@ dmypy.json
 
 ### VisualStudioCode ###
 .vscode/*
-.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+
+DBPL/.vscode/*
+!DBPL/.vscode/tasks.json
+!DBPL/.vscode/launch.json
+!DBPL/.vscode/extensions.json
+
+TopicDrift/.vscode/*
+!TopicDrift/.vscode/tasks.json
+!TopicDrift/.vscode/launch.json
+!TopicDrift/.vscode/extensions.json
 
 ### VisualStudioCode Patch ###
 # Ignore all local history of files

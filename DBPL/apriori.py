@@ -1,32 +1,32 @@
-from dblp_parser import run_parser_strategy, IItemStrategy, AuthorStrategyFrequency, AuthorStrategySets
-from itertools import combinations
-import threading
-from tqdm import tqdm as progress
+from dblp_parser import run_parser_strategy, IItemStrategy, AuthorStrategyFrequency, AuthorStrategySets, AuthorStrategyNTupleFrequency
+from itertools import chain
+import sys
+import os
+import time
 
 DATAFULL = "G:/_temp/UHasselt/BigDataAnalysis/DBLP/dblp.xml"
-# DATASNAP = "G:/_temp/UHasselt/BigDataAnalysis/DBLP/dblp50000.xml"
-DATASNAP = "C:/Apps/Github/BDA-Assignments/DBLP/dblp50000.xml"
+DATASNAP = "G:/_temp/UHasselt/BigDataAnalysis/DBLP/dblp50000.xml"
 
-DATA = DATASNAP
+# DATAFULL = "C:/Users/Cedric/Google Drive (cedric.mingneau@student.uhasselt.be)/BDA persoonlijk/oefeningen/dblp.xml"
+# DATASNAP = "C:/Users/Cedric/Google Drive (cedric.mingneau@student.uhasselt.be)/BDA persoonlijk/oefeningen/dblp50000.xml"
 
-"""
-Pass 1
-    - Vertaal tabel: [author,    id]
-    - Count tabel  : [id    , count]
+DATA = DATAFULL
 
-        => dict {author: count}?
 
-Pass 2
-    - Only use authors count >= support_threshold
-    - Make combinations of
-"""
-
-def dump_list_to_file(li, fname):
+def dump_list_to_file(li, key_lut, fname):
     with open(fname, 'w') as fp:
-        for i in li:
-            fp.write("{0}\n".format(i))
+        if not key_lut:
+            for i in li:
+                fp.write("{0}\n".format(i))
+        else:
+            for i in li:
+                keys = (i[0],) if isinstance(i[0], int) else i[0]
+                keys = tuple(map(lambda x: key_lut[x], keys))
+                fp.write("{0}: {1}\n".format(keys, i[1]))
+
 
 def apriori_test():
+    """For debug comparison only."""
     from efficient_apriori import apriori
 
     strat = run_parser_strategy(DATA, AuthorStrategySets())
@@ -43,128 +43,120 @@ def apriori_test():
                               min_support=20/basket_n, min_confidence=1.0,
                               verbosity = 1)
 
-    dump_list_to_file(["{} :\n  {}".format(k, "\n  ".join("{}".format(x) for x in v)) for k, v in itemsets.items()], "apr_test_itemsets.txt")
-    dump_list_to_file(rules, "apr_test_rules.txt")
+    dump_list_to_file(["{} :\n  {}".format(k, "\n  ".join("{}".format(x) for x in v)) for k, v in itemsets.items()], {}, "apr_test_itemsets.txt")
+    dump_list_to_file(rules, {}, "apr_test_rules.txt")
 
 
-def apriori_implement(support_threshold = 12):
-    ####################
-    # ----- Pass 1 -----
-    print("Start pass 1...")
+class Apriori:
+    def __init__(self, data_path, support_threshold = 15):
+        self.data_path         = data_path
+        self.support_threshold = max(1, support_threshold)
 
-    strat = run_parser_strategy(DATA, AuthorStrategyFrequency())
-    # freqs -> strat.get_data()  ==> { author: freq }
+        if not os.path.exists(data_path):
+            raise Exception("[Apriori] No such file: {}".format(data_path))
 
-    n_authors = len(strat.get_data())
-    print("Found freqs for {} authors.".format(n_authors))
+        self.pass_counter = 1
+        self.total_items  = 0
+        self.key_to_index = {}  # To translat from name to idx -> improve memory consumption
+        self.index_to_key = []  # For printing original names
 
+    def __filter_dict(self, d):
+        n_thresholded = {}
 
-    # basket_n = len(strat.get_data())
-    # fraction = int(0.001 * basket_n)
-    # strat.authors = {k: v for (k, v) in list(strat.get_data().items())[:fraction] }
+        for k, v in d.items():
+            if v >= self.support_threshold:
+                n_thresholded[k] = v
 
+        return n_thresholded
 
-    # Adjust for support
-    authors_thesholded = {}
+    def __next_pass(self, authors_thesholded):
+        print("Start pass {}...".format(self.pass_counter))
 
-    for k, v in strat.get_data().items():
-        if v >= support_threshold:
-            authors_thesholded[k] = v
+        if self.pass_counter == 1:
+            # First pass gets unique frequencies
 
-    del strat
-    strat = None
+            strat = run_parser_strategy(self.data_path, AuthorStrategyFrequency(show_progress=True))
+            # freqs -> strat.get_data()  ==> { author: freq }
 
-    dump_list_to_file(authors_thesholded.items(), "pass_1_single_freqs.txt")
-    print("{} authors >= support {}.".format(len(authors_thesholded), support_threshold))
+            strat.stop()
+            amount_n_tuples  = len(strat.get_data())
+            self.total_items = strat.total_items
 
+            print("  Caching singles LUT...")
+            self.key_to_index = { k: i for i, k in enumerate(strat.get_data().keys()) }
+            self.index_to_key = list(strat.get_data().keys())
 
-    ####################
-    # ----- Pass 2 -----
-    print("Start pass 2...")
+            simplified_keys_dict = {}
+            for k, v in strat.get_data().items():
+                simplified_keys_dict[self.key_to_index[k]] = v
+            strat.authors = simplified_keys_dict
 
-    author_combinations = combinations(authors_thesholded.keys(), 2)
+            print("  Created {} {}-tuples.".format(amount_n_tuples, self.pass_counter))
+        else:
+            # N-pass gets n-tuple frequencies
 
-    author_pairs = { k: 0 for k in author_combinations }
-    amount_n_tuples = len(author_pairs)
+            n_supported_uniques = authors_thesholded.keys()
+            if self.pass_counter > 2:
+                # Chain used keys from previous pass to single unique list, keeping order
+                n_supported_uniques = dict.fromkeys(chain(*n_supported_uniques))
 
-    print("Created {} pairs.".format(amount_n_tuples))
+            # Previously, combinations were created here, but this needed too much memory.
+            # Now only the supported uniques from the previous pass are aggregated, and hashed
+            # into a dictionary for O(1) lookup.
+            # Combinations are now made when reading a basket.
 
-    class AuthorStrategyPairFrequency(IItemStrategy):
-        TAG = "author"
+            print("  {} supported uniques from previous pass to find tuples.".format(len(n_supported_uniques)))
 
-        def __init__(self, author_pairs):
-            self.authors      = author_pairs
-            self.tag          = ""
-            self.current_item = []
+            strat = run_parser_strategy(self.data_path,
+                                        AuthorStrategyNTupleFrequency(n_supported_uniques, self.key_to_index, self.pass_counter,
+                                                                      prev_size=self.total_items))
+            strat.stop()
 
+            print("  Created {} {}-tuples.".format(len(strat.get_data()), self.pass_counter))
 
-            self.__keys = list(self.authors.keys())
-            self.size   = len(self.__keys)
-            self.idx    = 0
-            self.progress = progress(total=self.size,
-                                     desc="Finding {}-tuples...".format(2),
-                                     ncols=79, ascii=True)
+        dump_list_to_file(strat.get_data().items(), self.index_to_key, "pass_{}-tuples_freqs.txt".format(self.pass_counter))
 
-        def __threaded_check(self):
-            def check(start, end):
-                start, end = int(start), int(end)
-                for i in range(start, end):
-                    key = self.__keys[i]
-                    if all(t in self.current_item for t in key):
-                            self.authors[key] += 1
+        # Filter on support threshold
+        n_thresholded = self.__filter_dict(strat.get_data())
 
-            max_threads = 4
-            threads = []
+        del strat  # Explicit delete
+        print("  {} {}-tuples >= support {}.".format(len(n_thresholded), self.pass_counter, self.support_threshold))
 
-            for i in range(max_threads):
-                threads.append(threading.Thread(target=check,
-                                                args=(self.size * i / max_threads,
-                                                      self.size * (i+1) / max_threads)))
-                threads[i].start()
+        dump_list_to_file(n_thresholded.items(), self.index_to_key, "pass_{}-tuples_freqs_support.txt".format(self.pass_counter))
 
-            for t in threads:
-                t.join()
+        self.pass_counter += 1
+        return n_thresholded
 
-        def start_item(self, tag):
-            self.tag = tag
+    def start(self):
+        """Run passes over the data xml."""
+        print("> Run with \"{}\" and support {}".format(self.data_path, self.support_threshold))
 
-        def update_item(self, author):
-            if self.tag == self.TAG:
-                self.current_item.append(author)
+        n_thresholded = {}
 
-        def end_item(self, tag):
-            if self.tag == self.TAG and self.tag != tag and self.current_item:
-                if len(self.current_item) >= 2:
+        start = time.perf_counter()
 
-                    self.__threaded_check()
-                    self.idx += 1
-                    print("Checked a pair ({} < {})".format(self.idx, n_authors))
+        while True:
+            n_thresholded = self.__next_pass(n_thresholded)
+            if len(n_thresholded) < 2:
+                # If there are no or only one n-tuple, no new (n+1)-tuples can be created
+                break
 
-                    # for author_tuple in self.authors.keys():
-                    #     if all(t in self.current_item for t in author_tuple):
-                    #         self.authors[author_tuple] += 1
+        end = time.perf_counter() - start
+        minutes, seconds = int(end // 60), end % 60
 
-                self.current_item = []
+        print("\n> Completed {0} passes in {1:02d}:{2:06.3f}".format(self.pass_counter, minutes, seconds))
 
-        def get_data(self):
-            return self.authors
-
-    print("Find pairs in itemsets...")
-    strat = run_parser_strategy(DATA, AuthorStrategyPairFrequency(author_pairs))
-
-    dump_list_to_file(strat.get_data().items(), "pass_2_pair_freqs.txt")
-
-    n_thresholded = {}
-    for k, v in strat.get_data().items():
-        if v >= support_threshold:
-            n_thresholded[k] = v
-
-    print("{} pairs >= support {}.".format(len(n_thresholded), support_threshold))
-
-    dump_list_to_file(n_thresholded.items(), "pass_2_pair_freqs_support.txt")
 
 if __name__ == "__main__":
-    print("Start")
+    data_path, support_threshold = DATA, 15
+
+    argc = len(sys.argv)
+    if argc != 3:
+        print("No args given! Expected file path and support_threshold.")
+        # sys.exit()
+    else:
+        _, data_path, support_threshold = sys.argv
+        support_threshold = int(support_threshold)
 
     # apriori_test()
-    apriori_implement()
+    Apriori(data_path, support_threshold).start()

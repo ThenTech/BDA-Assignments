@@ -1,0 +1,21 @@
+Start parsing C:/Apps/Github/BDA-Assignments/DBLP/dblp.xml...
+Found titles for 26 years, to find 5 clusters/topics in conf/kdd.
+
+Plotting top 10 items for years 1998-2008 (1190 publications)...
+  Topic 1 (269 titles): time, visual, discov, pattern, model, classif, seri, gene, probabilist, inform
+  Topic 2 (226 titles): web, discoveri, model, network, knowledg, usa, august, intern, workshop, analysi
+  Topic 3 (256 titles): learn, cluster, support, machin, rule, imag, effici, associ, applic, predict
+  Topic 4 (177 titles): detect, tree, comput, network, classifi, abstract, algorithm, decis, framework, invit
+  Topic 5 (262 titles): cluster, larg, graph, search, frequent, learn, algorithm, effici, classif, distribut
+Plotting top 10 items for years 2006-2016 (2099 publications)...
+  Topic 1 (380 titles): cluster, algorithm, detect, stream, predict, advertis, model, pattern, process, effici
+  Topic 2 (409 titles): learn, featur, classif, machin, select, graph, sampl, largescal, model, optim
+  Topic 3 (490 titles): network, model, search, learn, inform, commun, web, classif, topic, structur
+  Topic 4 (452 titles): social, network, model, predict, onlin, analysi, infer, base, text, user
+  Topic 5 (368 titles): discoveri, detect, model, knowledg, workshop, intern, august, visual, scalabl, usa
+Plotting top 10 items for years 2014-2019 (1731 publications)...
+  Topic 1 (393 titles): learn, featur, model, estim, optim, deep, machin, larg, scalabl, time
+  Topic 2 (310 titles): network, detect, cluster, heterogen, graph, anomali, stream, dynam, model, text
+  Topic 3 (338 titles): learn, recommend, deep, embed, machin, process, discoveri, knowledg, person, represent
+  Topic 4 (280 titles): graph, onlin, advertis, analysi, search, recommend, model, rank, optim, experi
+  Topic 5 (410 titles): network, predict, social, model, base, user, risk, infer, applic, dynam

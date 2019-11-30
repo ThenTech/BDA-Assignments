@@ -1,0 +1,27 @@
+Start parsing C:/Apps/Github/BDA-Assignments/DBLP/dblp.xml...
+Found titles for 22 years, to find 5 clusters/topics in conf/edbt.
+
+Plotting top 10 items for years 1990-2000 (180 publications)...
+  Topic 1 (33 titles): technolog, extend, manag, abstract, advanc, march, intern, confer, schema, object
+  Topic 2 (36 titles): object, model, complex, algorithm, index, larg, join, retriev, optim, effici
+  Topic 3 (45 titles): view, queri, objectori, inform, integr, distribut, process, deduct, web, model
+  Topic 4 (28 titles): objectori, lock, parallel, queri, multipl, evalu, schema, manag, index, support
+  Topic 5 (38 titles): queri, perform, tempor, process, logic, access, program, structur, evalu, optim
+Plotting top 10 items for years 1998-2008 (508 publications)...
+  Topic 1 (79 titles): model, technolog, web, ontolog, retriev, applic, stream, march, inform, extend
+  Topic 2 (108 titles): xml, effici, document, queri, inform, manag, servic, secur, object, compress
+  Topic 3 (82 titles): queri, distribut, semant, mobil, servic, architectur, cluster, rule, relat, search
+  Topic 4 (165 titles): queri, process, xml, index, algorithm, optim, spatial, distribut, continu, structur
+  Topic 5 (74 titles): manag, integr, web, cluster, multidimension, cube, inform, view, dynam, aggreg
+Plotting top 10 items for years 2006-2016 (1157 publications)...
+  Topic 1 (233 titles): queri, proven, graph, march, web, pattern, workshop, design, technolog, flexibl
+  Topic 2 (279 titles): queri, effici, search, relat, graph, similar, join, algorithm, scalabl, skylin
+  Topic 3 (182 titles): queri, support, languag, index, applic, recommend, cloud, environ, analysi, search
+  Topic 4 (265 titles): queri, process, stream, privaci, probabilist, network, xml, social, distribut, inform
+  Topic 5 (198 titles): manag, semant, schema, web, network, inform, optim, map, queri, search
+Plotting top 10 items for years 2014-2019 (658 publications)...
+  Topic 1 (131 titles): queri, process, effici, model, optim, rdf, store, mapreduc, select, framework
+  Topic 2 (125 titles): queri, algorithm, effici, mapreduc, comput, search, graph, analysi, parallel, sparql
+  Topic 3 (144 titles): graph, queri, social, network, pattern, larg, search, stream, tempor, explor
+  Topic 4 (139 titles): analyt, big, manag, learn, privaci, inform, march, challeng, edbticdt, confer
+  Topic 5 (119 titles): process, stream, queri, detect, distribut, spatial, semant, trajectori, keyword, search

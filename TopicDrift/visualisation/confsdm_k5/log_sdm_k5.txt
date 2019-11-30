@@ -1,0 +1,15 @@
+Start parsing C:/Apps/Github/BDA-Assignments/DBLP/dblp.xml...
+Found titles for 19 years, to find 5 clusters/topics in conf/sdm.
+
+Plotting top 10 items for years 2006-2016 (1029 publications)...
+  Topic 1 (197 titles): cluster, learn, spars, classif, algorithm, text, problem, method, ensembl, distanc
+  Topic 2 (135 titles): matrix, secur, factor, cluster, manag, nonneg, graph, trust, web, evalu
+  Topic 3 (129 titles): dimension, privaci, estim, reduct, framework, supervis, frequent, confer, intern, siam
+  Topic 4 (304 titles): detect, graph, pattern, learn, featur, time, effici, stream, select, seri
+  Topic 5 (264 titles): model, network, social, learn, predict, dynam, larg, analysi, multipl, heterogen
+Plotting top 10 items for years 2014-2019 (505 publications)...
+  Topic 1 (90 titles): featur, select, network, commun, algorithm, graph, unsupervis, regress, cluster, structur
+  Topic 2 (105 titles): graph, learn, cluster, kernel, detect, larg, model, applic, onlin, hierarch
+  Topic 3 (90 titles): model, rank, detect, inform, framework, network, frequent, time, pattern, outlier
+  Topic 4 (110 titles): predict, network, learn, event, user, model, matter, inform, distribut, deep
+  Topic 5 (110 titles): learn, classif, matrix, time, factor, seri, model, social, network, discoveri

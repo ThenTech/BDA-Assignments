@@ -1,0 +1,27 @@
+Start parsing C:/Apps/Github/BDA-Assignments/DBLP/dblp.xml...
+Found titles for 49 years, to find 5 clusters/topics in conf/sigmod.
+
+Plotting top 10 items for years 1990-2000 (721 publications)...
+  Topic 1 (155 titles): queri, index, inform, method, estim, select, access, effici, search, sql
+  Topic 2 (176 titles): queri, optim, view, web, process, gener, languag, dynam, visual, evalu
+  Topic 3 (121 titles): manag, objectori, rule, model, applic, activ, document, transact, issu, languag
+  Topic 4 (149 titles): object, manag, transact, relat, control, sigmod, replic, intern, larg, concurr
+  Topic 5 (120 titles): join, parallel, algorithm, dbm, process, spatial, deduct, project, file, distribut
+Plotting top 10 items for years 1998-2008 (987 publications)...
+  Topic 1 (177 titles): queri, view, effici, inform, support, sql, execut, estim, search, xml
+  Topic 2 (197 titles): manag, web, applic, servic, cach, structur, dynam, stream, network, xml
+  Topic 3 (158 titles): xml, relat, design, larg, secur, middlewar, effici, effect, gener, extract
+  Topic 4 (289 titles): queri, process, optim, stream, effici, integr, algorithm, join, continu, approxim
+  Topic 5 (166 titles): index, search, high, perform, cluster, rank, larg, dimension, effici, object
+Plotting top 10 items for years 2006-2016 (1662 publications)...
+  Topic 1 (329 titles): graph, interact, social, network, analyt, larg, languag, scale, index, analysi
+  Topic 2 (323 titles): process, effici, queri, distribut, evalu, memori, parallel, big, execut, design
+  Topic 3 (251 titles): manag, june, intern, usa, workshop, inform, search, test, sigmod, applic
+  Topic 4 (399 titles): queri, search, keyword, effici, stream, relat, join, similar, algorithm, probabilist
+  Topic 5 (360 titles): queri, integr, dynam, gener, network, optim, xml, servic, privaci, aggreg
+Plotting top 10 items for years 2014-2019 (1176 publications)...
+  Topic 1 (239 titles): stream, semant, graph, big, web, process, scalabl, adapt, privaci, time
+  Topic 2 (150 titles): usa, workshop, june, intern, manag, queri, analyt, sigmod, structur, acm
+  Topic 3 (255 titles): analyt, learn, queri, parallel, graph, big, process, join, framework, machin
+  Topic 4 (300 titles): interact, queri, explor, network, relat, social, manag, entiti, model, visual
+  Topic 5 (232 titles): queri, effici, graph, process, algorithm, approxim, crowdsourc, search, join, answer

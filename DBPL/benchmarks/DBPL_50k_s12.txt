@@ -1,0 +1,16 @@
+> Run with "G:/_temp/UHasselt/BigDataAnalysis/DBLP/dblp50000.xml" and support 12
+Start pass 1...
+  Finding 1-tuples...: 49233it [00:01, 47221.76it/s]
+  Caching singles LUT...
+  Created 69706 1-tuples.
+  305 1-tuples >= support 12.
+Start pass 2...
+  305 supported uniques from previous pass to find tuples.
+  Finding 2-tuples...: 100%|###############################| 49233/49233 [00:00<00:00, 50131.38it/s]
+  Created 264 2-tuples.
+  3 2-tuples >= support 12.
+Start pass 3...
+  6 supported uniques from previous pass to find tuples.
+  Finding 3-tuples...: 100%|###############################| 49233/49233 [00:00<00:00, 51914.28it/s]
+  Created 0 3-tuples.
+  0 3-tuples >= support 12.
