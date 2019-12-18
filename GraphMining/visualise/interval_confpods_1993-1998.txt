@@ -1,0 +1,34 @@
+Plotting top 10 authors for years 1993-1998 (19 authors)...
+    Max wcc nodes 4, edges 6
+      => Dimitrios Gunopulos, Roni Khardon, Heikki Mannila, Hannu Toivonen
+    Top 10 authors: (by pagerank and edge ratio)
+       6% David Maier
+       6% Bennet Vance
+       6% Stéphane Grumbach
+       6% Tova Milo
+       6% Alon Y. Levy
+       6% Inderpal Singh Mumick
+       6% Yehoshua Sagiv
+       6% Oded Shmueli
+       6% Kien A. Hua
+       6% Sheau-Dong Lang
+    Top 10 central authors: (by centrality)
+       0.00% David Maier
+       0.00% Bennet Vance
+       0.00% Yoav Raz
+       0.00% Stéphane Grumbach
+       0.00% Tova Milo
+       0.00% Alon Y. Levy
+       0.00% Inderpal Singh Mumick
+       0.00% Yehoshua Sagiv
+       0.00% Oded Shmueli
+       0.00% Surajit Chaudhuri
+    Communities:
+       0: David Maier, Bennet Vance
+       1: Yoav Raz
+       2: Stéphane Grumbach, Tova Milo
+       3: Alon Y. Levy, Inderpal Singh Mumick, Yehoshua Sagiv, Oded Shmueli
+       4: Surajit Chaudhuri
+       5: Kien A. Hua, Sheau-Dong Lang, Wen K. Lee
+       6: Michael Benedikt, Leonid Libkin
+       7: Dimitrios Gunopulos, Roni Khardon, Heikki Mannila, Hannu Toivonen

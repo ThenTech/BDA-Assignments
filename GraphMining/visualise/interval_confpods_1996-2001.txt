@@ -1,0 +1,35 @@
+Plotting top 10 authors for years 1996-2001 (28 authors)...
+    Max wcc nodes 6, edges 15
+      => Ravi Kumar, Prabhakar Raghavan, Sridhar Rajagopalan, D. Sivakumar, Andrew Tomkins, Eli Upfal
+    Top 10 authors: (by pagerank and edge ratio)
+       4% Michael Benedikt
+       4% Leonid Libkin
+       4% Dimitrios Gunopulos
+       4% Roni Khardon
+       4% Heikki Mannila
+       4% Hannu Toivonen
+       4% Vasilis Samoladas
+       4% Daniel P. Miranker
+       4% Luc Segoufin
+       4% Victor Vianu
+    Top 10 central authors: (by centrality)
+       0.00% Udi Manber
+       0.00% Michael Benedikt
+       0.00% Leonid Libkin
+       0.00% Dimitrios Gunopulos
+       0.00% Roni Khardon
+       0.00% Heikki Mannila
+       0.00% Hannu Toivonen
+       0.00% Vasilis Samoladas
+       0.00% Daniel P. Miranker
+       0.00% Luc Segoufin
+    Communities:
+       0: Udi Manber
+       1: Michael Benedikt, Leonid Libkin
+       2: Dimitrios Gunopulos, Roni Khardon, Heikki Mannila, Hannu Toivonen
+       3: Vasilis Samoladas, Daniel P. Miranker
+       4: Luc Segoufin, Victor Vianu
+       5: Minos N. Garofalakis, Yannis E. Ioannidis, Banu Özden, Abraham Silberschatz
+       6: Marcelo Arenas, Leopoldo E. Bertossi, Jan Chomicki
+       7: Steven Dawson, Sabrina De Capitani di Vimercati, Patrick Lincoln, Pierangela Samarati
+       8: Ravi Kumar, Prabhakar Raghavan, Sridhar Rajagopalan, D. Sivakumar, Andrew Tomkins, Eli Upfal

@@ -1,0 +1,30 @@
+Plotting top 10 authors for years 2002-2003 (11 authors)...
+    Max wcc nodes 5, edges 10
+      => Arvind Arasu, Brian Babcock, Shivnath Babu, Jon McAlister, Jennifer Widom
+    Top 10 authors: (by pagerank and edge ratio)
+      10% Peter Buneman
+      10% Sanjeev Khanna
+      10% Wang Chiew Tan
+      10% Chung-Min Chen
+      10% Christine T. Cheng
+      10% Arvind Arasu
+      10% Brian Babcock
+      10% Shivnath Babu
+      10% Jon McAlister
+      10% Jennifer Widom
+    Top 10 central authors: (by centrality)
+       0.00% Peter Buneman
+       0.00% Sanjeev Khanna
+       0.00% Wang Chiew Tan
+       0.00% Kenneth A. Ross
+       0.00% Chung-Min Chen
+       0.00% Christine T. Cheng
+       0.00% Arvind Arasu
+       0.00% Brian Babcock
+       0.00% Shivnath Babu
+       0.00% Jon McAlister
+    Communities:
+       0: Peter Buneman, Sanjeev Khanna, Wang Chiew Tan
+       1: Kenneth A. Ross
+       2: Chung-Min Chen, Christine T. Cheng
+       3: Arvind Arasu, Brian Babcock, Shivnath Babu, Jon McAlister, Jennifer Widom

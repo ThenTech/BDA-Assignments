@@ -1,0 +1,37 @@
+Plotting top 10 authors for years 1990-1995 (23 authors)...
+    Max wcc nodes 4, edges 6
+      => Alon Y. Levy, Inderpal Singh Mumick, Yehoshua Sagiv, Oded Shmueli
+    Top 10 authors: (by pagerank and edge ratio)
+       5% Divyakant Agrawal
+       5% Amr El Abbadi
+       5% Serge Abiteboul
+       5% Paris C. Kanellakis
+       5% Emmanuel Waller
+       5% Jürgen Seib
+       5% Georg Lausen
+       5% Thomas Eiter
+       5% Georg Gottlob
+       5% David Maier
+    Top 10 central authors: (by centrality)
+       0.00% Yatin P. Saraiya
+       0.00% Divyakant Agrawal
+       0.00% Amr El Abbadi
+       0.00% Serge Abiteboul
+       0.00% Paris C. Kanellakis
+       0.00% Emmanuel Waller
+       0.00% Charles Elkan
+       0.00% Jan Chomicki
+       0.00% Jürgen Seib
+       0.00% Georg Lausen
+    Communities:
+       0: Yatin P. Saraiya
+       1: Divyakant Agrawal, Amr El Abbadi
+       2: Serge Abiteboul, Paris C. Kanellakis, Emmanuel Waller
+       3: Charles Elkan
+       4: Jan Chomicki
+       5: Jürgen Seib, Georg Lausen
+       6: Thomas Eiter, Georg Gottlob
+       7: David Maier, Bennet Vance
+       8: Stéphane Grumbach, Tova Milo
+       9: Alon Y. Levy, Inderpal Singh Mumick, Yehoshua Sagiv, Oded Shmueli
+      10: Kien A. Hua, Sheau-Dong Lang, Wen K. Lee
