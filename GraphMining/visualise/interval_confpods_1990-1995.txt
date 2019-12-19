@@ -1,37 +1,81 @@
-Plotting top 10 authors for years 1990-1995 (23 authors)...
-    Max wcc nodes 4, edges 6
-      => Alon Y. Levy, Inderpal Singh Mumick, Yehoshua Sagiv, Oded Shmueli
+Plotting top 10 authors for years 1990-1995 (190 authors)...
+    Max wcc nodes 44, edges 73
+      => Kenneth A. Ross, Mariano P. Consens, Alberto O. Mendelzon, Serge Abiteboul, Paris C. Kanellakis, Emmanuel Waller, Eric Simon, Victor Vianu, Gabriel M. Kuper, Peter Z. Revesz, Phokion G. Kolaitis, Moshe Y. Vardi, Inderpal Singh Mumick, Sheldon J. Finkelstein, Hamid Pirahesh, Raghu Ramakrishnan, Alexander Brodsky 0001, Yehoshua Sagiv, phane Grumbach, Catriel Beeri, Tova Milo, Gerd G. Hillebrand, Harry G. Mairson, Divesh Srivastava, S. Sudarshan 0001, Kevin J. Compton, Alon Y. Levy, Ashish Gupta 0001, sta Grahne, Surajit Chaudhuri, Mark H. Nodine, Michael T. Goodrich, Jeffrey Scott Vitter, Sridhar Ramaswamy, Darren Erik Vengroff, Karl Denninghoff, Oded Shmueli, Peter J. Stuckey, Jianwen Su, nen, Esko Ukkonen, Jeffrey D. Ullman, Jennifer Widom, Sairam Subramanian
     Top 10 authors: (by pagerank and edge ratio)
-       5% Divyakant Agrawal
-       5% Amr El Abbadi
-       5% Serge Abiteboul
-       5% Paris C. Kanellakis
-       5% Emmanuel Waller
-       5% Jürgen Seib
-       5% Georg Lausen
-       5% Thomas Eiter
-       5% Georg Gottlob
-       5% David Maier
+       1% Paris C. Kanellakis
+       1% Yehoshua Sagiv
+       1% Dirk Van Gucht
+       1% Divyakant Agrawal
+       1% Amr El Abbadi
+       1% Inderpal Singh Mumick
+       1% Victor Vianu
+       1% Gerhard Weikum
+       1% Pierre Wolper
+       1% Raghu Ramakrishnan
     Top 10 central authors: (by centrality)
-       0.00% Yatin P. Saraiya
-       0.00% Divyakant Agrawal
-       0.00% Amr El Abbadi
-       0.00% Serge Abiteboul
-       0.00% Paris C. Kanellakis
-       0.00% Emmanuel Waller
-       0.00% Charles Elkan
-       0.00% Jan Chomicki
-       0.00% Jürgen Seib
-       0.00% Georg Lausen
+      463.33% Tova Milo
+      420.00% Catriel Beeri
+      409.83% Paris C. Kanellakis
+      352.00% Raghu Ramakrishnan
+      285.67% Emmanuel Waller
+      281.00% Inderpal Singh Mumick
+      139.17% Alberto O. Mendelzon
+      124.00% Yehoshua Sagiv
+      106.17% Serge Abiteboul
+      97.00% phane Grumbach
     Communities:
-       0: Yatin P. Saraiya
-       1: Divyakant Agrawal, Amr El Abbadi
-       2: Serge Abiteboul, Paris C. Kanellakis, Emmanuel Waller
-       3: Charles Elkan
-       4: Jan Chomicki
-       5: Jürgen Seib, Georg Lausen
-       6: Thomas Eiter, Georg Gottlob
-       7: David Maier, Bennet Vance
-       8: Stéphane Grumbach, Tova Milo
-       9: Alon Y. Levy, Inderpal Singh Mumick, Yehoshua Sagiv, Oded Shmueli
-      10: Kien A. Hua, Sheau-Dong Lang, Wen K. Lee
+       0: Walid G. Aref, Hanan Samet
+       1: Thane E. Plambeck
+       2: Slawomir Pilarski, Tiko Kameda
+       3: Michael J. Carey 0001, Sanjay Krishnamurthi, Miron Livny, Jayant R. Haritsa
+       4: Khaled A. S. Abdel-Ghaffar, Amr El Abbadi, Divyakant Agrawal, Richard Jeffers, Man Hon Wong 0001, Gustavo Alonso, John L. Bruno, Vasudha Krishnaswamy
+       5: Jan Chomicki, Damian Niwinski
+       6: Kenneth A. Ross, Inderpal Singh Mumick, Sheldon J. Finkelstein, Hamid Pirahesh, Raghu Ramakrishnan, Alexander Brodsky 0001, Yehoshua Sagiv, Catriel Beeri, Divesh Srivastava, S. Sudarshan 0001, Alon Y. Levy, Ashish Gupta 0001, Oded Shmueli, Peter J. Stuckey, Jeffrey D. Ullman, Jennifer Widom
+       7: Mariano P. Consens, Alberto O. Mendelzon, Serge Abiteboul, Emmanuel Waller, Eric Simon, Victor Vianu, phane Grumbach, Tova Milo, Kevin J. Compton, sta Grahne, Karl Denninghoff, Jianwen Su, nen, Esko Ukkonen
+       8: Jia-Huai You, Li-Yan Yuan
+       9: Won Kim 0001
+      10: ronique Royer
+      11: Y. C. Tay
+      12: Paris C. Kanellakis, Gabriel M. Kuper, Peter Z. Revesz, Phokion G. Kolaitis, Moshe Y. Vardi, Gerd G. Hillebrand, Harry G. Mairson, Surajit Chaudhuri, Mark H. Nodine, Michael T. Goodrich, Jeffrey Scott Vitter, Sridhar Ramaswamy, Darren Erik Vengroff, Sairam Subramanian
+      13: Froduald Kabanza, venne, Pierre Wolper, Marianne Baudinet, zette
+      14: Va-On Tam, Meichun Hsu, Wei-hsing Wang, Eugene Pinsky
+      15: Gerhard Weikum, Christof Hasse, ssler, Peter Muth, rg Schek, Haiyan Ye
+      16: Marc Gyssens, Jan Paredaens, Dirk Van Gucht, Jan Van den Bussche, Gottfried Vossen, Dan Suciu, Val Tannen, Latha S. Colby, Edward L. Robertson, Lawrence V. Saxton
+      17: Dan E. Willard
+      18: Domenico Sacc, Carlo Zaniolo, Sumit Ganguly, Sergio Greco
+      19: Theodore Johnson, Dennis E. Shasha, John Turek, Sundeep Prakash
+      20: Jean-Louis Lassez
+      21: Lin Yu, Daniel J. Rosenkrantz
+      22: Charles Elkan
+      23: Mihalis Yannakakis, Foto N. Afrati, Stavros S. Cosmadakis, Christos H. Papadimitriou
+      24: Richard J. Lipton, Jeffrey F. Naughton, S. Seshadri, Peter J. Haas, Arun N. Swami
+      25: Allen Van Gelder, Kirack Sohn
+      26: Nandit Soparkar, Abraham Silberschatz, Sharad Mehrotra, Rajeev Rastogi, Yuri Breitbart, Henry F. Korth
+      27: Alan Fekete, Nancy A. Lynch, William E. Weihl
+      28: John S. Schlipf
+      29: Yatin P. Saraiya
+      30: Laks V. S. Lakshmanan, ndez
+      31: Narayanan Krishnakumar, Arthur J. Bernstein
+      32: Neil Immerman, Sushant Patnaik, David W. Stemple
+      33: Francesco M. Malvestuto, Marina Moscarini, Maurizio Rafanelli
+      34: Hector Garcia-Molina, Kenneth Salem
+      35: Richard Hull 0001, Masatoshi Yoshikawa, Martha Escobar-Molano, Dean Jacobs
+      36: Richard Helm, Kim Marriott, Martin Odersky
+      37: Otto Nurmi, Eljas Soisalon-Soininen
+      38: Donald B. Johnson, Larry Raab
+      39: rgen Seib, Georg Lausen
+      40: Michael Rabinovich, Edward D. Lazowska
+      41: Thomas Eiter, Georg Gottlob, Jyrki Kivinen, Heikki Mannila
+      42: Colin Bell, Anil Nerode, Raymond T. Ng, V. S. Subrahmanian
+      43: Ouri Wolfson, Sushil Jajodia
+      44: Seymour Ginsburg, Xiaoyang Sean Wang
+      45: Tirza Hirst, David Harel
+      46: Bernd-Uwe Pagel, Hans-Werner Six, Heinrich Toben, Peter Widmayer
+      47: Leonid Libkin, Limsoon Wong
+      48: David Maier 0001, Bennet Vance
+      49: Weidong Chen 0005, David Scott Warren
+      50: Christos Faloutsos, Ibrahim Kamel
+      51: Atsushi Ohori, Keishi Tajima
+      52: Diego Calvanese, Maurizio Lenzerini
+      53: Kien A. Hua, Sheau-Dong Lang, Wen K. Lee
+      54: Ling Tony Chen, Doron Rotem

@@ -101,7 +101,7 @@ class GraphMiner:
             self.__print((
                 "    Top {0} central authors: (by centrality)\n      {1}"
                     .format(top_x,
-                            "\n      ".join("{1:5.2f}% {0}".format(self.get_author_from_id(i), Nodes[i]) \
+                            "\n      ".join("{1:4f} {0}".format(self.get_author_from_id(i), Nodes[i]) \
                                                 for i in top_central)),
             ), outfile)
 
@@ -116,6 +116,11 @@ class GraphMiner:
                          for i, Cmty in enumerate(CmtyV))
             #   + ("     The modularity of the network is {0}".format(modularity),)
             , outfile)
+
+        def print_cores(self, k=3):
+            Core3 = snap.GetKCore(self.G, 3)
+
+            # TODO ?
 
         def print_node_stats(self, top_x=10, outfile=None):
             self.print_max_connected(outfile=outfile)
@@ -132,10 +137,13 @@ class GraphMiner:
 
         def export(self, name="export{0}.png", title="Graph for {0}"):
             # Draw to image
-            snap.DrawGViz(self.G, snap.gvlCirco,
-                          name.format(self.year),
-                          title.format(self.year),
-                          self.itemstore)
+            try:
+                snap.DrawGViz(self.G, snap.gvlCirco,
+                              name.format(self.year),
+                              title.format(self.year),
+                              self.itemstore)
+            except Exception as e:
+                print("WARNING: Graph.export - {0}".format(e))
 
     def prepare(self):
         print("Start parsing {0}...".format(self.data_path))

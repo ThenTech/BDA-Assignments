@@ -1,34 +1,68 @@
-Plotting top 10 authors for years 1993-1998 (19 authors)...
-    Max wcc nodes 4, edges 6
-      => Dimitrios Gunopulos, Roni Khardon, Heikki Mannila, Hannu Toivonen
+Plotting top 10 authors for years 1993-1998 (185 authors)...
+    Max wcc nodes 69, edges 125
+      => Surajit Chaudhuri, Moshe Y. Vardi, phane Grumbach, Tova Milo, Leonid Libkin, Limsoon Wong, Rajeev Rastogi, Sharad Mehrotra, Yuri Breitbart, Henry F. Korth, Abraham Silberschatz, Jan Chomicki, Damian Niwinski, Jan Van den Bussche, Dirk Van Gucht, Gottfried Vossen, Karl Denninghoff, Victor Vianu, Alon Y. Levy, Inderpal Singh Mumick, Yehoshua Sagiv, Oded Shmueli, Jianwen Su, Dan Suciu, Jan Paredaens, Val Tannen, Phokion G. Kolaitis, Alberto O. Mendelzon, Emmanuel Waller, Latha S. Colby, Edward L. Robertson, Lawrence V. Saxton, Ashish Gupta 0001, Jeffrey D. Ullman, Jennifer Widom, Guozhu Dong, Marc Andries, Luca Cabibbo, Anand Rajaraman, Divesh Srivastava, Mariano P. Consens, H. V. Jagadish, Alexander Brodsky 0001, Catherine Lassez, Jean-Louis Lassez, Michael J. Maher, Philippe Picouet, Gabriel M. Kuper, Dina Q. Goldin, Serge Abiteboul, Christos H. Papadimitriou, Marc Gyssens, Laks V. S. Lakshmanan, Iyer N. Subramanian, Michael Benedikt, Timothy Griffin, Laurent Herr, Catriel Beeri, Paula Ta-Shma, Sumit Ganguly, Akshay Goel, Marie-Christine Rousset, Freddy Dumortier, Luc Vandeurzen, Joseph M. Hellerstein, Elias Koutsoupias, Mihalis Yannakakis, Oscar H. Ibarra, zden
     Top 10 authors: (by pagerank and edge ratio)
-       6% David Maier
-       6% Bennet Vance
-       6% Stéphane Grumbach
-       6% Tova Milo
-       6% Alon Y. Levy
-       6% Inderpal Singh Mumick
-       6% Yehoshua Sagiv
-       6% Oded Shmueli
-       6% Kien A. Hua
-       6% Sheau-Dong Lang
+       1% Christos H. Papadimitriou
+       1% Alon Y. Levy
+       1% Dirk Van Gucht
+       1% Abraham Silberschatz
+       1% Heikki Mannila
+       1% Jan Van den Bussche
+       1% Yehoshua Sagiv
+       1% Tova Milo
+       1% Divyakant Agrawal
+       1% Jeffrey Scott Vitter
     Top 10 central authors: (by centrality)
-       0.00% David Maier
-       0.00% Bennet Vance
-       0.00% Yoav Raz
-       0.00% Stéphane Grumbach
-       0.00% Tova Milo
-       0.00% Alon Y. Levy
-       0.00% Inderpal Singh Mumick
-       0.00% Yehoshua Sagiv
-       0.00% Oded Shmueli
-       0.00% Surajit Chaudhuri
+      1248.50% Alon Y. Levy
+      1213.17% Dan Suciu
+      564.83% Tova Milo
+      551.00% Jan Paredaens
+      516.50% Christos H. Papadimitriou
+      438.50% Abraham Silberschatz
+      427.00% phane Grumbach
+      385.67% Inderpal Singh Mumick
+      380.50% Dirk Van Gucht
+      377.00% Jianwen Su
     Communities:
-       0: David Maier, Bennet Vance
-       1: Yoav Raz
-       2: Stéphane Grumbach, Tova Milo
-       3: Alon Y. Levy, Inderpal Singh Mumick, Yehoshua Sagiv, Oded Shmueli
-       4: Surajit Chaudhuri
-       5: Kien A. Hua, Sheau-Dong Lang, Wen K. Lee
-       6: Michael Benedikt, Leonid Libkin
-       7: Dimitrios Gunopulos, Roni Khardon, Heikki Mannila, Hannu Toivonen
+       0: Allen Van Gelder
+       1: Surajit Chaudhuri, Moshe Y. Vardi, Jan Chomicki, Damian Niwinski, Karl Denninghoff, Victor Vianu, Dan Suciu, Val Tannen, Phokion G. Kolaitis, Philippe Picouet, Gabriel M. Kuper, Dina Q. Goldin, Christos H. Papadimitriou, Joseph M. Hellerstein, Elias Koutsoupias, Mihalis Yannakakis
+       2: Tirza Hirst, David Harel
+       3: phane Grumbach, Leonid Libkin, Limsoon Wong, Jianwen Su, Guozhu Dong, Michael Benedikt, Timothy Griffin, Oscar H. Ibarra
+       4: Tova Milo, Alon Y. Levy, Inderpal Singh Mumick, Yehoshua Sagiv, Oded Shmueli, Alberto O. Mendelzon, Emmanuel Waller, Ashish Gupta 0001, Jeffrey D. Ullman, Jennifer Widom, Anand Rajaraman, Divesh Srivastava, Mariano P. Consens, H. V. Jagadish, Catriel Beeri, Paula Ta-Shma, Marie-Christine Rousset
+       5: Peter J. Haas, Jeffrey F. Naughton, S. Seshadri, Arun N. Swami
+       6: Bernd-Uwe Pagel, Hans-Werner Six, Heinrich Toben, Peter Widmayer, Mario Winter
+       7: David Maier 0001, Bennet Vance
+       8: Man Hon Wong 0001, Divyakant Agrawal, rg Schek, Gerhard Weikum, Haiyan Ye, Gustavo Alonso, Amr El Abbadi, John L. Bruno, Vasudha Krishnaswamy, Stephen Blott, Armin Fessler, Guido Nerjes, Peter Muth, Robert C. Steinke
+       9: Marco Schaerf, Marco Cadoli, Francesco M. Donini, Paolo Liberatore
+      10: Peter Z. Revesz
+      11: Rajeev Rastogi, Sharad Mehrotra, Yuri Breitbart, Henry F. Korth, Abraham Silberschatz, Sumit Ganguly, Akshay Goel, zden
+      12: Shinichi Morishita, Takeshi Fukuda, Yasuhiko Morimoto, Takeshi Tokuyama
+      13: Thomas Eiter, Georg Gottlob, Jyrki Kivinen, Heikki Mannila, Dimitrios Gunopulos, Roni Khardon, Hannu Toivonen
+      14: Mark H. Nodine, Michael T. Goodrich, Jeffrey Scott Vitter, Paris C. Kanellakis, Sridhar Ramaswamy, Darren Erik Vengroff, Gerd G. Hillebrand, Sairam Subramanian
+      15: Weidong Chen 0005, David Scott Warren
+      16: Jan Van den Bussche, Dirk Van Gucht, Gottfried Vossen, Jan Paredaens, Latha S. Colby, Edward L. Robertson, Lawrence V. Saxton, Marc Andries, Luca Cabibbo, Serge Abiteboul, Marc Gyssens, Laks V. S. Lakshmanan, Iyer N. Subramanian, Laurent Herr, Freddy Dumortier, Luc Vandeurzen
+      17: Yoav Raz
+      18: Martha Escobar-Molano, Richard Hull 0001, Dean Jacobs, Ti-Pin Chang
+      19: Christos Faloutsos, Ibrahim Kamel
+      20: Peter J. Stuckey, S. Sudarshan 0001
+      21: Atsushi Ohori, Keishi Tajima
+      22: sta Grahne, nen, Esko Ukkonen
+      23: Sushant Patnaik, Neil Immerman
+      24: Diego Calvanese, Maurizio Lenzerini
+      25: Kien A. Hua, Sheau-Dong Lang, Wen K. Lee
+      26: Ling Tony Chen, Doron Rotem
+      27: Chandra Chekuri, Waqar Hasan, Rajeev Motwani
+      28: Alexander Brodsky 0001, Catherine Lassez, Jean-Louis Lassez, Michael J. Maher
+      29: Vinay K. Chaudhri, Vassos Hadzilacos
+      30: Giansalvatore Mecca, Anthony J. Bonner, Paolo Atzeni
+      31: Alexei P. Stolboushkin, Michael A. Taitslin
+      32: Idit Keidar, Danny Dolev
+      33: Yannis Theodoridis, Timos K. Sellis
+      34: Elisa Bertino, Barbara Catania
+      35: Claudio Bettini, Xiaoyang Sean Wang, Sushil Jajodia
+      36: Joseph Albert, Yannis E. Ioannidis, Raghu Ramakrishnan, Jonathan Goldstein, Uri Shaft, Jie-Bing Yu
+      37: Ching-Tien Ho, Jehoshua Bruck, Rakesh Agrawal 0001
+      38: Stefan Berchtold, hm, Daniel A. Keim, Hans-Peter Kriegel
+      39: Wolfgang Scheufele, Guido Moerkotte
+      40: Oliver M. Duschka, Michael R. Genesereth
+      41: scher, Wolfgang May, Georg Lausen

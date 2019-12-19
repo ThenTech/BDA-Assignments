@@ -1,0 +1,89 @@
+/*****
+Graph for 1985
+*****/
+
+graph G {
+  graph [splines=true overlap=false]
+  node  [shape=ellipse, width=0.3, height=0.3]
+  0 [label="ois Bancilhon"];
+  1 [label="Nicolas Spyratos"];
+  2 [label="Amr El Abbadi"];
+  3 [label="Dale Skeen"];
+  4 [label="Flaviu Cristian"];
+  5 [label="Tim Connors"];
+  6 [label="Thanasis Hadzilacos"];
+  7 [label="Christos H. Papadimitriou"];
+  8 [label="Heikki Mannila"];
+  9 [label="ih"];
+  10 [label="Yehoshua Sagiv"];
+  11 [label="Jacob Stein"];
+  12 [label="David Maier 0001"];
+  13 [label="Mihalis Yannakakis"];
+  14 [label="Moshe Y. Vardi"];
+  15 [label="Giorgio Ausiello"];
+  16 [label="Alessandro D'Atri"];
+  17 [label="Marina Moscarini"];
+  18 [label="Shashi K. Gadia"];
+  19 [label="Jay H. Vaishnav"];
+  20 [label="Volkert Brosda"];
+  21 [label="Gottfried Vossen"];
+  22 [label="Ouri Wolfson"];
+  23 [label="zsoyoglu"];
+  24 [label="Victor Matos"];
+  25 [label="Jack Kent"];
+  26 [label="Hector Garcia-Molina"];
+  27 [label="Jae Chung"];
+  28 [label="Paolo Atzeni"];
+  29 [label="Edward P. F. Chan"];
+  30 [label="Marc Gyssens"];
+  31 [label="Aris M. Ouksel"];
+  32 [label="Serge Abiteboul"];
+  33 [label="Victor Vianu"];
+  34 [label="Arthur M. Keller"];
+  35 [label="Li-Yan Yuan"];
+  36 [label="Stavros S. Cosmadakis"];
+  37 [label="Paris C. Kanellakis"];
+  38 [label="K. V. S. Ramarao"];
+  39 [label="Sukhamay Kundu"];
+  40 [label="Carla Schlatter Ellis"];
+  41 [label="Thomas W. Page Jr."];
+  42 [label="Gerald J. Popek"];
+  43 [label="Alexander Tuzhilin"];
+  44 [label="Paul G. Spirakis"];
+  45 [label="Marco A. Casanova"];
+  46 [label="Arnaldo V. Moura"];
+  47 [label="Luiz Tucherman"];
+  48 [label="Nathan Goodman"];
+  49 [label="Dennis E. Shasha"];
+  0 -- 1;
+  1 -- 36;
+  1 -- 37;
+  2 -- 3;
+  2 -- 4;
+  3 -- 4;
+  6 -- 7;
+  7 -- 13;
+  8 -- 9;
+  11 -- 12;
+  13 -- 22;
+  15 -- 16;
+  15 -- 17;
+  16 -- 17;
+  18 -- 19;
+  20 -- 21;
+  23 -- 24;
+  23 -- 35;
+  25 -- 26;
+  25 -- 27;
+  26 -- 27;
+  28 -- 29;
+  32 -- 33;
+  36 -- 37;
+  41 -- 42;
+  43 -- 44;
+  45 -- 46;
+  45 -- 47;
+  46 -- 47;
+  48 -- 49;
+  label = "\nGraph for 1985\n";  fontsize=24;
+}

@@ -1,35 +1,82 @@
-Plotting top 10 authors for years 1996-2001 (28 authors)...
-    Max wcc nodes 6, edges 15
-      => Ravi Kumar, Prabhakar Raghavan, Sridhar Rajagopalan, D. Sivakumar, Andrew Tomkins, Eli Upfal
+Plotting top 10 authors for years 1996-2001 (244 authors)...
+    Max wcc nodes 80, edges 141
+      => Jan Chomicki, Dina Q. Goldin, Gabriel M. Kuper, Marc Gyssens, Laks V. S. Lakshmanan, Iyer N. Subramanian, Anand Rajaraman, Jeffrey D. Ullman, Michael Benedikt, Timothy Griffin, Leonid Libkin, Serge Abiteboul, Laurent Herr, Jan Van den Bussche, Alon Y. Levy, Catriel Beeri, Tova Milo, Paula Ta-Shma, H. V. Jagadish, Alberto O. Mendelzon, Inderpal Singh Mumick, Guozhu Dong, Limsoon Wong, Christos H. Papadimitriou, Moshe Y. Vardi, Michael J. Maher, Divesh Srivastava, Dan Suciu, Victor Vianu, Marie-Christine Rousset, Dirk Van Gucht, Freddy Dumortier, Luc Vandeurzen, Joseph M. Hellerstein, Elias Koutsoupias, Mihalis Yannakakis, Oliver M. Duschka, Michael R. Genesereth, Daniela Florescu, Bradley S. Fordham, Yelena Yesha, Frank Neven, Gottfried Vossen, Phokion G. Kolaitis, David L. Martin 0001, Madhukar N. Thakur, Luc Segoufin, Diego Calvanese, Giuseppe De Giacomo, Maurizio Lenzerini, David Scot Taylor, Prabhakar Raghavan, Hisao Tamaki, Santosh Vempala, James Bailey 0001, Kotagiri Ramamohanarao, Jon M. Kleinberg, Andrew Tomkins, Marcelo Arenas, Leopoldo E. Bertossi, Thomas Schwentick, Raymond T. Ng, Sophie Cluet, Olga Kapitskaia, Sachin More, S. Muthukrishnan, Elizabeth A. M. Shriver, Emmanuel Waller, Yannis Papakonstantinou, rger, Martin Grohe, Nick Koudas, Zhiyuan Chen 0003, Flip Korn, Ravi Kumar 0001, Sridhar Rajagopalan, D. Sivakumar, Eli Upfal, Todd D. Millstein, Marc Friedman
     Top 10 authors: (by pagerank and edge ratio)
-       4% Michael Benedikt
-       4% Leonid Libkin
-       4% Dimitrios Gunopulos
-       4% Roni Khardon
-       4% Heikki Mannila
-       4% Hannu Toivonen
-       4% Vasilis Samoladas
-       4% Daniel P. Miranker
-       4% Luc Segoufin
-       4% Victor Vianu
+       1% Christos H. Papadimitriou
+       1% Alon Y. Levy
+       1% Serge Abiteboul
+       1% Divesh Srivastava
+       1% Raghu Ramakrishnan
+       1% Victor Vianu
+       1% Jan Van den Bussche
+       1% Prabhakar Raghavan
+       1% Moshe Y. Vardi
+       1% Werner Nutt
     Top 10 central authors: (by centrality)
-       0.00% Udi Manber
-       0.00% Michael Benedikt
-       0.00% Leonid Libkin
-       0.00% Dimitrios Gunopulos
-       0.00% Roni Khardon
-       0.00% Heikki Mannila
-       0.00% Hannu Toivonen
-       0.00% Vasilis Samoladas
-       0.00% Daniel P. Miranker
-       0.00% Luc Segoufin
+      1352.33% Victor Vianu
+      1258.33% Christos H. Papadimitriou
+      1157.00% Serge Abiteboul
+      1026.17% Tova Milo
+      858.00% Alberto O. Mendelzon
+      764.00% Jan Van den Bussche
+      748.00% H. V. Jagadish
+      650.00% Divesh Srivastava
+      617.50% Dan Suciu
+      568.00% Luc Segoufin
     Communities:
-       0: Udi Manber
-       1: Michael Benedikt, Leonid Libkin
-       2: Dimitrios Gunopulos, Roni Khardon, Heikki Mannila, Hannu Toivonen
-       3: Vasilis Samoladas, Daniel P. Miranker
-       4: Luc Segoufin, Victor Vianu
-       5: Minos N. Garofalakis, Yannis E. Ioannidis, Banu Özden, Abraham Silberschatz
-       6: Marcelo Arenas, Leopoldo E. Bertossi, Jan Chomicki
-       7: Steven Dawson, Sabrina De Capitani di Vimercati, Patrick Lincoln, Pierangela Samarati
-       8: Ravi Kumar, Prabhakar Raghavan, Sridhar Rajagopalan, D. Sivakumar, Andrew Tomkins, Eli Upfal
+       0: Jan Chomicki, Dina Q. Goldin, Gabriel M. Kuper, Moshe Y. Vardi, Phokion G. Kolaitis, David L. Martin 0001, Madhukar N. Thakur, Diego Calvanese, Giuseppe De Giacomo, Maurizio Lenzerini, Marcelo Arenas, Leopoldo E. Bertossi
+       1: Marc Gyssens, Laks V. S. Lakshmanan, Iyer N. Subramanian, Jan Van den Bussche, Dirk Van Gucht, Freddy Dumortier, Luc Vandeurzen, Frank Neven, Gottfried Vossen, Thomas Schwentick, Emmanuel Waller, rger
+       2: Takeshi Fukuda, Yasuhiko Morimoto, Shinichi Morishita, Takeshi Tokuyama, Jun Sese
+       3: Anand Rajaraman, Jeffrey D. Ullman, Serge Abiteboul, Laurent Herr, Alon Y. Levy, Catriel Beeri, Tova Milo, Paula Ta-Shma, Dan Suciu, Victor Vianu, Marie-Christine Rousset, Oliver M. Duschka, Michael R. Genesereth, Daniela Florescu, Bradley S. Fordham, Yelena Yesha, Yannis Papakonstantinou, Todd D. Millstein, Marc Friedman
+       4: Bernd-Uwe Pagel, Hans-Werner Six
+       5: Michael Benedikt, Timothy Griffin, Leonid Libkin, Guozhu Dong, Limsoon Wong, Luc Segoufin, James Bailey 0001, Kotagiri Ramamohanarao, Martin Grohe
+       6: Yannis Theodoridis, Timos K. Sellis, Dimitris Papadias, Nikos Mamoulis
+       7: Man Hon Wong 0001, Kelvin Kam Wing Chu
+       8: Ronald Fagin
+       9: Sumit Ganguly, Akshay Goel, Abraham Silberschatz, Joseph Albert, Yannis E. Ioannidis, Raghu Ramakrishnan, Jonathan Goldstein, Uri Shaft, Jie-Bing Yu, zden, Rajeev Rastogi, Minos N. Garofalakis, Venkatesh Ganti, Johannes Gehrke
+      10: phane Grumbach, Jianwen Su, Oscar H. Ibarra, Maurizio Rafanelli, Leonardo Tininini
+      11: Elisa Bertino, Barbara Catania
+      12: Max J. Egenhofer
+      13: H. V. Jagadish, Alberto O. Mendelzon, Inderpal Singh Mumick, Michael J. Maher, Divesh Srivastava, Raymond T. Ng, Sophie Cluet, Olga Kapitskaia, Sachin More, S. Muthukrishnan, Elizabeth A. M. Shriver, Nick Koudas, Zhiyuan Chen 0003, Flip Korn
+      14: Alfred V. Aho
+      15: David Toman
+      16: Alexei P. Stolboushkin, Michael A. Taitslin
+      17: Christos H. Papadimitriou, Joseph M. Hellerstein, Elias Koutsoupias, Mihalis Yannakakis, David Scot Taylor, Prabhakar Raghavan, Hisao Tamaki, Santosh Vempala, Jon M. Kleinberg, Andrew Tomkins, Ravi Kumar 0001, Sridhar Rajagopalan, D. Sivakumar, Eli Upfal
+      18: Udi Manber
+      19: Claudio Bettini, Xiaoyang Sean Wang, Sushil Jajodia
+      20: Gustavo Alonso, Stephen Blott, Armin Fessler, rg Schek, Heiko Schuldt, Guy Pardon
+      21: Ching-Tien Ho, Jehoshua Bruck, Rakesh Agrawal 0001
+      22: Paolo Atzeni, Giansalvatore Mecca
+      23: Yuri Breitbart, Henry F. Korth
+      24: Stefan Berchtold, hm, Daniel A. Keim, Hans-Peter Kriegel
+      25: Wolfgang Scheufele, Guido Moerkotte
+      26: Dimitrios Gunopulos, Roni Khardon, Heikki Mannila, Hannu Toivonen, George Kollios, Vassilis J. Tsotras
+      27: Guido Nerjes, Peter Muth, Gerhard Weikum
+      28: scher, Wolfgang May, Georg Lausen
+      29: Divyakant Agrawal, Amr El Abbadi, Robert C. Steinke
+      30: Paolo Ciaccia, Marco Patella, Pavel Zezula
+      31: Pierangela Samarati, Latanya Sweeney, Steven Dawson, Sabrina De Capitani di Vimercati, Patrick Lincoln
+      32: Stavros Christodoulakis, Fenia Zioga
+      33: Pankaj K. Agarwal, Lars Arge, Jeff Erickson 0001, Paolo Giulio Franciosa, Jeffrey Scott Vitter, Vasilis Samoladas, Daniel P. Miranker
+      34: del, Yuri Gurevich, Colin Hirsch
+      35: Peter Buneman, Wenfei Fan, Scott Weinstein, on
+      36: Werner Nutt, Yehoshua Sagiv, Sara Shurin, Sara Cohen, Alexander Serebrenik, Yaron Kanza
+      37: John R. Smith, Chung-Sheng Li, Vittorio Castelli, Anant Jhingran
+      38: Charu C. Aggarwal, Philip S. Yu
+      39: Hasan Davulcu, Michael Kifer, C. R. Ramakrishnan, I. V. Ramakrishnan, Guizhen Yang
+      40: Sergei G. Vorobyov, Andrei Voronkov, Evgeny Dantsin
+      41: Luc Boasson, gielski, ne Guessarian, Yuri V. Matiyasevich
+      42: Howard J. Karloff, Milena Mihail
+      43: Carmem S. Hara, Susan B. Davidson
+      44: Lauri Malmi, Eljas Soisalon-Soininen
+      45: Yousef J. Al-Houmaily, Panos K. Chrysanthis
+      46: Noga Alon, Phillip B. Gibbons, Yossi Matias, Mario Szegedy
+      47: Francis C. Chu, Joseph Y. Halpern, Praveen Seshadri
+      48: Georg Gottlob, Nicola Leone, Francesco Scarcello
+      49: Beng Chin Ooi, Kian-Lee Tan, Cui Yu, phane Bressan
+      50: Floris Geerts, Bart Kuijpers
+      51: Mehmet M. Dalkilic, Edward L. Robertson
+      52: Mikhail J. Atallah, Sunil Prabhakar
+      53: Moses Charikar, Surajit Chaudhuri, Rajeev Motwani, Vivek R. Narasayya
+      54: Fabrizio Angiulli, Rachel Ben-Eliyahu-Zohary, Giovambattista Ianni, Luigi Palopoli
+      55: David Gross 0001, Michel de Rougemont
