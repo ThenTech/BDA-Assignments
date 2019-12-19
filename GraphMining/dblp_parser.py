@@ -109,7 +109,8 @@ class AuthorStrategyYearGraphs(IItemStrategy):
         self.graph_class = graph_class
         self.filter_key  = filter_key
 
-        self.authors = {}
+        self.authors_filtered = {}
+        self.authors_all = {}
 
         self.key          = False
         self.tag          = ""
@@ -146,20 +147,22 @@ class AuthorStrategyYearGraphs(IItemStrategy):
         elif self.tag == self.TAG2:
             self.current_year = int(value)
 
+    def __add_current(self, auth_dict):
+        if self.current_year not in auth_dict:
+            auth_dict[self.current_year] = self.graph_class(self.current_year)
+
+        # Add nodes and edges
+        if len(self.current_item) > 1:
+            for a1, a2 in combinations(self.current_item, 2):
+                auth_dict[self.current_year].AddConnection(a1, a2)
+                # auth_dict[self.current_year].AddConnection(a2, a1)
+        else:
+            auth_dict[self.current_year].AddItem(self.current_item[0])
+
     def end_item(self, tag):
         if ((self.tag == self.TAG and self.tag != tag) or (self.tag == self.TAG2 and self.tag != tag)) \
           and self.current_item and self.current_year > 1900:
-            if self.key:
-                if self.current_year not in self.authors:
-                    self.authors[self.current_year] = self.graph_class(self.current_year)
-
-                # Add nodes and edges
-                if len(self.current_item) > 1:
-                    for a1, a2 in combinations(self.current_item, 2):
-                        self.authors[self.current_year].AddConnection(a1, a2)
-                        # self.authors[self.current_year].AddConnection(a2, a1)
-                else:
-                    self.authors[self.current_year].AddItem(self.current_item[0])
+            self.__add_current(self.authors_filtered if self.key else self.authors_all)
 
             self.current_item = []
             self.current_year = -1
@@ -167,8 +170,28 @@ class AuthorStrategyYearGraphs(IItemStrategy):
             if self.progress:
                 self.progress.update()
 
+    def process_others(self):
+        for y, G1 in self.authors_filtered.items():
+            if y in self.authors_all:
+                G2 = self.authors_all[y]
+
+                # For all authors in filtered list
+                for N1 in G1.Nodes():
+                    nid = N1.GetId()
+                    nna = G1.get_author_from_id(nid)
+
+                    # If author in all list, add all its edges if they also appear in filtered
+                    if G2.has_author(nna):
+                        N2 = G2.get_node_from_name(nna)
+                        if N2:
+                            for edge in N2.GetOutEdges():
+                                a2 = G2.get_author_from_id(edge)
+
+                                if G1.has_author(a2):
+                                    G1.AddConnection(nna, a2)
+
     def get_data(self):
-        return self.authors
+        return self.authors_filtered
 
 
 def run_parser_strategy(data, strat=None):

@@ -37,7 +37,7 @@ class GraphMiner:
             self.itemstore = snap.TIntStrH()
 
         def AddItem(self, item):
-            if item not in self.intstore:
+            if not self.has_author(item):
                 self.last_id += 1
                 self.intstore[item] = self.last_id
                 self.itemstore.AddDat(self.last_id, item)
@@ -51,6 +51,19 @@ class GraphMiner:
 
         def get_author_from_id(self, idx):
             return self.itemstore.GetDatWithDefault(idx, "?")
+
+        def has_author(self, name):
+            return name in self.intstore
+
+        def get_id_from_author(self, name):
+            return self.intstore.get(name, -1)
+
+        def get_node_from_id(self, idx):
+            return self.G.GetNI(idx) if self.itemstore.IsKey(idx) else None
+
+        def get_node_from_name(self, name):
+            idx = self.get_id_from_author(name)
+            return self.G.GetNI(idx) if idx > -1 else None
 
         def Nodes(self):
             return self.G.Nodes()
@@ -151,6 +164,8 @@ class GraphMiner:
         strat = run_parser_strategy(self.data_path,
                                     AuthorStrategyYearGraphs(GraphMiner.Graph, self.filter_key))
         strat.stop()
+        strat.process_others()
+
         self.author_data = strat.get_data()
 
         print ("Found authors for {0} years in \"{1}\":"\
