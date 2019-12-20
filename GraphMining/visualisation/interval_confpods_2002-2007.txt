@@ -1,0 +1,71 @@
+Plotting top 10 authors for years 2002-2007 (284 authors)...
+    Max wcc nodes 166, edges 365
+      => Carlos A. Hurtado, Alberto O. Mendelzon, Georg Gottlob, Christoph Koch 0001, Foto N. Afrati, Chen Li 0001, Prasenjit Mitra, Donghui Zhang, Vassilis J. Tsotras, Dimitrios Gunopulos, Nick Koudas, Marcelo Arenas, Wenfei Fan, Leonid Libkin, Peter Buneman, Wang Chiew Tan, Luc Segoufin, Victor Vianu, Francis C. Chu, Joseph Y. Halpern, Johannes Gehrke, Sanjeev Khanna, Dan Suciu, Rada Chirkova, Brian Babcock, Shivnath Babu, Mayur Datar, Rajeev Motwani, Jennifer Widom, Arvind Arasu, Jon McAlister, Sudipto Guha, Gerome Miklau, Frank Neven, Jan Van den Bussche, Divesh Srivastava, Edith Cohen, Haim Kaplan, Tova Milo, Hoda Mokhtar, Jianwen Su, Oscar H. Ibarra, Sourav Chatterji, Sai Surya Kiran Evani, Sumit Ganguly, Mahesh Datt Yemmanuru, Marc Spielmann, Jerzy Tyszkiewicz, Minos N. Garofalakis, Amit Kumar 0001, Reinhard Pichler, Helmut Seidl, Thomas Schwentick, Anca Muscholl, Michael Benedikt, Martin Strauss 0001, S. Muthukrishnan, Ken Q. Pu, Samir Khuller, Yoo Ah Kim, Yung-Chun (Justin) Wan, Richard Hull 0001, Vassilis Christophides, Alexandre V. Evfimievski, Ramakrishnan Srikant, Rakesh Agrawal 0001, Daniel Kifer, Cristian Bucila, Walker M. White, Irit Dinur, Kobbi Nissim, Ronald Fagin, Phokion G. Kolaitis, Lucian Popa 0001, Liadan O'Callaghan, Graham Cormode, Ashish Kumar Gupta, Alon Y. Halevy, Michael Greenwald, ding, Thomas Wilke, Pablo Barcel, Ravi Kumar 0001, Mohammad Mahdian, D. Sivakumar, Erik Vee, Albert Atserias, Anuj Dawar, Ziv Bar-Yossef, Marcus Fontoura, Vanja Josifovski, rrez 0001, Klaus U. Schulz, Robert Baumgartner, Marcus Herzog, Sergio Flesca, Wim Martens, Serge Abiteboul, Omar Benjelloun, Gurmeet Singh Manku, Alan Nash, scher, Alin Deutsch, Liying Sui, Utkarsh Srivastava, Jasmine Novak, Andrew Tomkins, Ariel Fuxman, e J. Miller, Ramanathan V. Guha, Floris Geerts, Rajeev Rastogi, Dirk Leinders, Stijn Vansummeren, Dirk Van Gucht, Martin Grohe, Philip A. Bernstein, Abrams, Stefan Haar, Nicole Schweikardt, Kamesh Munagala, Krishnaram Kenthapadi, Yannis Katsis, Yannis Papakonstantinou, Sergey Melnik 0001, Nina Mishra, Avrim Blum, Cynthia Dwork, Frank McSherry, Sebastian Maneth, Alexandru Berlea, Thomas Perst, Bassem Sayrafi, Solmaz Kolahi, Fang Wei 0001, Jonathan Panttaja, T. S. Jayram, An Zhu, Mark Sandler, Mikolaj Bojanczyk, Claire David, Gagan Aggarwal, s Feder, Rina Panigrahy, Dilys Thomas, Ashish Goel, Srinivas R. Kashyap, Sreenivas Gollapudi, Ying Xu 0002, Supratim Deb, K. V. M. Naidu, Anand Srinivasan, Marc Gyssens, Jan Paredaens, George H. L. Fletcher, Toon Calders, Stijn Dekeyser, Jan Hidders, Dayou Zhou, Andrew McGregor 0001, Ashwin Machanavajjhala, Hernich, Flip Korn, Michael J. Franklin, Anirban Majumder, David Maier 0001
+    Top 10 authors: (by pagerank and edge ratio)
+       1% Phokion G. Kolaitis
+       1% Thomas Schwentick
+       1% Rajeev Motwani
+       1% Jan Van den Bussche
+       1% Johannes Gehrke
+       1% Georg Gottlob
+       1% Ronald Fagin
+       1% Michael Benedikt
+       1% Ravi Kumar 0001
+       1% Victor Vianu
+    Top 10 central authors: (by centrality)
+       3308.6 Thomas Schwentick
+       2952.7 Phokion G. Kolaitis
+       2397.4 Rajeev Rastogi
+       2316.2 S. Muthukrishnan
+       2191.9 Ravi Kumar 0001
+       2127.9 Wenfei Fan
+       1991.7 Rajeev Motwani
+       1974.4 Jan Van den Bussche
+       1870.8 Victor Vianu
+       1644.7 Michael Benedikt
+    Communities:
+       0: Carlos A. Hurtado, Alberto O. Mendelzon, Georg Gottlob, Christoph Koch 0001, Foto N. Afrati, Chen Li 0001, Vassilis J. Tsotras, Nick Koudas, Jennifer Widom, Jon McAlister, Frank Neven, Jan Van den Bussche, Toni Mancini, Sourav Chatterji, Sai Surya Kiran Evani, Sumit Ganguly, Mahesh Datt Yemmanuru, Yaron Kanza, Yehoshua Sagiv, Liadan O'Callaghan, Graham Cormode, Ashish Kumar Gupta, Alon Y. Halevy, Cinda Heeren, Ryan Williams 0001, Pablo Barcel, Ravi Kumar 0001, Mohammad Mahdian, D. Sivakumar, Swastik Kopparty, Chinya V. Ravishankar, Serge Abiteboul, Omar Benjelloun
+       1: Johannes Gehrke, Samir Khuller, Yoo Ah Kim, Yung-Chun (Justin) Wan, Richard Hull 0001, Vassilis Christophides, Alexandre V. Evfimievski, Ramakrishnan Srikant, Rakesh Agrawal 0001, Walker M. White, Andrea Cal, Riccardo Rosati, Domenico Lembo, Irit Dinur, Kobbi Nissim, Ganesh Ramesh, William Maniatty, Mohammed Javeed Zaki, Charu C. Aggarwal, Phokion G. Kolaitis, scher, Alin Deutsch, Liying Sui, Hakan Ferhatosmanoglu, Anand Srinivasan
+       2: Dennis E. Shasha, Arvind Arasu, Sudipto Guha, Gerome Miklau, Divesh Srivastava, Haim Kaplan, Tova Milo, Hoda Mokhtar, Jianwen Su, Michael Benedikt, Cristian Bucila, Christopher Unkel, Jasmine Novak, Andrew Tomkins, Ariel Fuxman, e J. Miller, Ramanathan V. Guha, Noga Alon, Nick G. Duffield, Carsten Lund, Stefan Haar, Nicole Schweikardt, Yannis Katsis, Yannis Papakonstantinou
+       3: Joseph Y. Halpern, Sanjeev Khanna, Marco Cadoli, Reinhard Pichler, Anca Muscholl, Daniel Kifer, Lucian Popa 0001, Gianluigi Greco, Subhash Suri, Erik Vee, Sven Hartmann, Sebastian Link, Albert Atserias, Anuj Dawar, Ziv Bar-Yossef, Aravind Ramachandran, Sergio Tessaris, Gagan Aggarwal, s Feder
+       4: Rolfe R. Schmidt, Oscar H. Ibarra, Maurizio Lenzerini, Diego Calvanese, Giuseppe De Giacomo, Moshe Y. Vardi, Marc Spielmann, Ronald Fagin, Michael Greenwald, John Hershberger 0001, ding, Thomas Wilke, Adam Meyerson, Avrim Blum, Cynthia Dwork, Frank McSherry, Sebastian Maneth
+       5: Bradley C. Kuszmaul, Haodong Hu, Fang Wei 0001, Jonathan Panttaja, T. S. Jayram, Benny Kimelfeld, An Zhu, Mark Sandler, Mikolaj Bojanczyk, Claire David, Enrico Franconi
+       6: Prasenjit Mitra, Donghui Zhang, Dimitrios Gunopulos, Jason Tsong-Li Wang, Rosalba Giugno, rger, Gottfried Vossen, Cyrus Shahabi, Kenneth A. Ross, Marcelo Arenas, Sreenivas Gollapudi
+       7: Jerzy Tyszkiewicz, Minos N. Garofalakis, Amit Kumar 0001, Jens-Peter Dittrich, Bernhard Seeger, David Scot Taylor, Peter Widmayer, Helmut Seidl, Thomas Schwentick, Ali Saman Tosun
+       8: Marcus Fontoura, Vanja Josifovski, rrez 0001, Klaus U. Schulz, Robert Baumgartner, Marcus Herzog, Sergio Flesca, Pankaj K. Agarwal, Nabil H. Mustafa
+       9: H. V. Jagadish, Leonard Pitt, Rina Panigrahy, Dilys Thomas, Ashish Goel, Srinivas R. Kashyap, Anna Pagh, Rasmus Pagh, Dayou Zhou
+      10: Jinyan Li, Limsoon Wong, Mengling Feng, Yap-Peng Tan, Solmaz Kolahi, Michael A. Bender, Martin Farach-Colton
+      11: Wenfei Fan, Leonid Libkin, Peter Buneman, Wang Chiew Tan, Edith Cohen, sta Grahne
+      12: Aaron Bohannon, Benjamin C. Pierce, Jeffrey A. Vaughan, Guizhen Yang, Michael Kifer
+      13: George H. L. Fletcher, Toon Calders, Stijn Dekeyser, Jan Hidders, Luciana S. Buriol
+      14: John Whaley, V. Benjamin Livshits, Michael C. Martin, Dzintars Avots, Michael Carbin
+      15: Raghav Kaushik, Raghu Ramakrishnan, Venkatesan T. Chakaravarthy, Utkarsh Srivastava, Monica S. Lam
+      16: Qi Zhao, Mitsunori Ogihara, Haixun Wang, Jun (Jim) Xu
+      17: Flip Korn, Michael J. Franklin, Anirban Majumder, Lap-Kei Lee
+      18: Gereon Frahling, Stefano Leonardi, Alberto Marchetti-Spaccamela, Christian Sohler
+      19: Sara Cohen, Martin Grohe, Sheng Zhong, Zhiqiang Yang
+      20: Mikkel Thorup, Santosh Vempala, Rebecca N. Wright, Floris Geerts
+      21: Wim Martens, Hanson Zhou, David P. Woodruff, Sandeep Gupta
+      22: Alex Thomo, Martin Strauss 0001, Nicola Leone, Rajeev Rastogi
+      23: Lisa Hellerstein, Ning Wu, Hernich
+      24: Ashwin Machanavajjhala, Anne Condon, Amol Deshpande
+      25: Ying Xu 0002, Supratim Deb, K. V. M. Naidu
+      26: th, Bassem Sayrafi, Haiquan Li
+      27: Alexandru Berlea, Thomas Perst, n Abadi
+      28: Christos Faloutsos, Sergey Melnik 0001, Nina Mishra
+      29: David Cheng, Ravi Kannan, Grant Wang
+      30: Dirk Leinders, Stijn Vansummeren, Dirk Van Gucht
+      31: Shivnath Babu, Mayur Datar, Rajeev Motwani
+      32: Dan Suciu, Chung-Min Chen, Christine T. Cheng
+      33: Luc Segoufin, Victor Vianu, Francis C. Chu
+      34: H. F. Ting, David Maier 0001
+      35: Vinay K. Chaudhri, Andrew McGregor 0001
+      36: Marc Gyssens, Jan Paredaens
+      37: Bogdan Warinschi, Nisheeth Shrivastava
+      38: Yasushi Sakurai, Masatoshi Yoshikawa
+      39: Kamesh Munagala, Krishnaram Kenthapadi
+      40: Philip A. Bernstein, Abrams
+      41: Gurmeet Singh Manku, Alan Nash
+      42: Dakshi Agrawal, Francesco Scarcello
+      43: S. Muthukrishnan, Ken Q. Pu
+      44: Rada Chirkova, Brian Babcock

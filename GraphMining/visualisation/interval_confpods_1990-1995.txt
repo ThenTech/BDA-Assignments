@@ -1,0 +1,65 @@
+Plotting top 10 authors for years 1990-1995 (183 authors)...
+    Max wcc nodes 84, edges 144
+      => Michael J. Carey 0001, Sanjay Krishnamurthi, Miron Livny, Jayant R. Haritsa, Hamid Pirahesh, Mariano P. Consens, Alberto O. Mendelzon, Serge Abiteboul, Paris C. Kanellakis, Emmanuel Waller, Eric Simon, Victor Vianu, Gabriel M. Kuper, Peter Z. Revesz, Moshe Y. Vardi, Raghu Ramakrishnan, Froduald Kabanza, venne, Pierre Wolper, Mihalis Yannakakis, Marc Gyssens, Jan Paredaens, Dirk Van Gucht, Phokion G. Kolaitis, Richard J. Lipton, Jeffrey F. Naughton, Inderpal Singh Mumick, Sheldon J. Finkelstein, Alexander Brodsky 0001, Yehoshua Sagiv, Kenneth A. Ross, Allen Van Gelder, Kirack Sohn, Foto N. Afrati, Stavros S. Cosmadakis, phane Grumbach, Catriel Beeri, Tova Milo, Shalom Tsur, Gerd G. Hillebrand, Harry G. Mairson, Jan Van den Bussche, S. Seshadri, Marianne Baudinet, zette, Divesh Srivastava, S. Sudarshan 0001, Kevin J. Compton, Thomas Eiter, Georg Gottlob, Alon Y. Levy, Ashish Gupta 0001, sta Grahne, Christos H. Papadimitriou, Surajit Chaudhuri, Peter J. Haas, Arun N. Swami, Leonid Libkin, Limsoon Wong, Mark H. Nodine, Michael T. Goodrich, Jeffrey Scott Vitter, Darren Erik Vengroff, Sridhar Ramaswamy, Gottfried Vossen, Karl Denninghoff, Oded Shmueli, Christos Faloutsos, Ibrahim Kamel, Rakesh Agrawal 0001, Peter J. Stuckey, Jianwen Su, Jyrki Kivinen, Heikki Mannila, Esko Ukkonen, Dan Suciu, Val Tannen, nen, Latha S. Colby, Edward L. Robertson, Lawrence V. Saxton, Jeffrey D. Ullman, Jennifer Widom, Sairam Subramanian
+    Top 10 authors: (by pagerank and edge ratio)
+       2% Paris C. Kanellakis
+       1% Moshe Y. Vardi
+       1% Yehoshua Sagiv
+       1% Victor Vianu
+       1% Raghu Ramakrishnan
+       1% Amr El Abbadi
+       1% Divyakant Agrawal
+       1% Inderpal Singh Mumick
+       1% Dirk Van Gucht
+       1% Pierre Wolper
+    Top 10 central authors: (by centrality)
+       1506.5 Paris C. Kanellakis
+       1112.0 Moshe Y. Vardi
+       1068.0 Victor Vianu
+        957.8 Raghu Ramakrishnan
+        792.0 Gottfried Vossen
+        674.5 Yehoshua Sagiv
+        548.7 Jeffrey F. Naughton
+        496.0 Dirk Van Gucht
+        478.2 Peter Z. Revesz
+        462.0 sta Grahne
+    Communities:
+       0: Victor Vianu, Gabriel M. Kuper, Peter Z. Revesz, Moshe Y. Vardi, Raghu Ramakrishnan, Froduald Kabanza, Mihalis Yannakakis, Va-On Tam, Meichun Hsu, Gerhard Weikum, Christof Hasse, Peter Muth, Marc Gyssens, Jan Paredaens, Dirk Van Gucht, Domenico Sacc, Carlo Zaniolo, Theodore Johnson, Dennis E. Shasha, Lin Yu, Jeffrey F. Naughton, Sheldon J. Finkelstein, Alon Y. Levy, Latha S. Colby, Edward L. Robertson, Lawrence V. Saxton
+       1: Hamid Pirahesh, Khaled A. S. Abdel-Ghaffar, Amr El Abbadi, Divyakant Agrawal, ssler, Inderpal Singh Mumick, Abraham Silberschatz, Alan Fekete, Nancy A. Lynch, Larry Raab, Marianne Baudinet, zette, rgen Seib, Yuri Breitbart, Henry F. Korth, Thomas Eiter, Georg Gottlob, Raymond T. Ng, David Maier 0001
+       2: Catriel Beeri, Tova Milo, Shalom Tsur, Narayanan Krishnakumar, Arthur J. Bernstein, Gerd G. Hillebrand, Harry G. Mairson, Maurizio Rafanelli, S. Seshadri, Hector Garcia-Molina, Kenneth Salem, Georg Lausen, Divesh Srivastava, S. Sudarshan 0001, Michael Rabinovich, Edward D. Lazowska
+       3: Phokion G. Kolaitis, Neil Immerman, Sushant Patnaik, David W. Stemple, Jan Van den Bussche, Sumit Ganguly, Sergio Greco, Francesco M. Malvestuto, Marina Moscarini, Heikki Mannila, Esko Ukkonen, Dan Suciu
+       4: Daniel J. Rosenkrantz, Richard J. Lipton, William E. Weihl, Alexander Brodsky 0001, Yehoshua Sagiv, Kenneth A. Ross, Allen Van Gelder, Kirack Sohn, Foto N. Afrati
+       5: Nandit Soparkar, Martin Odersky, Otto Nurmi, Eljas Soisalon-Soininen, Donald B. Johnson, Christos Faloutsos, Ibrahim Kamel, Vasudha Krishnaswamy
+       6: Mariano P. Consens, Alberto O. Mendelzon, Jia-Huai You, Li-Yan Yuan, Serge Abiteboul, Paris C. Kanellakis, Emmanuel Waller, Eric Simon
+       7: Jan Chomicki, Damian Niwinski, Haiyan Ye, Karl Denninghoff, Oded Shmueli, Diego Calvanese
+       8: Rakesh Agrawal 0001, Peter J. Stuckey, Jianwen Su, Jyrki Kivinen
+       9: Mark H. Nodine, Michael T. Goodrich, Jeffrey Scott Vitter, Darren Erik Vengroff
+      10: Surajit Chaudhuri, John Turek, Sundeep Prakash, Tirza Hirst
+      11: Richard Hull 0001, Masatoshi Yoshikawa, Wei-hsing Wang, Eugene Pinsky
+      12: Stavros S. Cosmadakis, phane Grumbach, Laks V. S. Lakshmanan, ndez
+      13: Michael J. Carey 0001, Sanjay Krishnamurthi, Miron Livny, Jayant R. Haritsa
+      14: Kien A. Hua, Sheau-Dong Lang, Wen K. Lee
+      15: David Harel, Peter J. Haas, Arun N. Swami
+      16: Ashish Gupta 0001, Seymour Ginsburg, Xiaoyang Sean Wang
+      17: Man Hon Wong 0001, Ouri Wolfson, Sushil Jajodia
+      18: Kevin J. Compton, Sharad Mehrotra, Rajeev Rastogi
+      19: Ling Tony Chen, Doron Rotem
+      20: Jennifer Widom, Sairam Subramanian
+      21: Maurizio Lenzerini, Jeffrey D. Ullman
+      22: Gustavo Alonso, John L. Bruno
+      23: Keishi Tajima, nen
+      24: Val Tannen, Atsushi Ohori
+      25: Martha Escobar-Molano, Dean Jacobs
+      26: David Scott Warren, Gottfried Vossen
+      27: Sridhar Ramaswamy, Weidong Chen 0005
+      28: Bennet Vance, rg Schek
+      29: Leonid Libkin, Limsoon Wong
+      30: Heinrich Toben, Peter Widmayer
+      31: Bernd-Uwe Pagel, Hans-Werner Six
+      32: sta Grahne, Christos H. Papadimitriou
+      33: V. S. Subrahmanian, Richard Jeffers
+      34: Colin Bell, Anil Nerode
+      35: Richard Helm, Kim Marriott
+      36: venne, Pierre Wolper
+      37: Slawomir Pilarski, Tiko Kameda
+      38: Walid G. Aref, Hanan Samet

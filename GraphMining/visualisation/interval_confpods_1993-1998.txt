@@ -1,0 +1,59 @@
+Plotting top 10 authors for years 1993-1998 (189 authors)...
+    Max wcc nodes 121, edges 233
+      => Surajit Chaudhuri, Moshe Y. Vardi, Yehoshua Sagiv, phane Grumbach, Tova Milo, Peter J. Haas, Jeffrey F. Naughton, S. Seshadri, Arun N. Swami, Leonid Libkin, Limsoon Wong, Man Hon Wong 0001, Divyakant Agrawal, Rajeev Rastogi, Sharad Mehrotra, Yuri Breitbart, Henry F. Korth, Abraham Silberschatz, rg Schek, Gerhard Weikum, Jan Chomicki, Damian Niwinski, Haiyan Ye, Mark H. Nodine, Michael T. Goodrich, Jeffrey Scott Vitter, Darren Erik Vengroff, Paris C. Kanellakis, Sridhar Ramaswamy, Jan Van den Bussche, Dirk Van Gucht, Gottfried Vossen, Victor Vianu, Karl Denninghoff, Alon Y. Levy, Inderpal Singh Mumick, Oded Shmueli, Martha Escobar-Molano, Richard Hull 0001, Dean Jacobs, Christos Faloutsos, Ibrahim Kamel, Rakesh Agrawal 0001, Jianwen Su, Foto N. Afrati, Dan Suciu, Val Tannen, Gerd G. Hillebrand, Jan Paredaens, Phokion G. Kolaitis, Alberto O. Mendelzon, Emmanuel Waller, Latha S. Colby, Edward L. Robertson, Lawrence V. Saxton, Gustavo Alonso, Amr El Abbadi, John L. Bruno, Vasudha Krishnaswamy, Ashish Gupta 0001, Jeffrey D. Ullman, Jennifer Widom, Sairam Subramanian, Guozhu Dong, Marc Andries, Luca Cabibbo, Anand Rajaraman, Divesh Srivastava, Mariano P. Consens, Peter T. Wood, H. V. Jagadish, Gabriel M. Kuper, Kenneth A. Ross, Alexander Brodsky 0001, Catherine Lassez, Jean-Louis Lassez, Michael J. Maher, Philippe Picouet, Ti-Pin Chang, Dina Q. Goldin, David Toman, Serge Abiteboul, Christos H. Papadimitriou, Marc Gyssens, Laks V. S. Lakshmanan, Iyer N. Subramanian, Alfred V. Aho, Michael Benedikt, Timothy Griffin, Laurent Herr, Catriel Beeri, Ronald Fagin, Paula Ta-Shma, Sumit Ganguly, Akshay Goel, Stephen Blott, Armin Fessler, Marie-Christine Rousset, Oliver M. Duschka, Joseph Albert, Yannis E. Ioannidis, Raghu Ramakrishnan, Joseph M. Hellerstein, Jonathan Goldstein, Uri Shaft, Jie-Bing Yu, Freddy Dumortier, Luc Vandeurzen, Ching-Tien Ho, Jehoshua Bruck, Elias Koutsoupias, Mihalis Yannakakis, Peter Buneman, Oscar H. Ibarra, zden, Wolfgang Scheufele, Guido Moerkotte, Guido Nerjes, Peter Muth, Michael R. Genesereth, Robert C. Steinke
+    Top 10 authors: (by pagerank and edge ratio)
+       1% Abraham Silberschatz
+       1% Alon Y. Levy
+       1% Tova Milo
+       1% Victor Vianu
+       1% Moshe Y. Vardi
+       1% Serge Abiteboul
+       1% Heikki Mannila
+       1% Dirk Van Gucht
+       1% Dan Suciu
+       1% Yehoshua Sagiv
+    Top 10 central authors: (by centrality)
+       2130.6 Abraham Silberschatz
+       1989.0 Serge Abiteboul
+       1407.2 Jeffrey D. Ullman
+       1186.7 Moshe Y. Vardi
+       1113.2 Christos H. Papadimitriou
+       1064.8 Victor Vianu
+        981.7 Dan Suciu
+        908.0 Rakesh Agrawal 0001
+        885.5 phane Grumbach
+        819.0 Jan Van den Bussche
+    Communities:
+       0: Surajit Chaudhuri, Moshe Y. Vardi, Yehoshua Sagiv, phane Grumbach, Tova Milo, Peter J. Haas, Jeffrey F. Naughton, S. Seshadri, Georg Gottlob, Victor Vianu, Alberto O. Mendelzon, Emmanuel Waller, Latha S. Colby, Edward L. Robertson, Chandra Chekuri, Rajeev Motwani, Danny Dolev, Jonathan Goldstein, scher
+       1: Tirza Hirst, Arun N. Swami, Bernd-Uwe Pagel, Hans-Werner Six, Heinrich Toben, Peter Widmayer, Leonid Libkin, Limsoon Wong, David Maier 0001, Bennet Vance, Jan Chomicki, Damian Niwinski, Alexander Brodsky 0001, Catherine Lassez, Marc Gyssens, Takeshi Fukuda, hm
+       2: Sheau-Dong Lang, Wen K. Lee, Ling Tony Chen, Doron Rotem, Guozhu Dong, Marc Andries, Luca Cabibbo, Anand Rajaraman, Divesh Srivastava, Mariano P. Consens, Peter T. Wood, H. V. Jagadish, Gabriel M. Kuper, Uri Shaft, Jie-Bing Yu
+       3: Abraham Silberschatz, Dean Jacobs, Christos Faloutsos, Ibrahim Kamel, Rakesh Agrawal 0001, Peter J. Stuckey, S. Sudarshan 0001, Jianwen Su, Gerd G. Hillebrand, sta Grahne, nen, Sushant Patnaik, Vassos Hadzilacos
+       4: Rajeev Rastogi, Sharad Mehrotra, Yuri Breitbart, Henry F. Korth, rg Schek, Gerhard Weikum, Haiyan Ye, Thomas Eiter, Karl Denninghoff, Alon Y. Levy, Inderpal Singh Mumick, Oded Shmueli, Kenneth A. Ross
+       5: Foto N. Afrati, Jyrki Kivinen, Heikki Mannila, Esko Ukkonen, Dan Suciu, Val Tannen, Jan Paredaens, Atsushi Ohori, Keishi Tajima, Neil Immerman, Phokion G. Kolaitis
+       6: Lawrence V. Saxton, Gustavo Alonso, Amr El Abbadi, Mario Winter, Giansalvatore Mecca, Anthony J. Bonner, Ti-Pin Chang, Alexei P. Stolboushkin, Michael A. Taitslin, Idit Keidar
+       7: Mark H. Nodine, Michael T. Goodrich, Jeffrey Scott Vitter, Darren Erik Vengroff, Paris C. Kanellakis, Sridhar Ramaswamy, Francesco M. Donini, Paolo Liberatore, Marco Schaerf
+       8: Raghu Ramakrishnan, Joseph M. Hellerstein, Daniel A. Keim, Hans-Peter Kriegel, Wolfgang Scheufele, Guido Moerkotte, Dimitrios Gunopulos, Roni Khardon
+       9: David Harel, John L. Bruno, Vasudha Krishnaswamy, Diego Calvanese, Maurizio Lenzerini, Ashish Gupta 0001, Jeffrey D. Ullman, Jennifer Widom
+      10: Mihalis Yannakakis, Peter Buneman, Oscar H. Ibarra, zden, Stefan Berchtold
+      11: Weidong Chen 0005, David Scott Warren, Jan Van den Bussche, Dirk Van Gucht, Gottfried Vossen
+      12: Hannu Toivonen, Guido Nerjes, Peter Muth, Michael R. Genesereth
+      13: Freddy Dumortier, Luc Vandeurzen, Ching-Tien Ho, Jehoshua Bruck
+      14: Sumit Ganguly, Akshay Goel, Elisa Bertino, Barbara Catania
+      15: Timothy Griffin, Catriel Beeri, Ronald Fagin, Paula Ta-Shma
+      16: Waqar Hasan, Jean-Louis Lassez, Michael J. Maher, Marco Cadoli
+      17: Wolfgang May, Georg Lausen, Robert C. Steinke
+      18: Xiaoyang Sean Wang, Stephen Blott, Armin Fessler
+      19: Laurent Herr, Yannis Theodoridis, Timos K. Sellis
+      20: Yasuhiko Morimoto, Shinichi Morishita, Takeshi Tokuyama
+      21: Paolo Atzeni, Elias Koutsoupias
+      22: Joseph Albert, Yannis E. Ioannidis
+      23: Marie-Christine Rousset, Oliver M. Duschka
+      24: Claudio Bettini, Sushil Jajodia
+      25: Alfred V. Aho, Michael Benedikt
+      26: Laks V. S. Lakshmanan, Iyer N. Subramanian
+      27: Serge Abiteboul, Christos H. Papadimitriou
+      28: Dina Q. Goldin, David Toman
+      29: Philippe Picouet, Vinay K. Chaudhri
+      30: Sairam Subramanian, Kien A. Hua
+      31: Martha Escobar-Molano, Richard Hull 0001
+      32: Man Hon Wong 0001, Divyakant Agrawal

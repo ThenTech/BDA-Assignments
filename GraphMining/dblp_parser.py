@@ -133,17 +133,16 @@ class AuthorStrategyYearGraphs(IItemStrategy):
         if self.filter_key and attr.getLength() == 2:
             self.key = self.filter_key in attr.get(self.ATTR, "").lower()
 
-            if self.key:
-                # Clear previous
-                self.current_item = []
-                self.current_year = -1
+            # Clear previous
+            self.current_item = []
+            self.current_year = -1
 
     def start_item(self, tag):
         self.tag = tag
 
     def update_item(self, value):
         if self.tag == self.TAG:
-            self.current_item.append(value)
+            self.current_item.append(value.strip())
         elif self.tag == self.TAG2:
             self.current_year = int(value)
 

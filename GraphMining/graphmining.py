@@ -6,13 +6,13 @@ import snap
 
 DATAFULL = "G:/_temp/UHasselt/BigDataAnalysis/DBLP/dblp.xml"
 DATASNAP = "G:/_temp/UHasselt/BigDataAnalysis/DBLP/dblp50000.xml"
-DATAFULL = "C:/Apps/Github/BDA-Assignments/DBLP/dblp.xml"
-DATASNAP = "C:/Apps/Github/BDA-Assignments/DBLP/dblp50000.xml"
+# DATAFULL = "C:/Apps/Github/BDA-Assignments/DBLP/dblp.xml"
+# DATASNAP = "C:/Apps/Github/BDA-Assignments/DBLP/dblp50000.xml"
 
 # DATAFULL = "C:/Users/Cedric/Google Drive (cedric.mingneau@student.uhasselt.be)/BDA persoonlijk/oefeningen/dblp.xml"
 # DATASNAP = "C:/Users/Cedric/Google Drive (cedric.mingneau@student.uhasselt.be)/BDA persoonlijk/oefeningen/dblp50000.xml"
 
-DATA = DATASNAP
+DATA = DATAFULL
 
 
 def safe_file_name(name, include=tuple()):
@@ -35,6 +35,17 @@ class GraphMiner:
             self.last_id   = -1
             self.intstore  = {}
             self.itemstore = snap.TIntStrH()
+
+        def copy(self):
+            gc = GraphMiner.Graph(self.year)
+
+            for N in self.Nodes():
+                a1 = self.get_author_from_id(N.GetId())
+                for edge in N.GetOutEdges():
+                    a2 = self.get_author_from_id(edge)
+                    gc.AddConnection(a1, a2)
+
+            return gc
 
         def AddItem(self, item):
             if not self.has_author(item):
@@ -114,21 +125,28 @@ class GraphMiner:
             self.__print((
                 "    Top {0} central authors: (by centrality)\n      {1}"
                     .format(top_x,
-                            "\n      ".join("{1:4f} {0}".format(self.get_author_from_id(i), Nodes[i]) \
+                            "\n      ".join("{1:7.1f} {0}".format(self.get_author_from_id(i), Nodes[i]) \
                                                 for i in top_central)),
             ), outfile)
 
         def print_communities(self, outfile=None):
             # Community detection
             CmtyV = snap.TCnComV()
-            modularity = snap.CommunityCNM(self.G, CmtyV)
 
-            self.__print(
-                ("    Communities:",)
-              + tuple("      {0:2d}: ".format(i) + ", ".join(map(self.get_author_from_id, Cmty)) \
-                         for i, Cmty in enumerate(CmtyV))
-            #   + ("     The modularity of the network is {0}".format(modularity),)
-            , outfile)
+            try:
+                temp = self.copy()  # ??
+                # modularity = snap.CommunityCNM(self.G, CmtyV)
+
+                modularity = snap.CommunityGirvanNewman(temp.G, CmtyV)  # Edges disappear after call
+            except Exception as e:
+                print("ERROR? {0}".format(e))
+            finally:
+                self.__print(
+                    ("    Communities:",)
+                + tuple("      {0:2d}: ".format(i) + ", ".join(map(self.get_author_from_id, Cmty)) \
+                            for i, Cmty in enumerate(CmtyV))
+                #   + ("     The modularity of the network is {0}".format(modularity),)
+                , outfile)
 
         def print_cores(self, k=3):
             Core3 = snap.GetKCore(self.G, 3)
@@ -172,10 +190,10 @@ class GraphMiner:
                 .format(len(self.author_data), self.filter_key))
 
         for year, g in sorted(self.author_data.items()):
-            print("  {0}: {1: 3} authors".format(year, g.G.GetNodes()))
+            print("  {0}: {1:3} authors".format(year, g.G.GetNodes()))
             # g.print_node_stats()
 
-        self.export_graphs()
+        # self.export_graphs()
 
     def __make_dir(self, _path):
         _path = _path.format(safe_file_name(self.filter_key) + "_{0}")
@@ -193,7 +211,7 @@ class GraphMiner:
         elif year in self.author_data:
             self.author_data[year].dump(name)
 
-    def export_graphs(self, year=-1, name="./visualise/{0}.png"):
+    def export_graphs(self, year=-1, name="./visualisation/{0}.png"):
         name = self.__make_dir(name)
 
         if year < 0:
@@ -211,7 +229,7 @@ class GraphMiner:
             for y in range(year[0], year[1]):
                 if y in self.author_data:
                     if not merged_graph:
-                        merged_graph = self.author_data[y]
+                        merged_graph = self.author_data[y].copy()
                     else:
                         G = self.author_data[y]
                         for edge in G.Edges():
@@ -235,12 +253,12 @@ class GraphMiner:
             print("  No such year!")
             return
 
-        outfile = self.__make_dir("./visualise/interval_{0}").format(years)
+        outfile = self.__make_dir("./visualisation/interval_{0}").format(years)
 
         with open(outfile + ".txt", "w") as ofile:
             ofile.write(info + "\n")
             merged_graph.print_node_stats(top_x=top_x, outfile=ofile)
-        merged_graph.export(outfile + ".png", "Graph for period " + years)
+        # merged_graph.export(outfile + ".png", "Graph for period " + years)
 
     def plot_interval_years(self, year_from=0, year_to=3000, delta=5, offset=3, top_x=10):
         for year in range(year_from, year_to+1, offset):
